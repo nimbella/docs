@@ -1,3 +1,9 @@
+---
+id: namespaces
+title: Namespace
+sidebar_label: Namespace
+---
+
 ## Nimbella namespaces
 
 You must have permission to use a specific namespace on the Nimbella platform in order to deploy a nim project and use many other nim capabilities.  A Nimbella namespace comes with storage resources which are managed as part of the namespace.

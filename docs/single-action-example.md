@@ -1,3 +1,9 @@
+---
+id: single-action
+title: Single Action Example
+sidebar_label: Single Action Example
+---
+
 ## Example: Create and deploy a project with a single action
 
 Let’s start with a really simple example that shows the basics of creating the source code for an action, placing it in a directory structure for a project, and deploying the project. This project needs no configuration and creates actions automatically based on the project directory structure.

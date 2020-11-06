@@ -1,3 +1,9 @@
+---
+id: commands
+title: Nim Commands
+sidebar_label: Nim Commands
+---
+
 ## nim command overview
 
 The Nimbella Command Line Tool (nim) is your primary portal to Nimbella services. Typing `nim` at a command prompt produces the latest version of help output, similar to the following.

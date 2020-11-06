@@ -1,6 +1,12 @@
+---
+id: flags
+title: Command Flags
+sidebar_label: Command Flags
+---
+
 # Nim command flags
 
-This document explains flags that appear on many `nim` commands with similar meaning.  Flags unique to one or very few commands are documented [in the command summary](nim-cmd.md).
+This document explains flags that appear on many `nim` commands with similar meaning.  Flags unique to one or very few commands are documented [in the command summary](command-summary.md).
 
 * [`--apihost`](#--apihost)
 * [`--auth`](#--auth)
@@ -41,6 +47,8 @@ Displays the syntax for the command on which it appears.  The command doesn't ex
 ---
 
 ##### --json
+
+On commands that support this flag, it causes the output of the command to be machine-readable JSON rather than human-readable text.  The details of the JSON vary by command.  Not all commands support this flag.
 
 ---
 

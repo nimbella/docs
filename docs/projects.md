@@ -1,3 +1,9 @@
+---
+id: projects
+title: Project
+sidebar_label: Project
+---
+
 ## About projects
 
 A project represents a logical unit of functionality whose boundaries are up to you. Your app can contain one or more projects. The directory structure of a project triggers how the deployer finds and labels packages and actions, how it deploys static web content, and what it ignores. In more complex cases you can set more control over project deployment by adding a [project configuration](configuration.md).

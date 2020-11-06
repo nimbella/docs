@@ -1,3 +1,9 @@
+---
+id: building
+title: Building
+sidebar_label: Building
+---
+
 ## Incorporating build steps for actions and web content
 
 The _web_ directory and any directory that represents an action can be built automatically as part of deployment. You can trigger this behavior in one of two ways.

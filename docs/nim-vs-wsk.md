@@ -1,3 +1,9 @@
+---
+id: wsk
+title: nim vs wsk
+sidebar_label: nim vs wsk
+---
+
 ## Information for OpenWhisk developers
 
 Nimbella powers the “serverless computing” portion of its offering with a modified version of [Apache OpenWhisk](http://openwhisk.org/). If you’re familiar with the OpenWhisk platform, you’ll recognize many similarities and some differences in the Nimbella commands and concepts. We’ll cover some of them here.

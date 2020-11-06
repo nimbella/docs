@@ -1,3 +1,9 @@
+---
+id: namespace-to-projects
+title: Tieing Namespaces to Projects
+sidebar_label: Tieing Namespaces to Projects
+---
+
 ## Tieing Namespaces To Projects
 
 There is no _required_ mapping between projects and namespaces.  However, you will want to decide on the mapping you want and how to enforce that mapping within a team.

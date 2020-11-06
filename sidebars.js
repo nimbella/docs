@@ -1,18 +1,171 @@
 module.exports = {
-  someSidebar: {
-    "Introduction": ["whatIsNimbella", "serverless", "serverlessVSServer", "servelessApps", "whyNimbella", "features", "openwhisk"],
-    "Nimbella Project": ["project"],
-    "Serverless SDK": ["keyValueSDK", "webSDK", "objectSDK"],
-    "Runtime & Languages": ["runtime"],
-    "CLI": ["cli"],
-    "Workbench": ["workbench"],
-    "Getting Started": ["gettingStarted"],
-    "Developing and Deploying Serverless APIs": ["agnostic", "nodejs", "python", "java", "go"],
-    "Developing & Deploying Web": ["web"],
-    "Taking your application to production": ["production"],
-    "Integrations": ["commander", "postman", "netlify"],
-    "Porting existing applications onto Nimbella": ["heroku", "express", "django", "flask", "lambda", "openwhiskPort"],
-    Docusaurus: ['doc1', 'doc2', 'doc3'],
-    Features: ['mdx'],
-  },
+	someSidebar: {
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+		Introduction: ['account'],
+=======
+=======
+>>>>>>> a537fde... Some examples explaining how to use Nimbella KV (#18)
+		Introduction: [
+			'what-is-nimbella',
+			'serverless',
+			'serverless-vs-server',
+			'serveless-apps',
+			'why-nimbella',
+			'account',
+			'features',
+			'openwhisk',
+		],
+<<<<<<< HEAD
+>>>>>>> 3d2301d... finalized fixes for this basic KV example doc
+=======
+>>>>>>> a537fde... Some examples explaining how to use Nimbella KV (#18)
+=======
+		Introduction: ['account'],
+>>>>>>> 4daaece... removed all empty files
+		'Nimbella Project': [
+			'deployer-overview',
+			'projects',
+			'namespaces',
+			'actions',
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+			'project',
+>>>>>>> 3d2301d... finalized fixes for this basic KV example doc
+=======
+			'project',
+>>>>>>> a537fde... Some examples explaining how to use Nimbella KV (#18)
+=======
+>>>>>>> 4daaece... removed all empty files
+			'configuration',
+			'deployer-feature',
+			'single-action',
+			'namespace-to-projects',
+		],
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+		'Serverless SDK': ['file-stores'],
+
+		CLI: ['install', 'commands', 'flags', 'command-summary', 'wsk'],
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 98045ed... Workbench documents - Sections 12 & 13 of issue 862 (#22)
+=======
+		'Serverless SDK': ['key-value-sdk', 'file-stores'],
+=======
+		'Serverless SDK': ['key-value-sdk', 'key-value-storage', 'file-stores'],
+>>>>>>> 877feca... Additional documentation for the Nimbella KV (#23)
+		'Runtime & Languages': ['runtime'],
+=======
+		'Serverless SDK': ['file-stores'],
+
+>>>>>>> 4daaece... removed all empty files
+		CLI: ['install', 'commands', 'flags', 'command-summary', 'wsk'],
+>>>>>>> 3d2301d... finalized fixes for this basic KV example doc
+		Workbench: [
+			'workbench',
+			'workbench-activations',
+			'workbench-deploy-from-github',
+			'workbench-playground-introduction',
+			'workbench-playground-exports',
+<<<<<<< HEAD
+<<<<<<< HEAD
+		],
+<<<<<<< HEAD
+=======
+		],
+<<<<<<< HEAD
+>>>>>>> 3d2301d... finalized fixes for this basic KV example doc
+		'Getting Started': ['getting-started', 'building'],
+		'Developing and Deploying Serverless APIs': [
+			'sample-project-walkthrough',
+			'basic-kv-commands',
+<<<<<<< HEAD
+=======
+=======
+		'Serverless SDK': ['key-value-sdk', 'file-stores'],
+		'Runtime & Languages': ['runtime'],
+		CLI: ['install', 'commands', 'flags', 'command-summary', 'wsk'],
+>>>>>>> a537fde... Some examples explaining how to use Nimbella KV (#18)
+		Workbench: ['workbench'],
+		'Getting Started': ['getting-started', 'building'],
+		'Developing and Deploying Serverless APIs': [
+			'sample-project-walkthrough',
+			'stateful-api-examples',
+<<<<<<< HEAD
+>>>>>>> a537fde... Some examples explaining how to use Nimbella KV (#18)
+=======
+>>>>>>> 98045ed... Workbench documents - Sections 12 & 13 of issue 862 (#22)
+		],
+		'Getting Started': ['getting-started', 'building'],
+		'Developing and Deploying Serverless APIs': ['sample-project-walkthrough'],
+=======
+		],
+>>>>>>> 3d2301d... finalized fixes for this basic KV example doc
+=======
+		],
+>>>>>>> a537fde... Some examples explaining how to use Nimbella KV (#18)
+=======
+		'Serverless SDK': ['key-value-sdk', 'file-stores'],
+		'Runtime & Languages': ['runtime'],
+		CLI: ['install', 'commands', 'flags', 'command-summary', 'wsk'],
+		Workbench: [
+			'workbench',
+			'workbench-activations',
+			'workbench-deploy-from-github',
+			'workbench-playground-introduction',
+			'workbench-playground-exports',
+		],
+<<<<<<< HEAD
+		'Getting Started': ['getting-started', 'building'],
+<<<<<<< HEAD
+		'Developing and Deploying Serverless APIs': ['sample-project-walkthrough'],
+>>>>>>> 98045ed... Workbench documents - Sections 12 & 13 of issue 862 (#22)
+=======
+=======
+		'Getting Started': ['getting-started', 'building', 'nim-creating-project'],
+>>>>>>> 8f0ecda... Project create example (#26)
+		'Developing and Deploying Serverless APIs': [
+			'sample-project-walkthrough',
+			'basic-kv-commands',
+			'deploy-from-github'
+		],
+>>>>>>> f543e74... Basic KV usage (#24)
+		'Developing & Deploying Web': ['web', 'web-content'],
+		'Taking your application to production': ['production'],
+		Integrations: ['commander', 'postman', 'netlify'],
+		'Porting existing applications onto Nimbella': [
+			'heroku',
+			'express',
+			'django',
+			'flask',
+			'lambda',
+			'openwhisk-port',
+		],
+		Docusaurus: ['doc1', 'doc2', 'doc3'],
+		Features: ['mdx'],
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+		'Getting Started': ['building'],
+		'Developing and Deploying Serverless APIs': ['basic-kv-commands'],
+		'Developing & Deploying Web': ['web-content'],
+>>>>>>> 4daaece... removed all empty files
+=======
+>>>>>>> 3d2301d... finalized fixes for this basic KV example doc
+=======
+>>>>>>> a537fde... Some examples explaining how to use Nimbella KV (#18)
+=======
+		'Getting Started': ['building'],
+		'Developing and Deploying Serverless APIs': ['basic-kv-commands'],
+		'Developing & Deploying Web': ['web-content'],
+>>>>>>> 4daaece... removed all empty files
+	},
 };
