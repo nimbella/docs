@@ -66,4 +66,3 @@ OpenWhisk supports [annotations](https://github.com/apache/incubator-openwhisk/b
 Here are some notes for `project.yml` configuration file modifiers if you’re familiar with OpenWhisk.
 
 *   The `webSecure` action modifier has the same semantics that `--web-secure` has in the `wsk action create` command in OpenWhisk. (The `nim action create` command does not offer a similar flag). It generates the `require-whisk-auth` annotation according to whether you specify `false` (the default), a string value (a secret you select) or `true`.
-</main>
