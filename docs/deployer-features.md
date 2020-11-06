@@ -1,3 +1,9 @@
+---
+id: deployerFeature
+title: Deployer Feature
+sidebar_label: Deployer Feature
+---
+
 ## About the Nimbella deployer
 
 

@@ -1,3 +1,9 @@
+---
+id: install
+title: Install CLI
+sidebar_label: Install CLI
+---
+
 ## Install the Nimbella Command Line Tool (nim)
 
 In most cases, we recommend that you use nim as a command to be invoked globally from shells or scripts. Here are the advantages of shell invocation:

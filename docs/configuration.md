@@ -1,3 +1,9 @@
+---
+id: configuration
+title: Project Configuration
+sidebar_label: Project Configuration
+---
+
 ## Adding project configuration
 
 A feature that sets nim projects apart from many other deployment tools is that no manifest or configuration file is required in a large number of suitably simple cases. You can simply choose a directory in the file system to represent a project and lay out the content of the project under that directory using a structure that nim will recognize as a project. See [the no-configuration project example](single-action-example.md).

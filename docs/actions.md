@@ -1,3 +1,9 @@
+---
+id: actions
+title: Actions
+sidebar_label: Actions
+---
+
 ## About actions
 
 ### Actions Have Public URLs by Default Unless the Project is Configured

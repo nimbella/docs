@@ -1,3 +1,9 @@
+---
+id: account
+title: Nimbella Account
+sidebar_label: Nimbella Account
+---
+
 ## Your Nimbella cloud account
 
 Your Nimbella cloud account gives you the following benefits:
