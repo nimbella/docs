@@ -1,3 +1,9 @@
+---
+id: webContent
+title: Web Content
+sidebar_label: Web Content
+---
+
 ## Adding static web content
 
 To add static web content to a project, add a directory called _web_ as a peer of the directory called _packages_. This directory should contain files whose suffixes imply well-known mime types for web content, such as _.html_, _.css_, or _.js_.

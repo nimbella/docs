@@ -1,3 +1,9 @@
+---
+id: workbench
+title: Workbench
+sidebar_label: Workbench
+---
+
 ## The Nimbella workbench
 
 Many (though not all) `nim` commands will also run in your web browser, which wraps some graphical assistance around `nim` and provides some additional commands.  This separate but closely related tool is called the Nimbella Workbench.

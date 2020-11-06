@@ -1,3 +1,9 @@
+---
+id: flags
+title: Command Flags
+sidebar_label: Command Flags
+---
+
 # Nim command flags
 
 This document explains flags that appear on many `nim` commands with similar meaning.  Flags unique to one or very few commands are documented [in the command summary](nim-cmd.md).

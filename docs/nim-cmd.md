@@ -1,3 +1,9 @@
+---
+id: commandSummary
+title: Command Summary
+sidebar_label: Command Summary
+---
+
 # Nimbella CLI Command Summary
 
 This document covers the syntax of all the Nimbella CLI commands, with brief semantic summaries and pointers to more extended documentation where it exists.  Flags common to many commands are documented [here](common-flags.md).
