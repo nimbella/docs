@@ -1,5 +1,5 @@
 ---
-id: deployerOverview
+id: deployer-overview
 title: Deployer Overview
 sidebar_label: Deployer Overview
 ---

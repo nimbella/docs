@@ -1,5 +1,5 @@
 ---
-id: keyValueSDK
+id: key-value-sdk
 title: Key Value SDK
 sidebar_label: Key Value SDK
 ---

@@ -1,5 +1,5 @@
 ---
-id: namespaceToProjects
+id: namespace-to-projects
 title: Tieing Namespaces to Projects
 sidebar_label: Tieing Namespaces to Projects
 ---

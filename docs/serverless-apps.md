@@ -1,5 +1,5 @@
 ---
-id: servelessApps
+id: serveless-apps
 title: What are Serverless Applications
 sidebar_label: Serverless Apps
 ---

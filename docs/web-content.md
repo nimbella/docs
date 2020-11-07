@@ -1,5 +1,5 @@
 ---
-id: webContent
+id: web-content
 title: Web Content
 sidebar_label: Web Content
 ---

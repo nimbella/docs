@@ -1,5 +1,5 @@
 ---
-id: singleAction
+id: single-action
 title: Single Action Example
 sidebar_label: Single Action Example
 ---
