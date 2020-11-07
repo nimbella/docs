@@ -1,11 +1,11 @@
 module.exports = {
   title: 'Nimbella Docs',
   tagline: 'The tagline of my site',
-  url: 'https://niks3089.github.io',
-  baseUrl: '/docs/',
+  url: 'https://docs.nimbella.io',
+  baseUrl: '/',
   onBrokenLinks: 'throw',
   favicon: 'img/favicon.ico',
-  organizationName: 'niks3089', // Usually your GitHub org/user name.
+  organizationName: 'nimbella', // Usually your GitHub org/user name.
   projectName: 'docs', // Usually your repo name.
   themeConfig: {
     navbar: {
