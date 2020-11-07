@@ -1,5 +1,5 @@
 ---
-id: openwhiskPort
+id: openwhisk-port
 title: Porting Openwhisk onto Nimbella
 sidebar_label: Openwhisk to Nimbella
 ---

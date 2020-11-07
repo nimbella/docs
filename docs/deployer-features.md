@@ -1,5 +1,5 @@
 ---
-id: deployerFeature
+id: deployer-feature
 title: Deployer Feature
 sidebar_label: Deployer Feature
 ---

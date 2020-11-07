@@ -1,5 +1,5 @@
 ---
-id: commandSummary
+id: command-summary
 title: Command Summary
 sidebar_label: Command Summary
 ---
