@@ -1,6 +1,6 @@
 module.exports = {
   someSidebar: {
-    "Introduction": ["whatIsNimbella", "serverless", "serverlessVSServer", "servelessApps", "whyNimbella", "account", "features", "openwhisk"],
+    "Introduction": ["welcome", "whatIsNimbella", "serverless", "serverlessVSServer", "servelessApps", "whyNimbella", "account", "features", "openwhisk"],
     "Nimbella Project": ["deployerOverview", "projects", "namespaces", "actions", "project", "configuration", "deployerFeature", "singleAction", "namespaceToProjects"],
     "Serverless SDK": ["keyValueSDK", "webSDK", "objectSDK"],
     "Runtime & Languages": ["runtime"],
