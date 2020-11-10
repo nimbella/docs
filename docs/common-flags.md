@@ -48,6 +48,8 @@ Displays the syntax for the command on which it appears.  The command doesn't ex
 
 ##### --json
 
+On commands that support this flag, it causes the output of the command to be machine-readable JSON rather than human-readable text.  The details of the JSON vary by command.  Not all commands support this flag.
+
 ---
 
 ##### --verbose

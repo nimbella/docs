@@ -9,7 +9,7 @@ sidebar_label: Command Summary
 This document covers the syntax of all the Nimbella CLI commands, with brief semantic summaries and pointers to more extended documentation where it exists.  Flags common to many commands are documented [here](common-flags.md).
 
 <!-- commands -->
-* [`nim action create ACTIONNAME [ACTIONPATH]`](#nim-action-create-actionname-actionpath)
+* [`nim action create [ACTIONNAME] ACTIONPATH`](#nim-action-create-actionname-actionpath)
 * [`nim action delete ACTIONNAME`](#nim-action-delete-actionname)
 * [`nim action get ACTIONNAME`](#nim-action-get-actionname)
 * [`nim action invoke ACTIONNAME`](#nim-action-invoke-actionname)
@@ -95,13 +95,13 @@ This document covers the syntax of all the Nimbella CLI commands, with brief sem
 * [`nim workbench run [COMMAND]`](#nim-workbench-run-command)
 
 ---
-## `nim action create ACTIONNAME [ACTIONPATH]`
+## `nim action create [ACTIONNAME] ACTIONPATH`
 
 Creates an Action
 
 ```
 USAGE
-  $ nim action create ACTIONNAME [ACTIONPATH]
+  $ nim action create [ACTIONNAME] ACTIONPATH
 
 OPTIONS
   -A, --annotation-file=annotation-file  FILE containing annotation values in JSON format
@@ -135,6 +135,31 @@ OPTIONS
 ```
 
 This command provides a quick way to create an individual action, not connected to a project.  However, [a project with a single action in it](single-action-example.md), while bulkier, allows for future extension as you add more actions and web content to your application.
+
+The action being created must not already exist.  If you wish to modify an existing action, use [nim action update](#nim-package-update-packagename).
+
+#### ACTIONNAME
+
+Provides the name of the action.  Action names in the current namespace
+consist of one or two segments separated by a slash (/) character.  Each segment conforms to these rules.
+
+* The first character must be an alphanumeric character, or an underscore.
+* The subsequent characters can be alphanumeric, spaces, or any of the following: `_`, `@`, `.`, `-`.
+* The last character can't be a space.
+
+When there are two segments to the name, the first denotes the package containing the action.
+
+Although it is the first argument, the `ACTIONNAME` may be omitted, causing the `ACTIONPATH` to be the first argument.
+
+#### ACTIONPATH
+
+Provides a location in the local file system where the code of the action is to be found.  
+
+
+
+
+
+
 
 ---
 ## `nim action delete ACTIONNAME`
