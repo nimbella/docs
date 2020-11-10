@@ -152,7 +152,7 @@ Sometimes it's necessary or just convenient to provide values for function param
 
 Actions receive parameters as input with the following flag:
 
- ```
+```
 --param key value
 ```
 
