@@ -1,8 +1,8 @@
-----
+---
 id: file-stores
 title: The Nimbella File Stores
 sidebar_label: Nimbella File Stores
-----
+---
 
 ## The Nimbella File Stores
 
