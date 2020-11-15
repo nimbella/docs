@@ -2,7 +2,7 @@ module.exports = {
   someSidebar: {
     "Introduction": ["welcome", "what-is-nimbella", "serverless", "serverless-vs-server", "serveless-apps", "why-nimbella", "account", "features", "openwhisk"],
     "Nimbella Project": ["deployer-overview", "projects", "namespaces", "actions", "project", "configuration", "deployer-feature", "single-action", "namespace-to-projects"],
-    "Serverless SDK": ["key-value-sdk", "web-sdk", "object-sdk"],
+    "Serverless SDK": ["key-value-sdk", "file-stores"],
     "Runtime & Languages": ["runtime"],
     "CLI": ["install", "commands", "flags", "command-summary", "wsk"],
     "Workbench": ["workbench"],

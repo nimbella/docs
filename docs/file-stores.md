@@ -1,3 +1,8 @@
+----
+id: file-stores
+title: The Nimbella File Stores
+sidebar_label: Nimbella File Stores
+----
 # The Nimbella File Stores
 
 A Nimbella account that has been provisioned with "storage" will have two file stores associated with it.  Often this kind of store is called an "object" store or "blob" store.  It is designed to hold unstructured items of varying size, named and managed as files.
