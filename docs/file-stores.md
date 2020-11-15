@@ -3,7 +3,8 @@ id: file-stores
 title: The Nimbella File Stores
 sidebar_label: Nimbella File Stores
 ----
-# The Nimbella File Stores
+
+## The Nimbella File Stores
 
 A Nimbella account that has been provisioned with "storage" will have two file stores associated with it.  Often this kind of store is called an "object" store or "blob" store.  It is designed to hold unstructured items of varying size, named and managed as files.
 
@@ -31,7 +32,7 @@ This document divides into these parts.
    - [The `python` SDK](#the-python-sdk)
 - Managing a file store with the [`nim` CLI](#managing-file-stores-with-the-nim-CLI).
 
-## Conceptual overview
+### Conceptual overview
 
 An file store behaves like a file _system_ in many ways.
 
@@ -49,11 +50,11 @@ The two file stores provided with your Nimbella namespace are similar in some wa
     - the upload capability can be useful in either store
     - the download capability is useful for the data store: files in the web store already have world-accessible URLs
 
-## Using a file store via the Nimbella SDK
+### Using a file store via the Nimbella SDK
 
 Nimbella provides SDKs for use within actions.  Currently, these exist for `nodejs`, `php`, and `python`.   An SDK is under development for `java` and the plan is to eventually cover all supported languages.
 
-### Using the `nodejs` SDK
+#### Using the `nodejs` SDK
 
 In an action written in JavaScript, you should include
 
@@ -81,13 +82,13 @@ The boolean argument is used to select which file store the client will work wit
 
 Note the `await` keyword in the examples.   The `storage` function returns a `Promise` resolving to a client, not the client itself.
 
-#### Programming file store operations in Javascript
+##### Programming file store operations in Javascript
 
 In the present Nimbella SDK, the file store client is an instance of what the Google Cloud Storage SDK calls a `Bucket` object.  The API references for what you can do with this object are provided by [Google](https://googleapis.dev/nodejs/storage/latest/Bucket.html).
 
 - **Note: we may provide a greater level of abstraction in future releases of the SDK**
 
-##### Bucket
+###### Bucket
 
 Most of the methods of `Bucket` should not be used without fully understanding the implications, since they are administrative in nature and Nimbella has pre-configured the file store for you.  The important ones are listed here.
 
@@ -96,7 +97,7 @@ Most of the methods of `Bucket` should not be used without fully understanding t
 
 Note that inside an action, "local" means local to the action runtime container.  Thus, while `upload` has its uses, the `save` method of `File` is more general since it can provide the file contents from memory.
 
-##### File
+###### File
 
 The most commonly used methods of [File](https://googleapis.dev/nodejs/storage/latest/File.html) are the following:
 
@@ -107,7 +108,7 @@ The most commonly used methods of [File](https://googleapis.dev/nodejs/storage/l
 - [file.copy(destination)](https://googleapis.dev/nodejs/storage/latest/File.html#copy) -- copies the file within the store
 - [file.move(destination)](https://googleapis.dev/nodejs/storage/latest/File.html#move) -- moves the file within the store
 
-##### getSignedUrl vs save or download
+###### getSignedUrl vs save or download
 
 With the basic operations of the previous section, you are able to both read and write data from a file store inside an action.  In some cases, however, the data originates in the front-end.  If the data is limited in size (less than a megabyte), it is perfectly reasonable for the front-end to pass this data as a parameter to the action, or receive as part of the action result.  For larger volumes of data, however, this cannot work because actions have limits on the sizes of their inputs and outputs.  For that case we have one more important method of `File`.
 
@@ -125,7 +126,7 @@ The `config` object may also contain
 
 - **contentType** -- the mime type of the expected content.  If this is provided, then the actual content must match when the URL is used.  If it omitted, then the content type of the actual content is not restricted.
 
-### Using the `php` SDK
+#### Using the `php` SDK
 
 In an action written in php, you should include
 
@@ -144,13 +145,13 @@ $client = $nim->storage();
 
 Unlike the `nodejs` and `python` SDKs, the `php` SDK does not currently provide access to the web store.   We expect to rectify this in an upcoming release.
 
-#### Programming file store operations in php
+##### Programming file store operations in php
 
 In the present Nimbella SDK, the file store client is an instance of what the Google Cloud Storage SDK calls a `Bucket` object.  The API references for what you can do with this object are provided by [Google](https://googleapis.github.io/google-cloud-php/#/docs/google-cloud/v0.122.0/storage/bucket).
 
 - **Note: we may provide a greater level of abstraction in future releases of the SDK**
 
-##### Bucket
+###### Bucket
 
 Most of the methods of `Bucket` should not be used without fully understanding the implications, since they are administrative in nature and Nimbella has pre-configured the file store for you.  The important ones are listed here.
 
@@ -159,9 +160,11 @@ Most of the methods of `Bucket` should not be used without fully understanding t
 
 The `data` argument may be a string, a resource, or a stream.
 
-##### StorageObject
+###### StorageObject
 
 In the php SDK, a [StorageObject](https://googleapis.github.io/google-cloud-php/#/docs/google-cloud/v0.122.0/storage/storageobject) denotes a file in the file store.  
+
+**TODO the following was copied from nodejs doc and needs to be amended for php**
 
 - [file.exists()](https://googleapis.dev/nodejs/storage/latest/File.html#exists) -- test whether a file exists in the store
 - [file.download(options)](https://googleapis.dev/nodejs/storage/latest/File.html#download) -- return the contents of a file in the store
@@ -171,7 +174,7 @@ In the php SDK, a [StorageObject](https://googleapis.github.io/google-cloud-php/
 - [file.move(destination)](https://googleapis.dev/nodejs/storage/latest/File.html#move) -- moves the file within the store
 - [for python](https://googleapis.dev/python/storage/latest/buckets.html)
 
-### Using the `python` SDK
+#### Using the `python` SDK
 
 You install the SDK with
 
@@ -203,8 +206,9 @@ client = nimbella.storage(True) # client will access the web store
 
 The boolean argument is used to select which file store the client will work with.
 
+**TODO the rest of this section**
 
-## Managing file stores with the `nim` CLI
+### Managing file stores with the `nim` CLI
 
 The `nim` CLI provides access to both file stores to support management programming in shell scripts and the like.  Under `nim object` we have the following commands, which access the data store.
 
@@ -245,4 +249,4 @@ The `<namespace>` name is optional.  If omitted, the command applies to the data
 nim [object|web] [create|update] 
 ```
 
-
+**TODO the rest of this section.**
