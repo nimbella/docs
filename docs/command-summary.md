@@ -6,7 +6,7 @@ sidebar_label: Nim Command Summary
 
 ## Nimbella CLI Command Summary
 
-The documents here cover the top level commands and topics of the Nimbella CLI.  Each document covers the syntax of its commands in the style of the command help but with more extended explanations.  Flags common to many commands are documented in [common-flags.md](commond-flags.md) to avoid repetition.
+The documents here cover the top level commands and topics of the Nimbella CLI.  Each document covers the syntax of its commands in the style of the command help but with more extended explanations.  Flags common to many commands are documented in [common-flags.md](common-flags.md) to avoid repetition.
 
 ### TOPICS
 - [action](nim-cmds/action.md)  **work with actions**
