@@ -3,7 +3,7 @@ module.exports = {
   tagline: 'The tagline of my site',
   url: 'https://docs.nimbella.io',
   baseUrl: '/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'nimbella', // Usually your GitHub org/user name.
   projectName: 'docs', // Usually your repo name.
