@@ -36,16 +36,16 @@ This document divides into these parts.
 
 An file store behaves like a file _system_ in many ways.
 
-- the entities in a file store are often called "files", and they have names, metadata, and contents, just like files in a filesystem
-- the names are hierarchical, separated by slashes and can be used to organize information into a hierarchy
-    - however, unlike in a file system, the "directories" are just portions names: they cannot be empty and are not created or deleted explicitly
+- The entities in a file store are often called "files", and they have names, metadata, and contents, just like files in a filesystem.
+- The names are hierarchical, separated by slashes and can be used to organize information into a hierarchy.
+- Unlike in a file system, the "directories" are just portions names: they cannot be empty and are not created or deleted explicitly.
 
 The two file stores provided with your Nimbella namespace are similar in some ways and specialized in others.
 
 - Only the web store provides permanent public URLs to its files (as opposed to time-limited signed URLs).  It is intended to hold the front end of your application.
 - The web store is directly provisioned from a Nimbella project when you issue `nim project deploy`.  There is no direct provisioning of the data store from a project.
-- Both can be accessed by using one of the Nimbella SDKs inside an action
-- Both can be queried and updated using `nim` 
+- Both can be accessed by using one of the Nimbella SDKs inside an action.
+- Both can be queried and updated using `nim`.
 - Using the SDK, you can generate a _signed URL_ for a file in either store, allowing your application's front-end (or your end-users) a time-limited means to upload or download the contents of that file
     - the upload capability can be useful in either store
     - the download capability is useful for the data store: files in the web store already have world-accessible URLs
@@ -66,7 +66,7 @@ The `nim` object serves as a client factory for both file stores and for the key
 
 To obtain a client for use with your data store, use
 
-```
+```js
 const client = await nim.storage()  // client will access the data store
 // or equivalently
 const client = await nim.storage(false) // client will access the data store
@@ -74,7 +74,7 @@ const client = await nim.storage(false) // client will access the data store
 
 You can also obtain a client for use with your web store.
 
-```
+```js
 const client = await nim.storage(true) // client will access the web store
 ```
 
@@ -82,7 +82,7 @@ The boolean argument is used to select which file store the client will work wit
 
 Note the `await` keyword in the examples.   The `storage` function returns a `Promise` resolving to a client, not the client itself.
 
-##### Programming file store operations in Javascript
+##### Programming file store operations in JavaScript
 
 In the present Nimbella SDK, the file store client is an instance of what the Google Cloud Storage SDK calls a `Bucket` object.  The API references for what you can do with this object are provided by [Google](https://googleapis.dev/nodejs/storage/latest/Bucket.html).
 
