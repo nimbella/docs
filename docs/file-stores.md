@@ -211,7 +211,7 @@ In the python SDK, a [Blob](https://googleapis.dev/python/storage/latest/blobs.h
 
 As documented in the language-specific sections, each SDK provides your actions with basic operations to read and write data from a file store.    When reading or writing files that could exceed a megabyte in size, an additional consideration applies.  
 
-If the data originates in your application's front-end, rather than internally to the action, the data would have to be transferred between the front-end and the action in order to use the simpler methods.  However, actions are limited to one megabyte of data in each direction.  To avoid exceeding this limit, you can create a direct time-limited channel between your front-end (or you end users) and one of your file stores.  This direct channel is called a _signed URL_ and it is, in fact, a URL in the `https:` scheme that can be used for data transfer _to_ a file in a file store (using `PUT`) or _from_ a file in a file store (using `GET`) or to delete a file (with `DELETE`).
+If the data originates in your application's front-end, rather than internally to the action, the data would have to be transferred between the front-end and the action in order to use the simpler methods.  However, actions are limited to one megabyte of data in each direction.  To avoid exceeding this limit, you can create a direct time-limited channel between your front-end (or you end users) and one of your file stores.  This direct channel is called a _signed URL_ and it is, in fact, a network URL that can be used for data transfer _to_ a file in a file store (using `PUT`) or _from_ a file in a file store (using `GET`) or to delete a file (with `DELETE`).
 
 Note that it is not necessary to create a signed URL to read from the web store since every file there has a permanent world-readable URL.
 
@@ -240,15 +240,56 @@ The `nim` CLI provides access to both file stores to support management programm
 **To remove all files from one of the file stores**
 
 ```
-nim [object|web] clean <namespace>
+nim [object|web] clean
 ```
 
-The `<namespace>` name is optional.  If omitted, the command applies to the data object or web store of current namespace.  You will be asked for confirmation unless you supply a `--force` (or `-f`) flag on the command.  You may notice that a "clean" web store actually has one file in it, `404.html`.  This is a "not found" page for your web content, supplied by Nimbella.  You can replace this page with one of your own, but when the web store is cleaned it reverts to the Nimbella-provided page.
+You will be asked for confirmation unless you supply a `--force` (or `-f`) flag on the command.
+
+You may notice that a "clean" web store actually has one file in it, `404.html`.  This is a "not found" page for your web content, supplied by Nimbella.  You can replace this page with one of your own, but when the web store is cleaned it reverts to the Nimbella-provided page.
+
+**To remove a single file from one of the file stores**
+
+```
+nim [object|web] delete FILENAME
+```
+
+The file you name is deleted without prompting.
 
 **To add content to one of the file stores**
 
 ```
-nim [object|web] [create|update] 
+nim [object|web] [create|update] FILEPATH
 ```
 
-The `create` and `update` commands are similar.  The `create` commands will fail if the file already exists and `update` will replace the file contents of an existing file.  
+The `create` and `update` commands are similar.  The `create` commands will fail if the file already exists and `update` will replace the file contents of an existing file.
+
+The argument should be the path to the local file that is to be copied to the file-store.  The name of the
+file is duplicated on the file-store unless you use the `--destination` (or `-d`) flag.  A destination can
+either be a new name for the file (if it does not end in a slash) or a "directory" to be pre-pended to the
+path (if it ends in a slash).
+
+**Note:** Be careful with absolute paths or paths containing `../`.  They may be duplicated literally in the file store.  We are looking at making some syntax improvements to avoid this pitfall.
+
+**To list the files in a file store**
+
+```
+nim [object|web] list [PREFIX]
+```
+
+If the prefix argument is omitted, this lists all the files.  Otherwise, it lists all files whose names begin with the prefix.  The `--long` (or `-l) flag causes the list to include more detail.
+
+**To retrieve file contents from a file store**
+
+```
+nim [object|web] get FILENAME
+```
+
+There will be an attempt to print the file contents on the console, unless you specify the `--save` or `--saveAs=NAME` flag.  The former saves the file under its existing name in the current directory and the latter saves it under a new name, also in the current directory.   This target directory can be changed by supplying a second argument to the command (**Note:** this syntax has caused some confusion and may be changed in a future release).
+
+**To obtain a signed URL (data store only)**
+
+```
+nim object url FILENAME
+```
+
+By default, the returned URL grants permission to "read" (GET) the content of the file for 15 minutes.  You can change the permission to "write" (PUT) with the `--permission` (or `-p`) flag and you can change the "time to live" with the `--ttl` (or `-t`) flag.  The unit for `--ttl` is minutes.  Note that there is maximum of 7 days (7 * 1440 minutes).
