@@ -27,7 +27,7 @@ OPTIONS
   --justwhisk        Remove only OpenWhisk entities, leaving other content
 ```
 
-_See code: [src/commands/namespace/clean.ts](https://github.com//nimbella/nimbella-cli/blob/v1.9.3/src/commands/namespace/clean.ts)_
+_See code: [src/commands/namespace/clean.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/namespace/clean.ts)_
 
 ## `nim namespace free [NAMESPACE]`
 
@@ -47,7 +47,7 @@ OPTIONS
   --help             Show help
 ```
 
-_See code: [src/commands/namespace/free.ts](https://github.com//nimbella/nimbella-cli/blob/v1.9.3/src/commands/namespace/free.ts)_
+_See code: [src/commands/namespace/free.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/namespace/free.ts)_
 
 ## `nim namespace get`
 
@@ -73,4 +73,4 @@ OPTIONS
   --version                Show version
 ```
 
-_See code: [src/commands/namespace/get.ts](https://github.com//nimbella/nimbella-cli/blob/v1.9.3/src/commands/namespace/get.ts)_
+_See code: [src/commands/namespace/get.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/namespace/get.ts)_

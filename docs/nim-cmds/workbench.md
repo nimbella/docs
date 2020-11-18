@@ -23,7 +23,7 @@ ALIASES
   $ nim wb login
 ```
 
-_See code: [src/commands/workbench/login.ts](https://github.com//nimbella/nimbella-cli/blob/v1.9.3/src/commands/workbench/login.ts)_
+_See code: [src/commands/workbench/login.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/workbench/login.ts)_
 
 ## `nim workbench run [COMMAND]`
 
@@ -45,4 +45,4 @@ ALIASES
   $ nim wb run
 ```
 
-_See code: [src/commands/workbench/run.ts](https://github.com//nimbella/nimbella-cli/blob/v1.9.3/src/commands/workbench/run.ts)_
+_See code: [src/commands/workbench/run.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/workbench/run.ts)_

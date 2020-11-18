@@ -29,7 +29,7 @@ OPTIONS
   --help             Show help
 ```
 
-_See code: [src/commands/object/clean.ts](https://github.com//nimbella/nimbella-cli/blob/v1.9.3/src/commands/object/clean.ts)_
+_See code: [src/commands/object/clean.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/object/clean.ts)_
 
 ## `nim object create OBJECTPATH [NAMESPACE]`
 
@@ -54,7 +54,7 @@ ALIASES
   $ nim object add
 ```
 
-_See code: [src/commands/object/create.ts](https://github.com//nimbella/nimbella-cli/blob/v1.9.3/src/commands/object/create.ts)_
+_See code: [src/commands/object/create.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/object/create.ts)_
 
 ## `nim object delete OBJECTNAME [NAMESPACE]`
 
@@ -74,7 +74,7 @@ OPTIONS
   --help             Show help
 ```
 
-_See code: [src/commands/object/delete.ts](https://github.com//nimbella/nimbella-cli/blob/v1.9.3/src/commands/object/delete.ts)_
+_See code: [src/commands/object/delete.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/object/delete.ts)_
 
 ## `nim object get OBJECTNAME DESTINATION [NAMESPACE]`
 
@@ -97,7 +97,7 @@ OPTIONS
   --saveAs=saveAs    Saves object on file system with the given name
 ```
 
-_See code: [src/commands/object/get.ts](https://github.com//nimbella/nimbella-cli/blob/v1.9.3/src/commands/object/get.ts)_
+_See code: [src/commands/object/get.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/object/get.ts)_
 
 ## `nim object list [PREFIX]`
 
@@ -118,7 +118,7 @@ OPTIONS
   --namespace=namespace  The namespace to list objects from (current namespace if omitted)
 ```
 
-_See code: [src/commands/object/list.ts](https://github.com//nimbella/nimbella-cli/blob/v1.9.3/src/commands/object/list.ts)_
+_See code: [src/commands/object/list.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/object/list.ts)_
 
 ## `nim object update OBJECTPATH [NAMESPACE]`
 
@@ -139,7 +139,7 @@ OPTIONS
   --help                         Show help
 ```
 
-_See code: [src/commands/object/update.ts](https://github.com//nimbella/nimbella-cli/blob/v1.9.3/src/commands/object/update.ts)_
+_See code: [src/commands/object/update.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/object/update.ts)_
 
 ## `nim object url OBJECTNAME [NAMESPACE]`
 
@@ -161,4 +161,4 @@ OPTIONS
   --help                       Show help
 ```
 
-_See code: [src/commands/object/url.ts](https://github.com//nimbella/nimbella-cli/blob/v1.9.3/src/commands/object/url.ts)_
+_See code: [src/commands/object/url.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/object/url.ts)_

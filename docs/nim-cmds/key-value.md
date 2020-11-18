@@ -34,7 +34,7 @@ ALIASES
   $ nim kv clean
 ```
 
-_See code: [src/commands/key-value/clean.ts](https://github.com//nimbella/nimbella-cli/blob/v1.9.3/src/commands/key-value/clean.ts)_
+_See code: [src/commands/key-value/clean.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/key-value/clean.ts)_
 
 ## `nim key-value del KEY`
 
@@ -57,7 +57,7 @@ ALIASES
   $ nim kv delete
 ```
 
-_See code: [src/commands/key-value/del.ts](https://github.com//nimbella/nimbella-cli/blob/v1.9.3/src/commands/key-value/del.ts)_
+_See code: [src/commands/key-value/del.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/key-value/del.ts)_
 
 ## `nim key-value expire KEY TTL`
 
@@ -80,7 +80,7 @@ ALIASES
   $ nim kv expire
 ```
 
-_See code: [src/commands/key-value/expire.ts](https://github.com//nimbella/nimbella-cli/blob/v1.9.3/src/commands/key-value/expire.ts)_
+_See code: [src/commands/key-value/expire.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/key-value/expire.ts)_
 
 ## `nim key-value get KEY`
 
@@ -102,7 +102,7 @@ ALIASES
   $ nim kv get
 ```
 
-_See code: [src/commands/key-value/get.ts](https://github.com//nimbella/nimbella-cli/blob/v1.9.3/src/commands/key-value/get.ts)_
+_See code: [src/commands/key-value/get.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/key-value/get.ts)_
 
 ## `nim key-value getMany [KEYPREFIX] [STARTINDEX] [COUNT]`
 
@@ -127,7 +127,7 @@ ALIASES
   $ nim kv getmany
 ```
 
-_See code: [src/commands/key-value/getMany.ts](https://github.com//nimbella/nimbella-cli/blob/v1.9.3/src/commands/key-value/getMany.ts)_
+_See code: [src/commands/key-value/getMany.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/key-value/getMany.ts)_
 
 ## `nim key-value list [PREFIX]`
 
@@ -150,7 +150,7 @@ ALIASES
   $ nim kv list
 ```
 
-_See code: [src/commands/key-value/list.ts](https://github.com//nimbella/nimbella-cli/blob/v1.9.3/src/commands/key-value/list.ts)_
+_See code: [src/commands/key-value/list.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/key-value/list.ts)_
 
 ## `nim key-value llen KEY`
 
@@ -172,7 +172,7 @@ ALIASES
   $ nim kv llen
 ```
 
-_See code: [src/commands/key-value/llen.ts](https://github.com//nimbella/nimbella-cli/blob/v1.9.3/src/commands/key-value/llen.ts)_
+_See code: [src/commands/key-value/llen.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/key-value/llen.ts)_
 
 ## `nim key-value lrange KEY START STOP`
 
@@ -196,7 +196,7 @@ ALIASES
   $ nim kv lrange
 ```
 
-_See code: [src/commands/key-value/lrange.ts](https://github.com//nimbella/nimbella-cli/blob/v1.9.3/src/commands/key-value/lrange.ts)_
+_See code: [src/commands/key-value/lrange.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/key-value/lrange.ts)_
 
 ## `nim key-value rpush KEY VALUE`
 
@@ -219,7 +219,7 @@ ALIASES
   $ nim kv rpush
 ```
 
-_See code: [src/commands/key-value/rpush.ts](https://github.com//nimbella/nimbella-cli/blob/v1.9.3/src/commands/key-value/rpush.ts)_
+_See code: [src/commands/key-value/rpush.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/key-value/rpush.ts)_
 
 ## `nim key-value set KEY VALUE`
 
@@ -243,7 +243,7 @@ ALIASES
   $ nim kv add
 ```
 
-_See code: [src/commands/key-value/set.ts](https://github.com//nimbella/nimbella-cli/blob/v1.9.3/src/commands/key-value/set.ts)_
+_See code: [src/commands/key-value/set.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/key-value/set.ts)_
 
 ## `nim key-value setMany [KEYPREFIX] [VALUEPREFIX] [STARTINDEX] [COUNT]`
 
@@ -269,7 +269,7 @@ ALIASES
   $ nim kv setmany
 ```
 
-_See code: [src/commands/key-value/setMany.ts](https://github.com//nimbella/nimbella-cli/blob/v1.9.3/src/commands/key-value/setMany.ts)_
+_See code: [src/commands/key-value/setMany.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/key-value/setMany.ts)_
 
 ## `nim key-value ttl KEY`
 
@@ -291,4 +291,4 @@ ALIASES
   $ nim kv ttl
 ```
 
-_See code: [src/commands/key-value/ttl.ts](https://github.com//nimbella/nimbella-cli/blob/v1.9.3/src/commands/key-value/ttl.ts)_
+_See code: [src/commands/key-value/ttl.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/key-value/ttl.ts)_
