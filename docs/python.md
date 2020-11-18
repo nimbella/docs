@@ -4,6 +4,84 @@ title: Python
 sidebar_label: Python
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs
+  defaultValue="js"
+  values={[
+    {label: 'Javascript', value: 'js'},
+    {label: 'Python', value: 'py'},
+    {label: 'Go', value: 'go'},
+  ]}
+  >
+  <TabItem value="js">
+
+```
+function Logout(props) {
+
+    const setLoginInfo = props.setLoginInfo;
+
+    useEffect(() => {
+        GoogleApi.delete('login')
+        .then((response) => {
+            setLoginInfo(null);
+            window.location.replace('https://google.com/logout')
+        });
+    }, [setLoginInfo])
+
+    return null;
+}
+```
+
+  </TabItem>
+  <TabItem value="py">
+
+```
+NEED TO CONVERT THIS FUNCTION IN PYTHON
+
+function Logout(props) {
+
+    const setLoginInfo = props.setLoginInfo;
+
+    useEffect(() => {
+        GoogleApi.delete('login')
+        .then((response) => {
+            setLoginInfo(null);
+            window.location.replace('https://google.com/logout')
+        });
+    }, [setLoginInfo])
+
+    return null;
+}
+```
+
+  </TabItem>
+  <TabItem value="go">
+
+```
+NEED TO CONVERT THIS FUNCTION IN GO
+
+function Logout(props) {
+
+    const setLoginInfo = props.setLoginInfo;
+
+    useEffect(() => {
+        GoogleApi.delete('login')
+        .then((response) => {
+            setLoginInfo(null);
+            window.location.replace('https://google.com/logout')
+        });
+    }, [setLoginInfo])
+
+    return null;
+}
+```
+
+  </TabItem>
+</Tabs>
+
+
 ## Taking an example python project, we go through
 ## Creating packages
 ## Creating Actions
