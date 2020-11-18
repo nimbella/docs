@@ -1,7 +1,7 @@
 ---
-id: python
-title: Python
-sidebar_label: Python
+id: sample-project-walkthrough
+title: Sample Project Walkthrough
+sidebar_label: Sample Project Walkthrough
 ---
 
 import Tabs from '@theme/Tabs';
@@ -82,7 +82,7 @@ function Logout(props) {
 </Tabs>
 
 
-## Taking an example python project, we go through
+## Taking an example project, we go through
 ## Creating packages
 ## Creating Actions
 ## Package.json and where to place them

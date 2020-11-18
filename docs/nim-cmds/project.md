@@ -31,7 +31,7 @@ OPTIONS
   --help                                     Show help
 ```
 
-_See code: [src/commands/project/create.ts](https://github.com//nimbella/nimbella-cli/blob/v1.9.3/src/commands/project/create.ts)_
+_See code: [src/commands/project/create.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/project/create.ts)_
 
 ## `nim project deploy [PROJECTS]`
 
@@ -63,7 +63,7 @@ OPTIONS
   --yarn                 Use yarn instead of npm for node builds
 ```
 
-_See code: [src/commands/project/deploy.ts](https://github.com//nimbella/nimbella-cli/blob/v1.9.3/src/commands/project/deploy.ts)_
+_See code: [src/commands/project/deploy.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/project/deploy.ts)_
 
 ## `nim project watch [PROJECTS]`
 
@@ -92,4 +92,4 @@ OPTIONS
   --yarn                 Use yarn instead of npm for node builds
 ```
 
-_See code: [src/commands/project/watch.ts](https://github.com//nimbella/nimbella-cli/blob/v1.9.3/src/commands/project/watch.ts)_
+_See code: [src/commands/project/watch.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/project/watch.ts)_

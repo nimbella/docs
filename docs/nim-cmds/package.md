@@ -36,7 +36,7 @@ OPTIONS
   --version                              Show version
 ```
 
-_See code: [src/commands/package/bind.ts](https://github.com//nimbella/nimbella-cli/blob/v1.9.3/src/commands/package/bind.ts)_
+_See code: [src/commands/package/bind.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/package/bind.ts)_
 
 ## `nim package create PACKAGENAME`
 
@@ -65,7 +65,7 @@ OPTIONS
   --version                              Show version
 ```
 
-_See code: [src/commands/package/create.ts](https://github.com//nimbella/nimbella-cli/blob/v1.9.3/src/commands/package/create.ts)_
+_See code: [src/commands/package/create.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/package/create.ts)_
 
 ## `nim package delete PACKAGENAME`
 
@@ -82,7 +82,7 @@ OPTIONS
   --json             output raw json
 ```
 
-_See code: [src/commands/package/delete.ts](https://github.com//nimbella/nimbella-cli/blob/v1.9.3/src/commands/package/delete.ts)_
+_See code: [src/commands/package/delete.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/package/delete.ts)_
 
 ## `nim package get PACKAGENAME`
 
@@ -105,7 +105,7 @@ OPTIONS
   --version                Show version
 ```
 
-_See code: [src/commands/package/get.ts](https://github.com//nimbella/nimbella-cli/blob/v1.9.3/src/commands/package/get.ts)_
+_See code: [src/commands/package/get.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/package/get.ts)_
 
 ## `nim package list [NAMESPACE]`
 
@@ -134,7 +134,7 @@ OPTIONS
   --version                Show version
 ```
 
-_See code: [src/commands/package/list.ts](https://github.com//nimbella/nimbella-cli/blob/v1.9.3/src/commands/package/list.ts)_
+_See code: [src/commands/package/list.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/package/list.ts)_
 
 ## `nim package update PACKAGENAME`
 
@@ -163,4 +163,4 @@ OPTIONS
   --version                              Show version
 ```
 
-_See code: [src/commands/package/update.ts](https://github.com//nimbella/nimbella-cli/blob/v1.9.3/src/commands/package/update.ts)_
+_See code: [src/commands/package/update.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/package/update.ts)_

@@ -28,7 +28,7 @@ OPTIONS
   --help             Show help
 ```
 
-_See code: [src/commands/web/clean.ts](https://github.com//nimbella/nimbella-cli/blob/v1.9.3/src/commands/web/clean.ts)_
+_See code: [src/commands/web/clean.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/web/clean.ts)_
 
 ## `nim web create WEBCONTENTPATH [NAMESPACE]`
 
@@ -53,7 +53,7 @@ ALIASES
   $ nim web add
 ```
 
-_See code: [src/commands/web/create.ts](https://github.com//nimbella/nimbella-cli/blob/v1.9.3/src/commands/web/create.ts)_
+_See code: [src/commands/web/create.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/web/create.ts)_
 
 ## `nim web delete WEBCONTENTNAME [NAMESPACE]`
 
@@ -73,7 +73,7 @@ OPTIONS
   --help             Show help
 ```
 
-_See code: [src/commands/web/delete.ts](https://github.com//nimbella/nimbella-cli/blob/v1.9.3/src/commands/web/delete.ts)_
+_See code: [src/commands/web/delete.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/web/delete.ts)_
 
 ## `nim web get WEBCONTENTNAME DESTINATION [NAMESPACE]`
 
@@ -97,7 +97,7 @@ OPTIONS
   --saveAs=saveAs    Saves content on file system with the given name
 ```
 
-_See code: [src/commands/web/get.ts](https://github.com//nimbella/nimbella-cli/blob/v1.9.3/src/commands/web/get.ts)_
+_See code: [src/commands/web/get.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/web/get.ts)_
 
 ## `nim web list [PREFIX]`
 
@@ -118,7 +118,7 @@ OPTIONS
   --namespace=namespace  The namespace to list web content from (current namespace if omitted)
 ```
 
-_See code: [src/commands/web/list.ts](https://github.com//nimbella/nimbella-cli/blob/v1.9.3/src/commands/web/list.ts)_
+_See code: [src/commands/web/list.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/web/list.ts)_
 
 ## `nim web update WEBCONTENTPATH [NAMESPACE]`
 
@@ -140,4 +140,4 @@ OPTIONS
   --help                         Show help
 ```
 
-_See code: [src/commands/web/update.ts](https://github.com//nimbella/nimbella-cli/blob/v1.9.3/src/commands/web/update.ts)_
+_See code: [src/commands/web/update.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/web/update.ts)_

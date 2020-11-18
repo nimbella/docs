@@ -35,7 +35,7 @@ OPTIONS
   --version                Show version
 ```
 
-_See code: [src/commands/activation/get.ts](https://github.com//nimbella/nimbella-cli/blob/v1.9.3/src/commands/activation/get.ts)_
+_See code: [src/commands/activation/get.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/activation/get.ts)_
 
 ## `nim activation list [ACTIVATION_NAME]`
 
@@ -65,7 +65,7 @@ OPTIONS
   --version                Show version
 ```
 
-_See code: [src/commands/activation/list.ts](https://github.com//nimbella/nimbella-cli/blob/v1.9.3/src/commands/activation/list.ts)_
+_See code: [src/commands/activation/list.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/activation/list.ts)_
 
 ## `nim activation logs [ACTIVATIONID]`
 
@@ -95,7 +95,7 @@ OPTIONS
   --version                Show version
 ```
 
-_See code: [src/commands/activation/logs.ts](https://github.com//nimbella/nimbella-cli/blob/v1.9.3/src/commands/activation/logs.ts)_
+_See code: [src/commands/activation/logs.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/activation/logs.ts)_
 
 ## `nim activation result [ACTIVATIONID]`
 
@@ -121,4 +121,4 @@ OPTIONS
   --version                Show version
 ```
 
-_See code: [src/commands/activation/result.ts](https://github.com//nimbella/nimbella-cli/blob/v1.9.3/src/commands/activation/result.ts)_
+_See code: [src/commands/activation/result.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/activation/result.ts)_
