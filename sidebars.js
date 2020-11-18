@@ -7,7 +7,7 @@ module.exports = {
     "CLI": ["install", "commands", "flags", "command-summary", "wsk"],
     "Workbench": ["workbench"],
     "Getting Started": ["getting-started", "building"],
-    "Developing and Deploying Serverless APIs": ["agnostic", "nodejs", "python", "java", "go"],
+    "Developing and Deploying Serverless APIs": ["sample-project-walkthrough"],
     "Developing & Deploying Web": ["web", "web-content"],
     "Taking your application to production": ["production"],
     "Integrations": ["commander", "postman", "netlify"],
