@@ -37,7 +37,7 @@ OPTIONS
   --version                                         Show version
 ```
 
-_See code: [src/commands/route/create.ts](https://github.com//nimbella/nimbella-cli/blob/v1.9.3/src/commands/route/create.ts)_
+_See code: [src/commands/route/create.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/route/create.ts)_
 
 ## `nim route delete BASEPATHORAPINAME [RELPATH] [APIVERB]`
 
@@ -65,7 +65,7 @@ OPTIONS
   --version                Show version
 ```
 
-_See code: [src/commands/route/delete.ts](https://github.com//nimbella/nimbella-cli/blob/v1.9.3/src/commands/route/delete.ts)_
+_See code: [src/commands/route/delete.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/route/delete.ts)_
 
 ## `nim route get BASEPATHORAPINAME`
 
@@ -91,7 +91,7 @@ OPTIONS
   --version                Show version
 ```
 
-_See code: [src/commands/route/get.ts](https://github.com//nimbella/nimbella-cli/blob/v1.9.3/src/commands/route/get.ts)_
+_See code: [src/commands/route/get.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/route/get.ts)_
 
 ## `nim route list [BASEPATH] [RELPATH] [APIVERB]`
 
@@ -122,4 +122,4 @@ OPTIONS
   --version                Show version
 ```
 
-_See code: [src/commands/route/list.ts](https://github.com//nimbella/nimbella-cli/blob/v1.9.3/src/commands/route/list.ts)_
+_See code: [src/commands/route/list.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/route/list.ts)_
