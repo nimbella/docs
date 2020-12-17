@@ -27,7 +27,10 @@ module.exports = {
 		CLI: ['install', 'commands', 'flags', 'command-summary', 'wsk'],
 		Workbench: ['workbench'],
 		'Getting Started': ['getting-started', 'building'],
-		'Developing and Deploying Serverless APIs': ['sample-project-walkthrough'],
+		'Developing and Deploying Serverless APIs': [
+			'sample-project-walkthrough',
+			'stateful-api-examples',
+		],
 		'Developing & Deploying Web': ['web', 'web-content'],
 		'Taking your application to production': ['production'],
 		Integrations: ['commander', 'postman', 'netlify'],
