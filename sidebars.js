@@ -22,7 +22,7 @@ module.exports = {
 			'single-action',
 			'namespace-to-projects',
 		],
-		'Serverless SDK': ['key-value-sdk', 'file-stores'],
+		'Serverless SDK': ['key-value-sdk', 'key-value-storage', 'file-stores'],
 		'Runtime & Languages': ['runtime'],
 		CLI: ['install', 'commands', 'flags', 'command-summary', 'wsk'],
 		Workbench: ['workbench'],
