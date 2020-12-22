@@ -6,7 +6,7 @@ sidebar_label: Workbench - Deploy from GitHub
 
 # Deploy from GitHub.
 
-What's nice about the Workbench is that you can deploy your projects that are stored on your GitHub account.
+What's nice about the Workbench is that you can deploy your projects directly from your GitHub repositories.
 
 To deploy a project from a directory, run `project deploy github:username/directory`.
 
