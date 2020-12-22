@@ -23,7 +23,7 @@ To run an example of a working `project deploy` command, run ``project deploy gi
 Not all projects can be deployed from the Workbench.
 
 - Limitations:
-  "If the project requires building (see [ref](https://github.com/nimbella-corp/nimbella-cli/blob/master/newdoc/building.md)), the build will be run for you in the cloud. This may fail if the build exceeds the time limits or memory limits allotted by our remote build capability."
+  "If the project requires building the build will be run for you in the cloud. This may fail if the build exceeds the time limits or memory limits allotted by our remote build capability."
 
 # Get help.
 
