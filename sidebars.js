@@ -33,13 +33,10 @@ module.exports = {
 			'workbench-playground-exports',
 		],
 		'Getting Started': ['getting-started', 'building', 'nim-creating-project'],
-
 		'Developing and Deploying Serverless APIs': [
 			'sample-project-walkthrough',
 			'stateful-api-examples',
 		],
-		'Getting Started': ['getting-started', 'building'],
-		'Developing and Deploying Serverless APIs': ['sample-project-walkthrough'],
 		'Developing & Deploying Web': ['web', 'web-content'],
 		'Taking your application to production': ['production'],
 		Integrations: ['commander', 'postman', 'netlify'],
