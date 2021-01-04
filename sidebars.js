@@ -1,7 +1,6 @@
 module.exports = {
 	someSidebar: {
 		Introduction: [
-			'welcome',
 			'what-is-nimbella',
 			'serverless',
 			'serverless-vs-server',
