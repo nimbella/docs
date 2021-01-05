@@ -1,28 +1,18 @@
 module.exports = {
 	someSidebar: {
-		Introduction: [
-			'what-is-nimbella',
-			'serverless',
-			'serverless-vs-server',
-			'serveless-apps',
-			'why-nimbella',
-			'account',
-			'features',
-			'openwhisk',
-		],
+		Introduction: ['account'],
 		'Nimbella Project': [
 			'deployer-overview',
 			'projects',
 			'namespaces',
 			'actions',
-			'project',
 			'configuration',
 			'deployer-feature',
 			'single-action',
 			'namespace-to-projects',
 		],
-		'Serverless SDK': ['key-value-sdk', 'file-stores'],
-		'Runtime & Languages': ['runtime'],
+		'Serverless SDK': ['file-stores'],
+
 		CLI: ['install', 'commands', 'flags', 'command-summary', 'wsk'],
 		Workbench: [
 			'workbench',
@@ -31,23 +21,8 @@ module.exports = {
 			'workbench-playground-introduction',
 			'workbench-playground-exports',
 		],
-		'Getting Started': ['getting-started', 'building'],
-		'Developing and Deploying Serverless APIs': [
-			'sample-project-walkthrough',
-			'basic-kv-commands',
-		],
-		'Developing & Deploying Web': ['web', 'web-content'],
-		'Taking your application to production': ['production'],
-		Integrations: ['commander', 'postman', 'netlify'],
-		'Porting existing applications onto Nimbella': [
-			'heroku',
-			'express',
-			'django',
-			'flask',
-			'lambda',
-			'openwhisk-port',
-		],
-		Docusaurus: ['doc1', 'doc2', 'doc3'],
-		Features: ['mdx'],
+		'Getting Started': ['building'],
+		'Developing and Deploying Serverless APIs': ['basic-kv-commands'],
+		'Developing & Deploying Web': ['web-content'],
 	},
 };
