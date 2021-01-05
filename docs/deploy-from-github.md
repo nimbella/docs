@@ -25,7 +25,6 @@ The process is similar to how you normally deploy your code. You start by runnin
 You follow the prefix with the “owner” (GitHub account), repository, the path to the project within the repository (if any), and specific branch or commit (if not `master`). For example,
 
 ```
-nim project deploy github:nimbella/demo-projects/visits
 nim project deploy git@github.com:/my-account/my-repo-with-project/#dev
 ```
 
