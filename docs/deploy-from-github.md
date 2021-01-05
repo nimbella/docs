@@ -28,7 +28,7 @@ You follow the prefix with the “owner” (GitHub account), repository, the pat
 nim project deploy git@github.com:/my-account/my-repo-with-project/#dev
 ```
 
-To test what it's like to deploy an app from GitHub, run this command to deploy the `visits` demo app.
+To test what it's like to deploy an app from GitHub, run this command to deploy the [Page Visits demo app](https://github.com/nimbella/demo-projects/tree/master/visits).
 
 ```
 nim project deploy github:nimbella/demo-projects/visits
