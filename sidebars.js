@@ -36,6 +36,7 @@ module.exports = {
 		'Developing and Deploying Serverless APIs': [
 			'sample-project-walkthrough',
 			'basic-kv-commands',
+			'deploy-from-github'
 		],
 		'Developing & Deploying Web': ['web', 'web-content'],
 		'Taking your application to production': ['production'],
