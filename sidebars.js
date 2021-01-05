@@ -35,7 +35,6 @@ module.exports = {
 		'Getting Started': ['getting-started', 'building', 'nim-creating-project'],
 		'Developing and Deploying Serverless APIs': [
 			'sample-project-walkthrough',
-			'stateful-api-examples',
 			'basic-kv-commands',
 		],
 		'Developing & Deploying Web': ['web', 'web-content'],
