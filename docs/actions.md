@@ -36,7 +36,7 @@ Zipped actions are usually created in a separate build step. As an alternative, 
 By creating a directory under the package directory, named for the action, and containing its source file(s), you can expand to multiple source files and they will be zipped automatically. Certain conditions must be met for this to work. Suppose the [example1 project](single-action-example.md) has a `hello` action with two source files: _helloMain.js_ and _helloAux.js_. To create the `demo/hello` action, add a `hello` directory as a child of the `demo` directory, as shown in this diagram.
 
 <center><img src="img/fig4-nim-example2-project-directory-structure.svg" height="450"/></center>
-<center><strong>Figure 3: Two source files in an action directory for automatic zipping<strong></center>
+<center><strong>Figure 3: Two source files in an action directory for automatic zipping</strong></center>
 
 The difference from the [example1 directory structure](single-action-example.md#fig2) is that the `hello` action is a _directory_ rather than a single source file. The source files in the directory are zipped automatically to form the action.
 
@@ -52,7 +52,7 @@ These conditions can be relaxed by using [project configuration](configuration.m
 Subdirectories can be present under an action directory (for example, a `node_modules` directory as in the following diagram). These directories are zipped up with everything else under the action directory.
 
 <center><img src="img/fig5-nim-example2-complex-directory-structure.svg" height="450"/></center>
-<center><strong>Figure 4: Autozipping a subdirectory of an action directory<strong></center>
+<center><strong>Figure 4: Autozipping a subdirectory of an action directory</strong></center>
 
 You can optionally limit the files to be zipped in either of two ways:
 
