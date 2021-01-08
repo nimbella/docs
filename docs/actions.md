@@ -4,6 +4,8 @@ title: Actions
 sidebar_label: Actions
 ---
 
+<!-- test -->
+
 ## About actions
 
 ### Actions Have Public URLs by Default Unless the Project is Configured
@@ -17,7 +19,6 @@ https://....nimbella.io/api/v1/web/.../demo/hello
 
 If you don’t want your actions to be publicly accessible through an unprotected URL, you’ll need to [add a project configuration](configuration.md).
 
-
 ### Using zipped source files to form a single action
 
 If you have more than one source file that must be bundled together to create a single action, you can zip the source files together as long as the file name and suffix take the following form _\<xxx\>.\<runtime\>.zip_.
@@ -30,7 +31,6 @@ Some language runtimes, such as Java, also accept specialized archives such as _
 
 Zipped actions are usually created in a separate build step. As an alternative, Nimbella has [an autozip feature triggered by directory structure](#multifile-actions-created-with-autozip).
 
-
 ### Multifile actions created with autozip
 
 By creating a directory under the package directory, named for the action, and containing its source file(s), you can expand to multiple source files and they will be zipped automatically. Certain conditions must be met for this to work. Suppose the [example1 project](single-action-example.md) has a `hello` action with two source files: _helloMain.js_ and _helloAux.js_. To create the `demo/hello` action, add a `hello` directory as a child of the `demo` directory, as shown in this diagram.
@@ -42,10 +42,10 @@ The difference from the [example1 directory structure](single-action-example.md#
 
 For autozipping to work in a project with no configuration, the following conditions must be met:
 
-*   At least one source file must have [a suffix from which the runtime type can be inferred](deployer-features.md#nimbella-deployer-supported-runtimes-for-actions).
-*   No other source file can have a suffix implying a different runtime.
-*   All source files must be compatible with the chosen runtime.
-*   Exactly one file must contain an identifiable `main` entry point, as required by the particular runtime selected.
+- At least one source file must have [a suffix from which the runtime type can be inferred](deployer-features.md#nimbella-deployer-supported-runtimes-for-actions).
+- No other source file can have a suffix implying a different runtime.
+- All source files must be compatible with the chosen runtime.
+- Exactly one file must contain an identifiable `main` entry point, as required by the particular runtime selected.
 
 These conditions can be relaxed by using [project configuration](configuration.md).
 
@@ -56,17 +56,16 @@ Subdirectories can be present under an action directory (for example, a `node_mo
 
 You can optionally limit the files to be zipped in either of two ways:
 
-*   Add a file called `.include`, which lists exactly the items to be included. Anything else in the action directory is excluded. Wildcards are not permitted in this file but entries can denote directories as well as files. The `.include` file can also be used for linking to somewhere else in the filesystem, as described in [Using an action source from elsewhere in the project](#using-an-action-source-file-from-elsewhere-in-the-project).
-*   Add a file called `.ignore`, stating which files and directories _not_ to include. The `.ignore` file follows the same rules as `.gitignore` and has the same effect. It is not necessary to list `.ignore` inside itself. It is automatically ignored, as are certain build-related files.
+- Add a file called `.include`, which lists exactly the items to be included. Anything else in the action directory is excluded. Wildcards are not permitted in this file but entries can denote directories as well as files. The `.include` file can also be used for linking to somewhere else in the filesystem, as described in [Using an action source from elsewhere in the project](#using-an-action-source-file-from-elsewhere-in-the-project).
+- Add a file called `.ignore`, stating which files and directories _not_ to include. The `.ignore` file follows the same rules as `.gitignore` and has the same effect. It is not necessary to list `.ignore` inside itself. It is automatically ignored, as are certain build-related files.
 
 You cannot have both a `.include` and `.ignore` in the same action directory.
 
 **Note:** No zipping occurs in any of the following cases:
 
-*   The directory representing the action contains only a single file.
-*   Only one file is listed in `.include`.
-*   Only one file is left after applying the rules in `.ignore`.
-
+- The directory representing the action contains only a single file.
+- Only one file is listed in `.include`.
+- Only one file is left after applying the rules in `.ignore`.
 
 #### Using an action source file from elsewhere in the project
 
@@ -74,10 +73,10 @@ If you use an `.include` file, it can contain entries that denote files or direc
 
 **Notes:**
 
-- Although paths in `.include` are currently _permitted_ to terminate outside the project entirely, this practice is deprecated because it makes it hard to relocate the project.  It’s better practice to include all files within the project. If they are directories shared by many actions and you want the deployer to otherwise ignore them, you can put them in the root directory, as described in [About projects](projects.md).
+- Although paths in `.include` are currently _permitted_ to terminate outside the project entirely, this practice is deprecated because it makes it hard to relocate the project. It’s better practice to include all files within the project. If they are directories shared by many actions and you want the deployer to otherwise ignore them, you can put them in the root directory, as described in [About projects](projects.md).
 - If you wish your build to execute remotely as described in [Remote Builds](building.md#remote-builds), you may not include material from outside the directory.
 
-Entries in `.include` are interpreted differently if they are absolute or contain `../` notation.  If the path has either of those characteristics, the resulting entries in the zip file start with the last segment of the listed path. Here are two examples:
+Entries in `.include` are interpreted differently if they are absolute or contain `../` notation. If the path has either of those characteristics, the resulting entries in the zip file start with the last segment of the listed path. Here are two examples:
 
-*   If you have `../../../lib/node_modules`, the contents of the node_modules directory are zipped but files inside the directory have the form `node_modules/<path>`.
-*   If you have `../../../lib/helpers.js` the file becomes just `helpers.js`.
+- If you have `../../../lib/node_modules`, the contents of the node_modules directory are zipped but files inside the directory have the form `node_modules/<path>`.
+- If you have `../../../lib/helpers.js` the file becomes just `helpers.js`.
