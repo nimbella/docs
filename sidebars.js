@@ -3,6 +3,7 @@ module.exports = {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		Introduction: ['account'],
 =======
 =======
@@ -24,11 +25,15 @@ module.exports = {
 =======
 		Introduction: ['account'],
 >>>>>>> 4daaece... removed all empty files
+=======
+		Introduction: ['account'],
+>>>>>>> 7f942ce059d52b6ae9999830a4318f0b2b7f62d2
 		'Nimbella Project': [
 			'deployer-overview',
 			'projects',
 			'namespaces',
 			'actions',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -40,6 +45,8 @@ module.exports = {
 >>>>>>> a537fde... Some examples explaining how to use Nimbella KV (#18)
 =======
 >>>>>>> 4daaece... removed all empty files
+=======
+>>>>>>> 7f942ce059d52b6ae9999830a4318f0b2b7f62d2
 			'configuration',
 			'deployer-feature',
 			'single-action',
@@ -50,9 +57,13 @@ module.exports = {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7f942ce059d52b6ae9999830a4318f0b2b7f62d2
 		'Serverless SDK': ['file-stores'],
 
 		CLI: ['install', 'commands', 'flags', 'command-summary', 'wsk'],
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -69,6 +80,13 @@ module.exports = {
 >>>>>>> 4daaece... removed all empty files
 		CLI: ['install', 'commands', 'flags', 'command-summary', 'wsk'],
 >>>>>>> 3d2301d... finalized fixes for this basic KV example doc
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 98045ed... Workbench documents - Sections 12 & 13 of issue 862 (#22)
+=======
+>>>>>>> 860d61b2c23c65f73f50788121ba5d0a9b3c4117
+>>>>>>> 7f942ce059d52b6ae9999830a4318f0b2b7f62d2
 		Workbench: [
 			'workbench',
 			'workbench-activations',
@@ -79,14 +97,18 @@ module.exports = {
 <<<<<<< HEAD
 		],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 		],
 <<<<<<< HEAD
 >>>>>>> 3d2301d... finalized fixes for this basic KV example doc
+=======
+>>>>>>> 7f942ce059d52b6ae9999830a4318f0b2b7f62d2
 		'Getting Started': ['getting-started', 'building'],
 		'Developing and Deploying Serverless APIs': [
 			'sample-project-walkthrough',
 			'basic-kv-commands',
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -94,12 +116,18 @@ module.exports = {
 		'Runtime & Languages': ['runtime'],
 		CLI: ['install', 'commands', 'flags', 'command-summary', 'wsk'],
 >>>>>>> a537fde... Some examples explaining how to use Nimbella KV (#18)
+=======
+=======
+>>>>>>> 7f942ce059d52b6ae9999830a4318f0b2b7f62d2
 		Workbench: ['workbench'],
 		'Getting Started': ['getting-started', 'building'],
 		'Developing and Deploying Serverless APIs': [
 			'sample-project-walkthrough',
 			'stateful-api-examples',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7f942ce059d52b6ae9999830a4318f0b2b7f62d2
 >>>>>>> a537fde... Some examples explaining how to use Nimbella KV (#18)
 =======
 >>>>>>> 98045ed... Workbench documents - Sections 12 & 13 of issue 862 (#22)
@@ -108,6 +136,7 @@ module.exports = {
 		'Developing and Deploying Serverless APIs': ['sample-project-walkthrough'],
 =======
 		],
+<<<<<<< HEAD
 >>>>>>> 3d2301d... finalized fixes for this basic KV example doc
 =======
 		],
@@ -132,12 +161,19 @@ module.exports = {
 =======
 		'Getting Started': ['getting-started', 'building', 'nim-creating-project'],
 >>>>>>> 8f0ecda... Project create example (#26)
+=======
+		'Getting Started': ['getting-started', 'building', 'nim-creating-project'],
+>>>>>>> 7f942ce059d52b6ae9999830a4318f0b2b7f62d2
 		'Developing and Deploying Serverless APIs': [
 			'sample-project-walkthrough',
 			'basic-kv-commands',
 			'deploy-from-github'
 		],
+<<<<<<< HEAD
 >>>>>>> f543e74... Basic KV usage (#24)
+=======
+>>>>>>> 860d61b2c23c65f73f50788121ba5d0a9b3c4117
+>>>>>>> 7f942ce059d52b6ae9999830a4318f0b2b7f62d2
 		'Developing & Deploying Web': ['web', 'web-content'],
 		'Taking your application to production': ['production'],
 		Integrations: ['commander', 'postman', 'netlify'],
@@ -153,12 +189,16 @@ module.exports = {
 		Features: ['mdx'],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7f942ce059d52b6ae9999830a4318f0b2b7f62d2
 =======
 		'Getting Started': ['building'],
 		'Developing and Deploying Serverless APIs': ['basic-kv-commands'],
 		'Developing & Deploying Web': ['web-content'],
 >>>>>>> 4daaece... removed all empty files
 =======
+<<<<<<< HEAD
 >>>>>>> 3d2301d... finalized fixes for this basic KV example doc
 =======
 >>>>>>> a537fde... Some examples explaining how to use Nimbella KV (#18)
@@ -167,5 +207,8 @@ module.exports = {
 		'Developing and Deploying Serverless APIs': ['basic-kv-commands'],
 		'Developing & Deploying Web': ['web-content'],
 >>>>>>> 4daaece... removed all empty files
+=======
+>>>>>>> 860d61b2c23c65f73f50788121ba5d0a9b3c4117
+>>>>>>> 7f942ce059d52b6ae9999830a4318f0b2b7f62d2
 	},
 };
