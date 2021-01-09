@@ -10,7 +10,7 @@ Nimbella gives you the ability to deploy your applications and serverless functi
 
 To indicate you want to deploy from GitHub, use a project path that starts with one of the following.
 
-```
+```yaml
 github:
 git@github.com:
 https://github.com/

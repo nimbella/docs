@@ -15,7 +15,7 @@ The Nimbella CLI provides some enforcement assistance for one commonly occuring 
 
 You impose this rule by creating a `project.yml` file in the root of an "owning" project.  This file can contain quite a bit of information, as outlined in [Adding project configuration](configuration.md).  For present purposes it needs to contain at least
 
-```
+```yaml
 targetNamespace:
   test: <namespace1>
   production: <namespace2>
@@ -28,7 +28,7 @@ Either `test` or `production` can be omitted.  When you deploy the project
 
 Once you have deployed the project to a namespace, it will record its ownership of the namespace in the credential store.  It also records the role of the namespace (test or production).  Once this happens, other projects will not be able to deploy to it.  You can observe the results in `nim auth list`.
 
-```
+```shell
   Namespace            Current Storage   Redis Production Project
   johndoeg-5skkrmhfzyo     no     yes     yes      no     mygithub/myrepo/myproject
   johndoeg-grinjpsjnuh     no     yes     yes     yes     mygithub/myrepo/myproject

@@ -23,7 +23,7 @@ Visit [nimbella.com](https://nimbella.com) and press the signup button (it's fre
 
 Issue
 
-```
+```shell
 > nim auth login
 ```
 
@@ -31,7 +31,7 @@ After going through the signup process (which typically takes one or two minutes
 
 In general (e.g.) when switching to a different machine you can just issue
 
-```
+```shell
 > nim auth login
 ```
 
@@ -52,7 +52,7 @@ After you’ve created a namespace, you can view it and information about it in 
 
 *   Use the `auth list` command, as follows:
 
-```
+```shell
 > nim auth list
   Namespace            Current Storage   Redis Production Project
 ✓ <your namespace>       yes     yes      yes     no      <any>
@@ -87,13 +87,13 @@ A newly added namespace is automatically set as current, indicated by a checkmar
 
 If you have more than one namespace, you can switch between them without needing to log into your account again by using the following command:
 
-```
+```shell
 nim auth switch <namespace>
 ```
 
 This changes the target namespace for future project deployments.  Most namespace names are long and tedious to type, so we provide an abbreviation capability.
 
-```
+```shell
 nim auth switch dt-
 ```
 
@@ -103,13 +103,13 @@ will switch to a namespace uniquely identified by the characters `dt` followed b
 
 The easiest way to manage multiple namespaces is to maintain the rule that each namespace is tied to a project and each project is tied to one or two namespaces. To do this, add the following top-level directive to a _project.yml_ configuration file for each project:
 
-```
+```yaml
 targetNamespace: <namespace>
 ```
 
 or
 
-```
+```yaml
 targetNamespace:
   test: <namespace1>
   production: <namespace2>
@@ -119,7 +119,7 @@ A more complete explanation of how `targetNamespace` affects project deployment 
 
 There are more complex development scenarios, in which you would not want to correlate projects and namespaces so strongly.  For those cases, we also provide the `--target` directive of the `project deploy` command:
 
-```
+```shell
 nim project deploy <projectPath>... --target <namespace>
 ```
 

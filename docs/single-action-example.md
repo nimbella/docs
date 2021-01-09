@@ -15,7 +15,7 @@ In the simplest implementation of a project, each action corresponds to a single
 
 **To create and deploy a project to print Hello World (simplest form):**
 
-```
+```shell
 > nim project create example1
 > nim project deploy example1
 Deploying project '/path/to/example1'
@@ -32,7 +32,7 @@ Deployed actions:
 ```
 So, what just happened?  As a result, of `nim project create`, `nim` generated a project and added a sample to it called `hello.js`.  Specifically, in your current directory, it created
 
-```
+```shell
 example1/packages/default/hello.js
 example1/web
 ```
@@ -41,7 +41,7 @@ We address the purpose of the `web` directory in [Adding static web content](web
 
 As a result of `nim project deploy`, the project was deployed to your namespace and the result was an action called `hello`.  To record the status of that deployment, `nim` created
 
-```
+```shell
 example1/.nimbella/...
 ```
 
@@ -55,13 +55,13 @@ To make the process less magical and more hands-on, remove the entire `example1`
 
 (1) Create _hello.js_ with the following code:
 
-```nodejs
+```js
 function main(args) { return { msg: 'Hello World' } }
 ```
 
 (2) Create a project directory with the following command:
 
-```
+```shell
 > mkdir -p example1/packages/demo
 ```
 
@@ -69,13 +69,13 @@ The [project directory structure](projects.md) sets the name of the project (`ex
 
 (3) Copy the JavaScript file into the `demo` directory with the following command.
 
-```
+```shell
 > cp hello.js example1/packages/demo
 ```
 
 (4) Deploy the project.
 
-```
+```shell
 > nim project deploy example1
 Deploying project '/path/to/example1'
   to namespace '...'
@@ -87,7 +87,7 @@ Deployed actions:
 
 (5)  Invoke the deployed action.
 
-```
+```shell
 > nim action invoke demo/hello
 {
   "msg": "Hello World"
@@ -96,8 +96,8 @@ Deployed actions:
 
 Here’s a diagram of the project structure that was created in this procedure.
 
-<center id="fig2"><img src="./fig2-nim-example1-project-directory-structure.svg" height="300"/></center>
-<center>**Figure 1: Directory structure of the example1 project**</center>
+<center id="fig2"><img src="img/fig2-nim-example1-project-directory-structure.svg" height="300"/></center>
+<center><strong>Figure 1: Directory structure of the example1 project</strong></center>
 
 **Notes:**
 
