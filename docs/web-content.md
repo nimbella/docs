@@ -18,7 +18,7 @@ The _web_ directory also supports integrated [building](building.md), just like 
 
 Here’s an example of a project with modest web content, populated by hand. For simplicity, the actions of the project are not shown.
 
-```
+```js
 example3/web/chatroom.html
 example3/web/chatroom.css
 example3/web/runner.js
@@ -27,12 +27,12 @@ example3/web/favicon.ico
 
 Here’s a diagram of the `example3` project structure.
 
-<center><img src="./fig6-nim-example3-project-directory-structure.svg" height="450"/></center>
-<center>**Figure 5: A project with static web content**</center>
+<center><img src="img/fig6-nim-example3-project-directory-structure.svg" height="450"/></center>
+<center><strong>Figure 5: A project with static web content</strong></center>
 
 Here’s the output when the project is deployed.
 
-```
+```shell
 > nim project deploy example3
 Deploying project '/path/to/example3'
   to namespace '...'

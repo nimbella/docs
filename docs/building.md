@@ -13,7 +13,7 @@ The _web_ directory and any directory that represents an action can be built aut
 
 *   By placing a `package.json` file in in each directory in which you want builds to occur. The presence of this file causes one of the following commands to be executed.
 
-```
+```shell
 npm install --production
 yarn install --production
 npm install && npm run build
@@ -40,14 +40,14 @@ Let’s start with a simple Node.js dependency.
 
 Project `qrcode` includes a Node.js function in a single source file. This function depends on npm packages. You can clone this example from [GitHub](https://github.com/nimbella/demo-projects) as follows:
 
-```
+```shell
 > git clone
 > cd demo-projets
 ```
 
 Here is a part of the project layout:
 
-```
+```js
 qrcode/packages/
 qrcode/packages/default
 qrcode/packages/default/qr
@@ -57,7 +57,7 @@ qrcode/packages/default/qr/qr.js
 
 Let’s deploy `qrcode ` to show all the automation that takes place and how that reduces the amount of work you have to do to a great extent.
 
-```
+```shell
 > nim project deploy qrcode
 Deploying project '/path/to/qrcode'
   to namespace '...'
@@ -143,13 +143,13 @@ The question of whether a build is local or remote is also affected by flags tha
 
 A build will not work remotely unless you have storage credentials.  You can check this with
 
-```
+```shell
 nim auth current --storage
 ```
 
 The response should be `true`.  Otherwise, you can request that storage be added to your namespace.  Once this has been done, use
 
-```
+```shell
 nim auth refresh
 ```
 
@@ -176,6 +176,6 @@ The latter is, obviously, more performant.
 
 If you specify a `build.sh` for a remote build, even in languages that have default remote builds, it _replaces_ rather than augmenting the default remote build.  This can make the `build.sh` hard to craft because details encapsulated in the default remote build can be non-obvious without knowledge of OpenWhisk runtime internals.  You can have the best of both worlds by invoking the default remote build explicitly as a step (usually the final step) of your `build.sh`.   The syntax is
 
-```
+```js
 /bin/defaultBuild
 ```

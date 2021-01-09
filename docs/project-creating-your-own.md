@@ -12,7 +12,7 @@ With the Nimbella CLI, you can create a project template that you can use to ins
 
 To create a project template, run this command in your command prompt:
 
-```
+```shell
 nim project create folder_name
 ```
 
@@ -26,13 +26,13 @@ After running this command in your command prompt, you should see a message sayi
 
 To generate a `.yml` file when you create a project. Run the command:
 
-```
+```shell
 nim project create folder_name --config
 ```
 
 The `--config` flag tells the CLI to generate a `.yml` template you can use for your project. You should see this template inside of your project folder:
 
-```
+```yaml
 targetNamespace: ''
 cleanNamespace: false
 bucket: {}

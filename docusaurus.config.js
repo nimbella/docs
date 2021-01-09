@@ -12,7 +12,7 @@ module.exports = {
       title: 'Nimbella Developer Guide',
       logo: {
         alt: 'Nimbella Docs Logo',
-        src: 'img/logo.svg',
+        src: 'img/nimbella-logo.svg',
       },
       items: [
         {
@@ -65,7 +65,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © Nimbella, Inc ${new Date().getFullYear()}. All rights reserved. Terms | Privacy`,
+      copyright: `Copyright © Nimbella, Inc ${new Date().getFullYear()}. All rights reserved. <a href="https://nimbella.com/terms" target="_blank" rel="noreferrer noopener nofollow">Terms</a> | <a href="https://nimbella.com/privacy" target="_blank" rel="noreferrer noopener nofollow">Privacy</a>`,
     },
   },
   presets: [

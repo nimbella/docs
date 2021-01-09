@@ -14,7 +14,7 @@ You can list all of your Key-Values.
 
 Command:
 
-```
+```shell
 nim kv list
 ```
 
@@ -22,7 +22,7 @@ nim kv list
 
 You can get the value of a key in your command prompt.
 
-```
+```shell
 nim kv get [keyName]
 ```
 
@@ -30,7 +30,7 @@ nim kv get [keyName]
 
 Here's how you can change the value of a key in your command prompt. In this example, we'll be using a key that is holding onto a number called `counter`.
 
-```
+```shell
 nim kv set counter 42
 OK
 
@@ -42,6 +42,6 @@ nim kv get counter
 
 If you do not need a Key, you can delete it.
 
-```
+```shell
 nim kv del [keyValue]
 ```

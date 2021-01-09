@@ -10,7 +10,7 @@ sidebar_label: Actions
 
 Every action produced by a no-configuration project such as [the example project above](single-action-example.md) is publicly accessible via a URL and is called a _web action_. You can retrieve the URL for any particular web action by using the `action get` command, as in the following example, which returns the URL for the `demo/hello` action created in the previous example.
 
-```
+```shell
 > nim action get demo/hello --url
 https://....nimbella.io/api/v1/web/.../demo/hello
 ```

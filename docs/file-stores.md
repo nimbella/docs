@@ -11,7 +11,7 @@ A Nimbella account that has been provisioned with "storage" will have two file s
 
 The `nim` command will show the current contents of these stores.
 
-```
+```shell
 # To show web store contents
 nim web list
 
@@ -60,7 +60,7 @@ Nimbella provides SDKs for use within actions.  Currently, these exist for [`nod
 
 In an action written in JavaScript, you should include
 
-```
+```js
 const nim = require('@nimbella/sdk')
 ```
 
@@ -115,7 +115,7 @@ The most commonly used methods of [File](https://googleapis.dev/nodejs/storage/l
 
 In an action written in php, you should include
 
-```
+```php
 use Nimbella\Nimbella;
 $nim = new Nimbella()
 ```
@@ -124,7 +124,7 @@ The `nim` object serves as a client factory for the data store and for the key-v
 
 To obtain a client for use with your data store, use
 
-```
+```php
 $client = $nim->storage();
 ```
 
@@ -162,7 +162,7 @@ In the php SDK, a [StorageObject](https://googleapis.github.io/google-cloud-php/
 
 In an action written in python, you should include
 
-```
+```python
 import nimbella
 ```
 
@@ -170,7 +170,7 @@ The `nimbella` object serves as a client factory for both file stores and for th
 
 To obtain a client for use with your data store, use
 
-```
+```python
 client = nimbella.storage() # client will access the data store
 # or equivalently
 client = nimbella.storage(False) # client will access the data store
@@ -178,7 +178,7 @@ client = nimbella.storage(False) # client will access the data store
 
 You can also obtain a client for use with your web store.
 
-```
+```python
 client = nimbella.storage(True) # client will access the web store
 ```
 
@@ -239,7 +239,7 @@ The `nim` CLI provides access to both file stores to support management programm
 
 **To remove all files from one of the file stores**
 
-```
+```shell
 nim [object|web] clean
 ```
 
@@ -249,7 +249,7 @@ You may notice that a "clean" web store actually has one file in it, `404.html`.
 
 **To remove a single file from one of the file stores**
 
-```
+```shell
 nim [object|web] delete FILENAME
 ```
 
@@ -257,7 +257,7 @@ The file you name is deleted without prompting.
 
 **To add content to one of the file stores**
 
-```
+```shell
 nim [object|web] [create|update] FILEPATH
 ```
 
@@ -272,7 +272,7 @@ path (if it ends in a slash).
 
 **To list the files in a file store**
 
-```
+```shell
 nim [object|web] list [PREFIX]
 ```
 
@@ -280,7 +280,7 @@ If the prefix argument is omitted, this lists all the files.  Otherwise, it list
 
 **To retrieve file contents from a file store**
 
-```
+```shell
 nim [object|web] get FILENAME
 ```
 
@@ -288,7 +288,7 @@ There will be an attempt to print the file contents on the console, unless you s
 
 **To obtain a signed URL (data store only)**
 
-```
+```shell
 nim object url FILENAME
 ```
 

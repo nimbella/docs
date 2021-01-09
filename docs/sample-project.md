@@ -17,7 +17,7 @@ import TabItem from '@theme/TabItem';
   >
   <TabItem value="js">
 
-```
+```js
 function Logout(props) {
 
     const setLoginInfo = props.setLoginInfo;
@@ -37,7 +37,7 @@ function Logout(props) {
   </TabItem>
   <TabItem value="py">
 
-```
+```python
 NEED TO CONVERT THIS FUNCTION IN PYTHON
 
 function Logout(props) {
@@ -59,7 +59,7 @@ function Logout(props) {
   </TabItem>
   <TabItem value="go">
 
-```
+```go
 NEED TO CONVERT THIS FUNCTION IN GO
 
 function Logout(props) {

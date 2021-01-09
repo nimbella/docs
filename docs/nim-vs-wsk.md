@@ -50,7 +50,7 @@ Usually, a Nimbella developer has just one API host and all namespaces use the s
 *   If all of your namespaces have unique names, if some are on different API hosts, the API host is automatically switched when you switch the namespace.
 *   If you happen to have identically named namespaces on different API hosts, then you must use the `--apihost` flag to disambiguate. Substitute the URL of your API host in the following examples.
 
-```
+```shell
 > nim auth switch <namespace> --apihost <API host>
 > nim project deploy <projectPath>... --target <namespace> --apihost <API host>
 ```

@@ -33,7 +33,7 @@ This is a great time-saver during project development and also helps [facilitate
 Consider the following example of an `example4` project. The output from standard deployment is shown here:
 
 
-```
+```shell
 > nim project deploy example4
 Deploying project '/path/to/example4'
   to namespace '...'
@@ -49,7 +49,7 @@ Now suppose that you’ve made changes to `demo/hello` and `welcome` but not the
 To deploy incrementally, use the `--incremental` flag, as in the following example.
 
 
-```
+```shell
 > nim project deploy example4 --incremental
 Deploying project '/path/to/example4'
   to namespace '...'
@@ -73,7 +73,7 @@ A good way to implement incremental deployment during project development is to 
 
 Here’s an example of using this command for incremental deployment.
 
-```
+```shell
 > nim project watch example4
 Watching 'example4' [use Control-C to terminate]
 ...
@@ -92,7 +92,7 @@ The `project watch` command accepts a list of projects and most of the flags tha
 
 There may be occasions when you only want to deploy parts of a project.  If the change-based selection of incremental deployment does not fit your needs, you can control which actions are deployed (and whether web content is deployed) directly from the command line.
 
-```
+```shell
 # Deploy just the web content and no packages
 nim project deploy printer --include web
 
@@ -124,7 +124,7 @@ The `nim` command does not get involved in keeping your clone in synch with the 
 
 To indicate you want to deploy from GitHub, use a project path that starts with one of the following.
 
-```
+```shell
 github:
 git@github.com:
 https://github.com/
@@ -134,7 +134,7 @@ The deployer supports all three prefix styles to align with developer habits and
 
 You follow the prefix with the "owner" (GitHub account), repository, path to the project within the repository (if any), and specific branch or commit (if not `master`).   For example,
 
-```
+```shell
 nim project deploy github:nimbella/demo-projects/visits
 nim project deploy git@github.com:/my-account/my-repo-with-project/#dev
 ```
@@ -143,19 +143,19 @@ The deployer does not use SSL public/private keys or username/password authentic
 
 You can check GitHub accounts for which you have tokens in your Nimbella credential store by issuing
 
-```
+```shell
 nim auth github --list
 ```
 
 If you do not have any GitHub account registered then `nim project deploy` will (by default) refuse to deploy from github.  You can override this behavior using (e.g.)
 
-```
+```shell
 nim project github:nimbella/demo-projects/visits --anon-github
 ```
 
 However, GitHub imposes severe rate limitations on anonymous access.  Many projects that you will want to deploy will be large enough that you will hit this limit routinely.  Also, you will be unable to deploy from private repos.  So, this option is really for exploring the capability only.   To really use the capability in serious development, you must have a GitHub account.  If you have one (or once you have one) you can add it to your Nimbella credentials using
 
-```
+```shell
 nim auth github --initial
 ```
 
@@ -189,7 +189,7 @@ As shown in the following example, the `action get` command output shows the nam
 
 In this example, the `action get` command retrieves the annotation for the `demo/hello` action from [example1](single-action-example.md):
 
-```
+```shell
 > nim action get demo/hello
 {
   "namespace": ".../demo",
@@ -250,7 +250,7 @@ Looking at the information in `versions.json` answers the question _“What did 
 
 The `versions.json_`entries for packages and actions look something like this:
 
-```
+```shell
 [
   {
     "apihost": "https://...",
@@ -275,7 +275,7 @@ In this example, you can see that there are separate status entries for the pack
 
 If you have also deployed static web content, the `versions.json` file has a `webHashes` entry with digest information about each web file, something like this:
 
-```
+```shell
 "webHashes": {
   "qrcode/web/index.html": "56bc228c3f5b8a33e59224bdadd8a7d8674dbc1e774a97af4cb62a355f585276",
   "qrcode/web/logo.png": "302f6b60c3b73ac23df07e528d14ef740576ac5966cdd5ea4884f03d0a532a71"

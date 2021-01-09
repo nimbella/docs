@@ -10,20 +10,20 @@ Many (though not all) `nim` commands will also run in your web browser, which wr
 
 If you've never used the workbench (and assuming you are logged into a Nimbella account) you should enable the same Nimbella account on the workbench by opening it from the command line, as follows.
 
-```
+```shell
 nim workbench login
 ```
 
 This will open the workbench in your default browser and log you in there with the same Nimbella namespace credentials you are using locally (see [Nimbella Namespaces](namespaces.md)).  Those credentials will be remembered for that browser on the current machine.  You can bookmark the workbench, or you can run it again with a particular command, as in the two following examples.
 
-```
+```shell
 nim workbench run
 nim workbench run action list
 ```
 
 Once you are in the workbench, all `nim` subcommands are available except for these few.
 
-```
+```shell
 action create
 action update
 object create

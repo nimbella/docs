@@ -8,7 +8,7 @@ sidebar_label: Nim Commands
 
 The Nimbella Command Line Tool (nim) is your primary portal to Nimbella services. Typing `nim` at a command prompt produces the latest version of help output, similar to the following.
 
-```
+```shell
 > nim
 A comprehensive CLI for the Nimbella stack
 
@@ -42,7 +42,7 @@ These commands fall into four categories, described in the following sections.
 
 **Note:** In some of the help output from `nim` (as shown) there are colon separators between parts of the command.  This happens because nim is based on [oclif](https://github.com/oclif), the Open CLI Framework from Heroku, which requires them. However, nim has logic to allow blank separators, so you can also use these commands with blank separators, as in these examples:
 
-```
+```shell
 > nim auth list
 > nim project deploy
 ```
@@ -56,7 +56,7 @@ The `auth` subtree lets you manage Nimbella credentials for Nimbella _namespaces
 
 The `nim auth` subtree has its own set of commands, as follows.
 
-```
+```shell
 > nim auth
 manage Nimbella and GitHub credentials
 
@@ -88,7 +88,7 @@ The `project:deploy` command controls the Nimbella _deployer_, which operates on
 
 Help output for the `nim project` command:
 
-```
+```shell
 > nim project
 manage and deploy Nimbella projects
 
@@ -103,7 +103,7 @@ COMMANDS
 
 Help output for the `nim project create` command:
 
-```
+```shell
 > nim project create
 Create a Nimbella Project
 
@@ -130,7 +130,7 @@ See the [Example: Create and deploy a project with a single action](single-actio
 
 Help output for the `nim project deploy` command:
 
-```
+```shell
 > nim project deploy
 Deploy Nimbella projects
 
@@ -162,7 +162,7 @@ See the [Example: Create and deploy a project with a single action](single-actio
 
 Help output for the `nim project watch` command:
 
-```
+```shell
 > nim project watch
 Watch Nimbella projects, deploying incrementally on change
 
