@@ -26,19 +26,6 @@ module.exports = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
-          items: [
-            {
-              label: 'Style Guide',
-              to: '/',
-            },
-            {
-              label: 'Second Doc',
-              to: '/doc2/',
-            },
-          ],
-        },
-        {
           title: 'Community',
           items: [
             {
@@ -61,6 +48,14 @@ module.exports = {
             {
               label: 'GitHub',
               href: 'https://github.com/nimbella/docs',
+            },
+            {
+              label: 'Nimbella.com',
+              href: 'https://nimbella.com/',
+            },
+            {
+              label: 'Sign up',
+              href: 'https://nimbella.com/signup',
             },
           ],
         },
