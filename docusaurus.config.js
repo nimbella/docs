@@ -6,7 +6,7 @@ module.exports = {
   onBrokenLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'nimbella', // Usually your GitHub org/user name.
-  projectName: 'docs', // Usually your repo name.
+  projectName: 'docs', // Usually your repo name.,
   themeConfig: {
     navbar: {
       title: 'Nimbella Developer Guide',
