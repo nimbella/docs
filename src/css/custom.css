@@ -50,3 +50,51 @@
 .markdown > h6 {
   --ifm-h6-font-size: 1rem;
 }
+
+@media (max-width: 996px) {
+  .navbar__toggle {
+    display: none;
+  }
+  .navbar__item {
+    display: inline-block;
+  }
+
+  .menu--responsive .menu__button {
+    bottom: unset;
+    right: unset;
+    left: 1.4rem;
+    top: 4rem;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+  }
+  html[data-theme='dark'] .menu--responsive .menu__button {
+    color: white;
+  }
+}
+
+@media screen and (max-width: 997px) {
+  .react-toggle.displayOnlyInLargeViewport_node_modules-\@docusaurus-theme-classic-lib-theme-Navbar- {
+    display: inline-block !important;
+  }
+  .navbar__items--right {
+    position: absolute;
+    top: 59px;
+    left: 0;
+    border-bottom: 1px solid #efefef;
+    padding: 0 1rem;
+    width: 100%;
+  }
+  html[data-theme='dark'] .navbar__items--right {
+    background-color: #323335;
+  }
+  html[data-theme='light'] .navbar__items--right {
+    background-color: #f7f4f4;
+  }
+  .menu--show {
+    top: 94px;
+  }
+  .navbar-sidebar {
+    box-shadow: none;
+  }
+}
