@@ -17,6 +17,8 @@ work with rules
 Create a Rule
 
 ```
+Create a Rule
+
 USAGE
   $ nim rule create NAME TRIGGER ACTION
 
@@ -39,13 +41,15 @@ OPTIONS
   --version                Show version
 ```
 
-_See code: [src/commands/rule/create.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/rule/create.ts)_
+_See code: [src/commands/rule/create.ts](https://github.com/nimbella/nimbella-cli/blob/v1.10.2/src/commands/rule/create.ts)_
 
 ## `nim rule delete NAME`
 
 Delete a Rule
 
 ```
+Delete a Rule
+
 USAGE
   $ nim rule delete NAME
 
@@ -66,13 +70,15 @@ OPTIONS
   --version                Show version
 ```
 
-_See code: [src/commands/rule/delete.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/rule/delete.ts)_
+_See code: [src/commands/rule/delete.ts](https://github.com/nimbella/nimbella-cli/blob/v1.10.2/src/commands/rule/delete.ts)_
 
 ## `nim rule disable NAME`
 
 Disable a Rule
 
 ```
+Disable a Rule
+
 USAGE
   $ nim rule disable NAME
 
@@ -92,13 +98,15 @@ OPTIONS
   --version                Show version
 ```
 
-_See code: [src/commands/rule/disable.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/rule/disable.ts)_
+_See code: [src/commands/rule/disable.ts](https://github.com/nimbella/nimbella-cli/blob/v1.10.2/src/commands/rule/disable.ts)_
 
 ## `nim rule enable NAME`
 
 Enable a Rule
 
 ```
+Enable a Rule
+
 USAGE
   $ nim rule enable NAME
 
@@ -118,13 +126,15 @@ OPTIONS
   --version                Show version
 ```
 
-_See code: [src/commands/rule/enable.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/rule/enable.ts)_
+_See code: [src/commands/rule/enable.ts](https://github.com/nimbella/nimbella-cli/blob/v1.10.2/src/commands/rule/enable.ts)_
 
 ## `nim rule get NAME`
 
 Retrieves a Rule
 
 ```
+Retrieves a Rule
+
 USAGE
   $ nim rule get NAME
 
@@ -144,13 +154,15 @@ OPTIONS
   --version                Show version
 ```
 
-_See code: [src/commands/rule/get.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/rule/get.ts)_
+_See code: [src/commands/rule/get.ts](https://github.com/nimbella/nimbella-cli/blob/v1.10.2/src/commands/rule/get.ts)_
 
 ## `nim rule list`
 
 Retrieves a list of Rules
 
 ```
+Retrieves a list of Rules
+
 USAGE
   $ nim rule list
 
@@ -173,13 +185,15 @@ OPTIONS
   --version                Show version
 ```
 
-_See code: [src/commands/rule/list.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/rule/list.ts)_
+_See code: [src/commands/rule/list.ts](https://github.com/nimbella/nimbella-cli/blob/v1.10.2/src/commands/rule/list.ts)_
 
 ## `nim rule status NAME`
 
 Gets the status of a rule
 
 ```
+Gets the status of a rule
+
 USAGE
   $ nim rule status NAME
 
@@ -199,13 +213,15 @@ OPTIONS
   --version                Show version
 ```
 
-_See code: [src/commands/rule/status.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/rule/status.ts)_
+_See code: [src/commands/rule/status.ts](https://github.com/nimbella/nimbella-cli/blob/v1.10.2/src/commands/rule/status.ts)_
 
 ## `nim rule update NAME TRIGGER ACTION`
 
 Update a Rule
 
 ```
+Update a Rule
+
 USAGE
   $ nim rule update NAME TRIGGER ACTION
 
@@ -228,4 +244,4 @@ OPTIONS
   --version                Show version
 ```
 
-_See code: [src/commands/rule/update.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/rule/update.ts)_
+_See code: [src/commands/rule/update.ts](https://github.com/nimbella/nimbella-cli/blob/v1.10.2/src/commands/rule/update.ts)_

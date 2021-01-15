@@ -10,6 +10,8 @@ update the nim CLI
 update the nim CLI
 
 ```
+update the <%= config.bin %> CLI
+
 USAGE
   $ nim update [CHANNEL]
 ```

@@ -15,6 +15,8 @@ work with triggers
 Create a trigger
 
 ```
+Create a trigger
+
 USAGE
   $ nim trigger create TRIGGERNAME
 
@@ -25,7 +27,7 @@ OPTIONS
   -A, --annotation-file=annotation-file  FILE containing annotation values in JSON format
   -P, --param-file=param-file            FILE containing parameter values in JSON format
   -a, --annotation=annotation            annotation values in KEY VALUE format
-  -f, --feed=feed                        trigger feed action name
+  -f, --feed=feed                        trigger feed ACTION_NAME
   -i, --insecure                         bypass certificate check
   -p, --param=param                      parameter values in KEY VALUE format
   -u, --auth=auth                        whisk auth
@@ -39,13 +41,15 @@ OPTIONS
   --version                              Show version
 ```
 
-_See code: [src/commands/trigger/create.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/trigger/create.ts)_
+_See code: [src/commands/trigger/create.ts](https://github.com/nimbella/nimbella-cli/blob/v1.10.2/src/commands/trigger/create.ts)_
 
 ## `nim trigger delete TRIGGERPATH`
 
 Delete a Trigger
 
 ```
+Delete a Trigger
+
 USAGE
   $ nim trigger delete TRIGGERPATH
 
@@ -65,13 +69,15 @@ OPTIONS
   --version                Show version
 ```
 
-_See code: [src/commands/trigger/delete.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/trigger/delete.ts)_
+_See code: [src/commands/trigger/delete.ts](https://github.com/nimbella/nimbella-cli/blob/v1.10.2/src/commands/trigger/delete.ts)_
 
 ## `nim trigger fire TRIGGERNAME`
 
 Fire a Trigger
 
 ```
+Fire a Trigger
+
 USAGE
   $ nim trigger fire TRIGGERNAME
 
@@ -93,13 +99,15 @@ OPTIONS
   --version                    Show version
 ```
 
-_See code: [src/commands/trigger/fire.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/trigger/fire.ts)_
+_See code: [src/commands/trigger/fire.ts](https://github.com/nimbella/nimbella-cli/blob/v1.10.2/src/commands/trigger/fire.ts)_
 
 ## `nim trigger get TRIGGERPATH`
 
 Get a Trigger
 
 ```
+Get a Trigger
+
 USAGE
   $ nim trigger get TRIGGERPATH
 
@@ -119,13 +127,15 @@ OPTIONS
   --version                Show version
 ```
 
-_See code: [src/commands/trigger/get.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/trigger/get.ts)_
+_See code: [src/commands/trigger/get.ts](https://github.com/nimbella/nimbella-cli/blob/v1.10.2/src/commands/trigger/get.ts)_
 
 ## `nim trigger list`
 
 Lists all of your Triggers
 
 ```
+Lists all of your Triggers
+
 USAGE
   $ nim trigger list
 
@@ -148,13 +158,15 @@ OPTIONS
   --version                Show version
 ```
 
-_See code: [src/commands/trigger/list.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/trigger/list.ts)_
+_See code: [src/commands/trigger/list.ts](https://github.com/nimbella/nimbella-cli/blob/v1.10.2/src/commands/trigger/list.ts)_
 
 ## `nim trigger update TRIGGERNAME`
 
 Update or create a Trigger
 
 ```
+Update or create a Trigger
+
 USAGE
   $ nim trigger update TRIGGERNAME
 
@@ -178,4 +190,4 @@ OPTIONS
   --version                              Show version
 ```
 
-_See code: [src/commands/trigger/update.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/trigger/update.ts)_
+_See code: [src/commands/trigger/update.ts](https://github.com/nimbella/nimbella-cli/blob/v1.10.2/src/commands/trigger/update.ts)_

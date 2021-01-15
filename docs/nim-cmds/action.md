@@ -15,6 +15,8 @@ work with actions
 Creates an Action
 
 ```
+Creates an Action
+
 USAGE
   $ nim action create ACTIONNAME [ACTIONPATH]
 
@@ -49,34 +51,15 @@ OPTIONS
   --web-secure=web-secure                secure the web action (valid values are true, false, or any string)
 ```
 
-This command provides a quick way to create an individual action, not connected to a project.  However, [a project with a single action in it](single-action-example.md), while bulkier, allows for future extension as you add more actions and web content to your application.
-
-The action being created must not already exist.  If you wish to modify an existing action, use [nim action update](#nim-package-update-packagename).
-
-#### ACTIONNAME
-
-Provides the name of the action.  Action names in the current namespace
-consist of one or two segments separated by a slash (/) character.  Each segment conforms to these rules.
-
-* The first character must be an alphanumeric character, or an underscore.
-* The subsequent characters can be alphanumeric, spaces, or any of the following: `_`, `@`, `.`, `-`.
-* The last character can't be a space.
-
-When there are two segments to the name, the first denotes the package containing the action.
-
-Although it is the first argument, the `ACTIONNAME` may be omitted, causing the `ACTIONPATH` to be the first argument.
-
-#### ACTIONPATH
-
-Provides a location in the local file system where the code of the action is to be found.  
-
-_See code: [src/commands/action/create.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/action/create.ts)_
+_See code: [src/commands/action/create.ts](https://github.com/nimbella/nimbella-cli/blob/v1.10.2/src/commands/action/create.ts)_
 
 ## `nim action delete ACTIONNAME`
 
 Deletes an Action
 
 ```
+Deletes an Action
+
 USAGE
   $ nim action delete ACTIONNAME
 
@@ -94,29 +77,20 @@ OPTIONS
   --version                Show version
 ```
 
-This command deletes a single action.  You can also delete all the actions in a package along with the package itself using
-
-```
-nim package delete -r
-```
-
-You can delete all the OpenWhisk resources in a namespace using
-
-```
-nim namespace clean --justwhisk
-```
-
-_See code: [src/commands/action/delete.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/action/delete.ts)_
+_See code: [src/commands/action/delete.ts](https://github.com/nimbella/nimbella-cli/blob/v1.10.2/src/commands/action/delete.ts)_
 
 ## `nim action get ACTIONNAME`
 
 Retrieves an Action
 
 ```
+Retrieves an Action
+
 USAGE
   $ nim action get ACTIONNAME
 
 OPTIONS
+  -E, --save-env=save-env  save environment variables to FILE as key-value pairs
   -c, --code               show action code (only works if code is not a zip file
   -i, --insecure           bypass certificate check
   -r, --url                get action url
@@ -133,13 +107,15 @@ OPTIONS
   --version                Show version
 ```
 
-_See code: [src/commands/action/get.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/action/get.ts)_
+_See code: [src/commands/action/get.ts](https://github.com/nimbella/nimbella-cli/blob/v1.10.2/src/commands/action/get.ts)_
 
 ## `nim action invoke ACTIONNAME`
 
 Invokes an Action
 
 ```
+Invokes an Action
+
 USAGE
   $ nim action invoke ACTIONNAME
 
@@ -161,13 +137,15 @@ OPTIONS
   --web                        Invoke as a web action, show result as web page
 ```
 
-_See code: [src/commands/action/invoke.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/action/invoke.ts)_
+_See code: [src/commands/action/invoke.ts](https://github.com/nimbella/nimbella-cli/blob/v1.10.2/src/commands/action/invoke.ts)_
 
 ## `nim action list [PACKAGENAME]`
 
 Lists all the Actions
 
 ```
+Lists all the Actions
+
 USAGE
   $ nim action list [PACKAGENAME]
 
@@ -190,13 +168,15 @@ OPTIONS
   --version                Show version
 ```
 
-_See code: [src/commands/action/list.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/action/list.ts)_
+_See code: [src/commands/action/list.ts](https://github.com/nimbella/nimbella-cli/blob/v1.10.2/src/commands/action/list.ts)_
 
 ## `nim action update ACTIONNAME [ACTIONPATH]`
 
 Updates an Action
 
 ```
+Updates an Action
+
 USAGE
   $ nim action update ACTIONNAME [ACTIONPATH]
 
@@ -231,4 +211,4 @@ OPTIONS
   --web-secure=web-secure                secure the web action (valid values are true, false, or any string)
 ```
 
-_See code: [src/commands/action/update.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/action/update.ts)_
+_See code: [src/commands/action/update.ts](https://github.com/nimbella/nimbella-cli/blob/v1.10.2/src/commands/action/update.ts)_

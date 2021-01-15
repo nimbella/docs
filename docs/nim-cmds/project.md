@@ -3,41 +3,41 @@
 
 manage and deploy Nimbella projects
 
-* [`nim project create [NAME]`](#nim-project-create-name)
+* [`nim project create [PROJECT]`](#nim-project-create-project)
 * [`nim project deploy [PROJECTS]`](#nim-project-deploy-projects)
 * [`nim project watch [PROJECTS]`](#nim-project-watch-projects)
 
-## `nim project create [NAME]`
+## `nim project create [PROJECT]`
 
 Create a Nimbella Project
 
 ```
+Create a Nimbella Project
+
 USAGE
-  $ nim project create [NAME]
+  $ nim project create [PROJECT]
 
 ARGUMENTS
-  NAME  Project name
+  PROJECT  project path in the file system
 
 OPTIONS
-  -c, --clientCode                           Generates client code
-  -i, --id=id                                API specs id/name/path
-  -k, --key=key                              Key to access the source API
-  -l, --language=go|js|ts|py|java|swift|php  [default: js] Language for the project (creates sample project unless source is specified)
-  -o, --overwrite                            Overwrites the existing file(s)
-  -s, --source=postman|openapi               API specs source
-  -u, --updateSource                         Sync updated API specs back to source
-  -v, --verbose                              Greater detail in error messages
-  --config                                   Generate template config file
-  --help                                     Show help
+  -l, --language=go|golang|js|javascript|ts|typescript|py|python|java|swift|php  [default: js] Language for the project (creates sample project unless source is specified)
+  -o, --overwrite                                                                Overwrites the existing file(s)
+  -t, --type=postman|openapi|sample                                              API specs source
+  -v, --verbose                                                                  Greater detail in error messages
+  --config                                                                       Generate template config file
+  --help                                                                         Show help
 ```
 
-_See code: [src/commands/project/create.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/project/create.ts)_
+_See code: [src/commands/project/create.ts](https://github.com/nimbella/nimbella-cli/blob/v1.10.2/src/commands/project/create.ts)_
 
 ## `nim project deploy [PROJECTS]`
 
 Deploy Nimbella projects
 
 ```
+Deploy Nimbella projects
+
 USAGE
   $ nim project deploy [PROJECTS]
 
@@ -56,6 +56,7 @@ OPTIONS
   --incremental          Deploy only changes since last deploy
   --insecure             Ignore SSL Certificates
   --production           Deploy to the production namespace instead of the test one
+  --remote-build         Run builds remotely
   --target=target        The target namespace
   --verbose-build        Display build details
   --verbose-zip          Display start/end of zipping phase for each action
@@ -63,13 +64,15 @@ OPTIONS
   --yarn                 Use yarn instead of npm for node builds
 ```
 
-_See code: [src/commands/project/deploy.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/project/deploy.ts)_
+_See code: [src/commands/project/deploy.ts](https://github.com/nimbella/nimbella-cli/blob/v1.10.2/src/commands/project/deploy.ts)_
 
 ## `nim project watch [PROJECTS]`
 
 Watch Nimbella projects, deploying incrementally on change
 
 ```
+Watch Nimbella projects, deploying incrementally on change
+
 USAGE
   $ nim project watch [PROJECTS]
 
@@ -85,6 +88,7 @@ OPTIONS
   --help                 Show help
   --include=include      Project portions to include
   --insecure             Ignore SSL Certificates
+  --remote-build         Run builds remotely
   --target=target        The target namespace
   --verbose-build        Display build details
   --verbose-zip          Display start/end of zipping phase for each action
@@ -92,4 +96,4 @@ OPTIONS
   --yarn                 Use yarn instead of npm for node builds
 ```
 
-_See code: [src/commands/project/watch.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/project/watch.ts)_
+_See code: [src/commands/project/watch.ts](https://github.com/nimbella/nimbella-cli/blob/v1.10.2/src/commands/project/watch.ts)_

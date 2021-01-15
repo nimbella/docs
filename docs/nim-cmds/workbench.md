@@ -11,6 +11,8 @@ open Nimbella workbench with login or command
 Open the Nimbella Workbench, logging in with current credentials
 
 ```
+Open the Nimbella Workbench, logging in with current credentials
+
 USAGE
   $ nim workbench login
 
@@ -23,13 +25,15 @@ ALIASES
   $ nim wb login
 ```
 
-_See code: [src/commands/workbench/login.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/workbench/login.ts)_
+_See code: [src/commands/workbench/login.ts](https://github.com/nimbella/nimbella-cli/blob/v1.10.2/src/commands/workbench/login.ts)_
 
 ## `nim workbench run [COMMAND]`
 
 Open the Nimbella Workbench and run a command there
 
 ```
+Open the Nimbella Workbench and run a command there
+
 USAGE
   $ nim workbench run [COMMAND]
 
@@ -45,4 +49,4 @@ ALIASES
   $ nim wb run
 ```
 
-_See code: [src/commands/workbench/run.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/workbench/run.ts)_
+_See code: [src/commands/workbench/run.ts](https://github.com/nimbella/nimbella-cli/blob/v1.10.2/src/commands/workbench/run.ts)_

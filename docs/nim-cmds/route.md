@@ -3,18 +3,20 @@
 
 work with routes
 
-* [`nim route create BASEPATH RELPATH APIVERB ACTION`](#nim-route-create-basepath-relpath-apiverb-action)
+* [`nim route create [BASEPATH] [RELPATH] [APIVERB] [ACTION]`](#nim-route-create-basepath-relpath-apiverb-action)
 * [`nim route delete BASEPATHORAPINAME [RELPATH] [APIVERB]`](#nim-route-delete-basepathorapiname-relpath-apiverb)
 * [`nim route get BASEPATHORAPINAME`](#nim-route-get-basepathorapiname)
 * [`nim route list [BASEPATH] [RELPATH] [APIVERB]`](#nim-route-list-basepath-relpath-apiverb)
 
-## `nim route create BASEPATH RELPATH APIVERB ACTION`
+## `nim route create [BASEPATH] [RELPATH] [APIVERB] [ACTION]`
 
 create a new api route
 
 ```
+create a new api route
+
 USAGE
-  $ nim route create BASEPATH RELPATH APIVERB ACTION
+  $ nim route create [BASEPATH] [RELPATH] [APIVERB] [ACTION]
 
 ARGUMENTS
   BASEPATH  The base path of the api
@@ -23,6 +25,7 @@ ARGUMENTS
   ACTION    The action to call
 
 OPTIONS
+  -c, --config-file=config-file                     file containing API configuration in swagger JSON format
   -i, --insecure                                    bypass certificate check
   -n, --apiname=apiname                             Friendly name of the API; ignored when CFG_FILE is specified (default BASE_PATH)
   -r, --response-type=html|http|json|text|svg|json  [default: json] Set the web action response TYPE.
@@ -37,13 +40,15 @@ OPTIONS
   --version                                         Show version
 ```
 
-_See code: [src/commands/route/create.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/route/create.ts)_
+_See code: [src/commands/route/create.ts](https://github.com/nimbella/nimbella-cli/blob/v1.10.2/src/commands/route/create.ts)_
 
 ## `nim route delete BASEPATHORAPINAME [RELPATH] [APIVERB]`
 
 delete an API
 
 ```
+delete an API
+
 USAGE
   $ nim route delete BASEPATHORAPINAME [RELPATH] [APIVERB]
 
@@ -65,13 +70,15 @@ OPTIONS
   --version                Show version
 ```
 
-_See code: [src/commands/route/delete.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/route/delete.ts)_
+_See code: [src/commands/route/delete.ts](https://github.com/nimbella/nimbella-cli/blob/v1.10.2/src/commands/route/delete.ts)_
 
 ## `nim route get BASEPATHORAPINAME`
 
 get API details
 
 ```
+get API details
+
 USAGE
   $ nim route get BASEPATHORAPINAME
 
@@ -91,13 +98,15 @@ OPTIONS
   --version                Show version
 ```
 
-_See code: [src/commands/route/get.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/route/get.ts)_
+_See code: [src/commands/route/get.ts](https://github.com/nimbella/nimbella-cli/blob/v1.10.2/src/commands/route/get.ts)_
 
 ## `nim route list [BASEPATH] [RELPATH] [APIVERB]`
 
 List routes/apis
 
 ```
+List routes/apis
+
 USAGE
   $ nim route list [BASEPATH] [RELPATH] [APIVERB]
 
@@ -122,4 +131,4 @@ OPTIONS
   --version                Show version
 ```
 
-_See code: [src/commands/route/list.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/route/list.ts)_
+_See code: [src/commands/route/list.ts](https://github.com/nimbella/nimbella-cli/blob/v1.10.2/src/commands/route/list.ts)_

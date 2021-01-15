@@ -10,6 +10,8 @@ Display the full documentation of this CLI
 Display the full documentation of this CLI
 
 ```
+Display the full documentation of this CLI
+
 USAGE
   $ nim doc
 
@@ -21,4 +23,4 @@ ALIASES
   $ nim docs
 ```
 
-_See code: [src/commands/doc.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/doc.ts)_
+_See code: [src/commands/doc.ts](https://github.com/nimbella/nimbella-cli/blob/v1.10.2/src/commands/doc.ts)_

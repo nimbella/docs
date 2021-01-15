@@ -12,6 +12,8 @@ work with namespaces
 Remove content from a namespace
 
 ```
+Remove content from a namespace
+
 USAGE
   $ nim namespace clean [NAMESPACE]
 
@@ -27,13 +29,15 @@ OPTIONS
   --justwhisk        Remove only OpenWhisk entities, leaving other content
 ```
 
-_See code: [src/commands/namespace/clean.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/namespace/clean.ts)_
+_See code: [src/commands/namespace/clean.ts](https://github.com/nimbella/nimbella-cli/blob/v1.10.2/src/commands/namespace/clean.ts)_
 
 ## `nim namespace free [NAMESPACE]`
 
 Remove project ownership restrictions from namespaces
 
 ```
+Remove project ownership restrictions from namespaces
+
 USAGE
   $ nim namespace free [NAMESPACE]
 
@@ -47,13 +51,15 @@ OPTIONS
   --help             Show help
 ```
 
-_See code: [src/commands/namespace/free.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/namespace/free.ts)_
+_See code: [src/commands/namespace/free.ts](https://github.com/nimbella/nimbella-cli/blob/v1.10.2/src/commands/namespace/free.ts)_
 
 ## `nim namespace get`
 
 Get triggers, actions, and rules in the registry for namespace
 
 ```
+Get triggers, actions, and rules in the registry for namespace
+
 USAGE
   $ nim namespace get
 
@@ -73,4 +79,4 @@ OPTIONS
   --version                Show version
 ```
 
-_See code: [src/commands/namespace/get.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/namespace/get.ts)_
+_See code: [src/commands/namespace/get.ts](https://github.com/nimbella/nimbella-cli/blob/v1.10.2/src/commands/namespace/get.ts)_

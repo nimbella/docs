@@ -15,6 +15,8 @@ work with packages
 Bind parameters to a package
 
 ```
+Bind parameters to a package
+
 USAGE
   $ nim package bind PACKAGENAME BINDPACKAGENAME
 
@@ -36,13 +38,15 @@ OPTIONS
   --version                              Show version
 ```
 
-_See code: [src/commands/package/bind.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/package/bind.ts)_
+_See code: [src/commands/package/bind.ts](https://github.com/nimbella/nimbella-cli/blob/v1.10.2/src/commands/package/bind.ts)_
 
 ## `nim package create PACKAGENAME`
 
 Creates a Package
 
 ```
+Creates a Package
+
 USAGE
   $ nim package create PACKAGENAME
 
@@ -65,13 +69,15 @@ OPTIONS
   --version                              Show version
 ```
 
-_See code: [src/commands/package/create.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/package/create.ts)_
+_See code: [src/commands/package/create.ts](https://github.com/nimbella/nimbella-cli/blob/v1.10.2/src/commands/package/create.ts)_
 
 ## `nim package delete PACKAGENAME`
 
 Deletes a Package
 
 ```
+Deletes a Package
+
 USAGE
   $ nim package delete PACKAGENAME
 
@@ -82,13 +88,15 @@ OPTIONS
   --json             output raw json
 ```
 
-_See code: [src/commands/package/delete.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/package/delete.ts)_
+_See code: [src/commands/package/delete.ts](https://github.com/nimbella/nimbella-cli/blob/v1.10.2/src/commands/package/delete.ts)_
 
 ## `nim package get PACKAGENAME`
 
 Retrieves a Package
 
 ```
+Retrieves a Package
+
 USAGE
   $ nim package get PACKAGENAME
 
@@ -105,13 +113,15 @@ OPTIONS
   --version                Show version
 ```
 
-_See code: [src/commands/package/get.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/package/get.ts)_
+_See code: [src/commands/package/get.ts](https://github.com/nimbella/nimbella-cli/blob/v1.10.2/src/commands/package/get.ts)_
 
 ## `nim package list [NAMESPACE]`
 
 Lists all the Packages
 
 ```
+Lists all the Packages
+
 USAGE
   $ nim package list [NAMESPACE]
 
@@ -134,22 +144,24 @@ OPTIONS
   --version                Show version
 ```
 
-_See code: [src/commands/package/list.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/package/list.ts)_
+_See code: [src/commands/package/list.ts](https://github.com/nimbella/nimbella-cli/blob/v1.10.2/src/commands/package/list.ts)_
 
 ## `nim package update PACKAGENAME`
 
 Updates a Package
 
 ```
+Updates a Package
+
 USAGE
   $ nim package update PACKAGENAME
 
 OPTIONS
   -A, --annotation-file=annotation-file  FILE containing annotation values in JSON format
-  -P, --param-file=param-file            FILE containing parameter values in JSON format
+  -P, --param-file=param-file            parameter to be passed to the package for json file
   -a, --annotation=annotation            annotation values in KEY VALUE format
   -i, --insecure                         bypass certificate check
-  -p, --param=param                      parameter values in KEY VALUE format
+  -p, --param=param                      parameters in key value pairs to be passed to the package
   -u, --auth=auth                        whisk auth
   -v, --verbose                          Verbose output
   --apihost=apihost                      whisk API host
@@ -163,4 +175,4 @@ OPTIONS
   --version                              Show version
 ```
 
-_See code: [src/commands/package/update.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/package/update.ts)_
+_See code: [src/commands/package/update.ts](https://github.com/nimbella/nimbella-cli/blob/v1.10.2/src/commands/package/update.ts)_

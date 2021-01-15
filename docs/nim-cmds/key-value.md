@@ -21,6 +21,8 @@ work with key-value store
 Clears the Key Value Store, be cautious!
 
 ```
+Clears the Key Value Store, be cautious!
+
 USAGE
   $ nim key-value clean
 
@@ -34,13 +36,15 @@ ALIASES
   $ nim kv clean
 ```
 
-_See code: [src/commands/key-value/clean.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/key-value/clean.ts)_
+_See code: [src/commands/key-value/clean.ts](https://github.com/nimbella/nimbella-cli/blob/v1.10.2/src/commands/key-value/clean.ts)_
 
 ## `nim key-value del KEY`
 
 Removes the specified keys and returns number of keys that were removed. A key is ignored if it does not exist
 
 ```
+Removes the specified keys and returns number of keys that were removed. A key is ignored if it does not exist
+
 USAGE
   $ nim key-value del KEY
 
@@ -53,17 +57,18 @@ OPTIONS
   --help             Show help
 
 ALIASES
-  $ nim kv del
-  $ nim kv delete
+  $ nim key-value delete
 ```
 
-_See code: [src/commands/key-value/del.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/key-value/del.ts)_
+_See code: [src/commands/key-value/del.ts](https://github.com/nimbella/nimbella-cli/blob/v1.10.2/src/commands/key-value/del.ts)_
 
 ## `nim key-value expire KEY TTL`
 
 Sets the specified ttl value for the specified key
 
 ```
+Sets the specified ttl value for the specified key
+
 USAGE
   $ nim key-value expire KEY TTL
 
@@ -80,13 +85,15 @@ ALIASES
   $ nim kv expire
 ```
 
-_See code: [src/commands/key-value/expire.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/key-value/expire.ts)_
+_See code: [src/commands/key-value/expire.ts](https://github.com/nimbella/nimbella-cli/blob/v1.10.2/src/commands/key-value/expire.ts)_
 
 ## `nim key-value get KEY`
 
 Get Value for a Key
 
 ```
+Get Value for a Key
+
 USAGE
   $ nim key-value get KEY
 
@@ -102,13 +109,15 @@ ALIASES
   $ nim kv get
 ```
 
-_See code: [src/commands/key-value/get.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/key-value/get.ts)_
+_See code: [src/commands/key-value/get.ts](https://github.com/nimbella/nimbella-cli/blob/v1.10.2/src/commands/key-value/get.ts)_
 
 ## `nim key-value getMany [KEYPREFIX] [STARTINDEX] [COUNT]`
 
 Gets values for given Keys
 
 ```
+Gets values for given Keys
+
 USAGE
   $ nim key-value getMany [KEYPREFIX] [STARTINDEX] [COUNT]
 
@@ -127,13 +136,15 @@ ALIASES
   $ nim kv getmany
 ```
 
-_See code: [src/commands/key-value/getMany.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/key-value/getMany.ts)_
+_See code: [src/commands/key-value/getMany.ts](https://github.com/nimbella/nimbella-cli/blob/v1.10.2/src/commands/key-value/getMany.ts)_
 
 ## `nim key-value list [PREFIX]`
 
 Lists Keys from Key Value Store
 
 ```
+Lists Keys from Key Value Store
+
 USAGE
   $ nim key-value list [PREFIX]
 
@@ -150,13 +161,15 @@ ALIASES
   $ nim kv list
 ```
 
-_See code: [src/commands/key-value/list.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/key-value/list.ts)_
+_See code: [src/commands/key-value/list.ts](https://github.com/nimbella/nimbella-cli/blob/v1.10.2/src/commands/key-value/list.ts)_
 
 ## `nim key-value llen KEY`
 
 Returns the length of the list stored at key. If a key does not exist, it is interpreted as an empty list and 0 is returned. An error is returned when the value stored at key is not a list.
 
 ```
+Returns the length of the list stored at key. If a key does not exist, it is interpreted as an empty list and 0 is returned. An error is returned when the value stored at key is not a list.
+
 USAGE
   $ nim key-value llen KEY
 
@@ -172,13 +185,15 @@ ALIASES
   $ nim kv llen
 ```
 
-_See code: [src/commands/key-value/llen.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/key-value/llen.ts)_
+_See code: [src/commands/key-value/llen.ts](https://github.com/nimbella/nimbella-cli/blob/v1.10.2/src/commands/key-value/llen.ts)_
 
 ## `nim key-value lrange KEY START STOP`
 
 Returns the specified elements of the list stored at key. The offsets start and stop are zero-based indexes, with 0 being the first element of the list, 1 being the next element and so on.
 
 ```
+Returns the specified elements of the list stored at key. The offsets start and stop are zero-based indexes, with 0 being the first element of the list, 1 being the next element and so on.
+
 USAGE
   $ nim key-value lrange KEY START STOP
 
@@ -196,13 +211,15 @@ ALIASES
   $ nim kv lrange
 ```
 
-_See code: [src/commands/key-value/lrange.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/key-value/lrange.ts)_
+_See code: [src/commands/key-value/lrange.ts](https://github.com/nimbella/nimbella-cli/blob/v1.10.2/src/commands/key-value/lrange.ts)_
 
 ## `nim key-value rpush KEY VALUE`
 
 Insert all the specified values at the tail of the list stored at key. It is created as an empty list before performing the push operation if the key does not exist. An error is returned when key holds such a value that is not a list
 
 ```
+Insert all the specified values at the tail of the list stored at key. It is created as an empty list before performing the push operation if the key does not exist. An error is returned when key holds such a value that is not a list
+
 USAGE
   $ nim key-value rpush KEY VALUE
 
@@ -219,13 +236,15 @@ ALIASES
   $ nim kv rpush
 ```
 
-_See code: [src/commands/key-value/rpush.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/key-value/rpush.ts)_
+_See code: [src/commands/key-value/rpush.ts](https://github.com/nimbella/nimbella-cli/blob/v1.10.2/src/commands/key-value/rpush.ts)_
 
 ## `nim key-value set KEY VALUE`
 
 Sets the specified value at the specified key
 
 ```
+Sets the specified value at the specified key
+
 USAGE
   $ nim key-value set KEY VALUE
 
@@ -243,13 +262,15 @@ ALIASES
   $ nim kv add
 ```
 
-_See code: [src/commands/key-value/set.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/key-value/set.ts)_
+_See code: [src/commands/key-value/set.ts](https://github.com/nimbella/nimbella-cli/blob/v1.10.2/src/commands/key-value/set.ts)_
 
 ## `nim key-value setMany [KEYPREFIX] [VALUEPREFIX] [STARTINDEX] [COUNT]`
 
 Set Value for a Key
 
 ```
+Set Value for a Key
+
 USAGE
   $ nim key-value setMany [KEYPREFIX] [VALUEPREFIX] [STARTINDEX] [COUNT]
 
@@ -269,13 +290,15 @@ ALIASES
   $ nim kv setmany
 ```
 
-_See code: [src/commands/key-value/setMany.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/key-value/setMany.ts)_
+_See code: [src/commands/key-value/setMany.ts](https://github.com/nimbella/nimbella-cli/blob/v1.10.2/src/commands/key-value/setMany.ts)_
 
 ## `nim key-value ttl KEY`
 
 Get ttl value for a Key
 
 ```
+Get ttl value for a Key
+
 USAGE
   $ nim key-value ttl KEY
 
@@ -291,4 +314,4 @@ ALIASES
   $ nim kv ttl
 ```
 
-_See code: [src/commands/key-value/ttl.ts](https://github.com/nimbella/nimbella-cli/blob/v1.9.3/src/commands/key-value/ttl.ts)_
+_See code: [src/commands/key-value/ttl.ts](https://github.com/nimbella/nimbella-cli/blob/v1.10.2/src/commands/key-value/ttl.ts)_

@@ -10,6 +10,8 @@ interact with Nimbella Commander
 interact with Nimbella Commander
 
 ```
+interact with Nimbella Commander
+
 USAGE
   $ nim commander
 
