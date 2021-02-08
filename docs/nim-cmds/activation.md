@@ -23,7 +23,7 @@ OPTIONS
   -g, --logs               Emit only the logs, stripped of time stamps and stream identifier
   -i, --insecure           bypass certificate check
   -l, --last               Fetch the most recent activation (default)
-  -n, --limit=limit        [default: 1] Fetch the last LIMIT activation (up to 200)
+  -q, --quiet              Suppress last activation information header
   -r, --result             Emit only the result
   -s, --skip=skip          SKIP number of activations
   -u, --auth=auth          whisk auth
@@ -37,7 +37,7 @@ OPTIONS
   --version                Show version
 ```
 
-_See code: [src/commands/activation/get.ts](https://github.com/nimbella/nimbella-cli/blob/v1.10.2/src/commands/activation/get.ts)_
+_See code: [src/commands/activation/get.ts](https://github.com/nimbella/nimbella-cli/blob/v1.13.0/src/commands/activation/get.ts)_
 
 ## `nim activation list [ACTIVATION_NAME]`
 
@@ -69,7 +69,7 @@ OPTIONS
   --version                Show version
 ```
 
-_See code: [src/commands/activation/list.ts](https://github.com/nimbella/nimbella-cli/blob/v1.10.2/src/commands/activation/list.ts)_
+_See code: [src/commands/activation/list.ts](https://github.com/nimbella/nimbella-cli/blob/v1.13.0/src/commands/activation/list.ts)_
 
 ## `nim activation logs [ACTIVATIONID]`
 
@@ -104,7 +104,7 @@ OPTIONS
   --version                Show version
 ```
 
-_See code: [src/commands/activation/logs.ts](https://github.com/nimbella/nimbella-cli/blob/v1.10.2/src/commands/activation/logs.ts)_
+_See code: [src/commands/activation/logs.ts](https://github.com/nimbella/nimbella-cli/blob/v1.13.0/src/commands/activation/logs.ts)_
 
 ## `nim activation result [ACTIVATIONID]`
 
@@ -121,6 +121,7 @@ OPTIONS
   -i, --insecure           bypass certificate check
   -l, --last               Fetch the most recent activation result (default)
   -n, --limit=limit        [default: 1] Fetch the last LIMIT activation results (up to 200)
+  -q, --quiet              Suppress last activation information header
   -s, --skip=skip          SKIP number of activations
   -u, --auth=auth          whisk auth
   -v, --verbose            Verbose output
@@ -133,4 +134,4 @@ OPTIONS
   --version                Show version
 ```
 
-_See code: [src/commands/activation/result.ts](https://github.com/nimbella/nimbella-cli/blob/v1.10.2/src/commands/activation/result.ts)_
+_See code: [src/commands/activation/result.ts](https://github.com/nimbella/nimbella-cli/blob/v1.13.0/src/commands/activation/result.ts)_
