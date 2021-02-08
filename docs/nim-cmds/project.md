@@ -5,6 +5,7 @@ manage and deploy Nimbella projects
 
 * [`nim project create [PROJECT]`](#nim-project-create-project)
 * [`nim project deploy [PROJECTS]`](#nim-project-deploy-projects)
+* [`nim project serve-web LOCATION`](#nim-project-serve-web-location)
 * [`nim project watch [PROJECTS]`](#nim-project-watch-projects)
 
 ## `nim project create [PROJECT]`
@@ -29,7 +30,7 @@ OPTIONS
   --help                                                                         Show help
 ```
 
-_See code: [src/commands/project/create.ts](https://github.com/nimbella/nimbella-cli/blob/v1.10.2/src/commands/project/create.ts)_
+_See code: [src/commands/project/create.ts](https://github.com/nimbella/nimbella-cli/blob/v1.13.0/src/commands/project/create.ts)_
 
 ## `nim project deploy [PROJECTS]`
 
@@ -64,7 +65,29 @@ OPTIONS
   --yarn                 Use yarn instead of npm for node builds
 ```
 
-_See code: [src/commands/project/deploy.ts](https://github.com/nimbella/nimbella-cli/blob/v1.10.2/src/commands/project/deploy.ts)_
+_See code: [src/commands/project/deploy.ts](https://github.com/nimbella/nimbella-cli/blob/v1.13.0/src/commands/project/deploy.ts)_
+
+## `nim project serve-web LOCATION`
+
+Serves content from the local Web folder, proxying API requests to given/current namespace
+
+```
+Serves content from the local Web folder, proxying API requests to given/current namespace
+
+USAGE
+  $ nim project serve-web LOCATION
+
+ARGUMENTS
+  LOCATION  [default: ./web] The location of web content
+
+OPTIONS
+  -v, --verbose          Greater detail in error messages
+  --apihost=apihost      API host of the namespace
+  --help                 Show help
+  --namespace=namespace  The namespace to proxy (current namespace if omitted)
+```
+
+_See code: [src/commands/project/serve-web.ts](https://github.com/nimbella/nimbella-cli/blob/v1.13.0/src/commands/project/serve-web.ts)_
 
 ## `nim project watch [PROJECTS]`
 
@@ -96,4 +119,4 @@ OPTIONS
   --yarn                 Use yarn instead of npm for node builds
 ```
 
-_See code: [src/commands/project/watch.ts](https://github.com/nimbella/nimbella-cli/blob/v1.10.2/src/commands/project/watch.ts)_
+_See code: [src/commands/project/watch.ts](https://github.com/nimbella/nimbella-cli/blob/v1.13.0/src/commands/project/watch.ts)_

@@ -51,7 +51,7 @@ OPTIONS
   --web-secure=web-secure                secure the web action (valid values are true, false, or any string)
 ```
 
-_See code: [src/commands/action/create.ts](https://github.com/nimbella/nimbella-cli/blob/v1.10.2/src/commands/action/create.ts)_
+_See code: [src/commands/action/create.ts](https://github.com/nimbella/nimbella-cli/blob/v1.13.0/src/commands/action/create.ts)_
 
 ## `nim action delete ACTIONNAME`
 
@@ -77,7 +77,7 @@ OPTIONS
   --version                Show version
 ```
 
-_See code: [src/commands/action/delete.ts](https://github.com/nimbella/nimbella-cli/blob/v1.10.2/src/commands/action/delete.ts)_
+_See code: [src/commands/action/delete.ts](https://github.com/nimbella/nimbella-cli/blob/v1.13.0/src/commands/action/delete.ts)_
 
 ## `nim action get ACTIONNAME`
 
@@ -90,24 +90,25 @@ USAGE
   $ nim action get ACTIONNAME
 
 OPTIONS
-  -E, --save-env=save-env  save environment variables to FILE as key-value pairs
-  -c, --code               show action code (only works if code is not a zip file
-  -i, --insecure           bypass certificate check
-  -r, --url                get action url
-  -u, --auth=auth          whisk auth
-  -v, --verbose            Verbose output
-  --apihost=apihost        whisk API host
-  --apiversion=apiversion  whisk API version
-  --cert=cert              client cert
-  --debug=debug            Debug level output
-  --help                   Show help
-  --key=key                client key
-  --save                   save action code to file corresponding with action name
-  --save-as=save-as        file to save action code to
-  --version                Show version
+  -E, --save-env=save-env            save environment variables to FILE as key-value pairs
+  -J, --save-env-json=save-env-json  save environment variables to FILE as JSON
+  -c, --code                         show action code (only works if code is not a zip file)
+  -i, --insecure                     bypass certificate check
+  -r, --url                          get action url
+  -u, --auth=auth                    whisk auth
+  -v, --verbose                      Verbose output
+  --apihost=apihost                  whisk API host
+  --apiversion=apiversion            whisk API version
+  --cert=cert                        client cert
+  --debug=debug                      Debug level output
+  --help                             Show help
+  --key=key                          client key
+  --save                             save action code to file corresponding with action name
+  --save-as=save-as                  file to save action code to
+  --version                          Show version
 ```
 
-_See code: [src/commands/action/get.ts](https://github.com/nimbella/nimbella-cli/blob/v1.10.2/src/commands/action/get.ts)_
+_See code: [src/commands/action/get.ts](https://github.com/nimbella/nimbella-cli/blob/v1.13.0/src/commands/action/get.ts)_
 
 ## `nim action invoke ACTIONNAME`
 
@@ -137,7 +138,7 @@ OPTIONS
   --web                        Invoke as a web action, show result as web page
 ```
 
-_See code: [src/commands/action/invoke.ts](https://github.com/nimbella/nimbella-cli/blob/v1.10.2/src/commands/action/invoke.ts)_
+_See code: [src/commands/action/invoke.ts](https://github.com/nimbella/nimbella-cli/blob/v1.13.0/src/commands/action/invoke.ts)_
 
 ## `nim action list [PACKAGENAME]`
 
@@ -168,7 +169,7 @@ OPTIONS
   --version                Show version
 ```
 
-_See code: [src/commands/action/list.ts](https://github.com/nimbella/nimbella-cli/blob/v1.10.2/src/commands/action/list.ts)_
+_See code: [src/commands/action/list.ts](https://github.com/nimbella/nimbella-cli/blob/v1.13.0/src/commands/action/list.ts)_
 
 ## `nim action update ACTIONNAME [ACTIONPATH]`
 
@@ -211,4 +212,4 @@ OPTIONS
   --web-secure=web-secure                secure the web action (valid values are true, false, or any string)
 ```
 
-_See code: [src/commands/action/update.ts](https://github.com/nimbella/nimbella-cli/blob/v1.10.2/src/commands/action/update.ts)_
+_See code: [src/commands/action/update.ts](https://github.com/nimbella/nimbella-cli/blob/v1.13.0/src/commands/action/update.ts)_

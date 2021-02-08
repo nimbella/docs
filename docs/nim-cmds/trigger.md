@@ -41,7 +41,7 @@ OPTIONS
   --version                              Show version
 ```
 
-_See code: [src/commands/trigger/create.ts](https://github.com/nimbella/nimbella-cli/blob/v1.10.2/src/commands/trigger/create.ts)_
+_See code: [src/commands/trigger/create.ts](https://github.com/nimbella/nimbella-cli/blob/v1.13.0/src/commands/trigger/create.ts)_
 
 ## `nim trigger delete TRIGGERPATH`
 
@@ -69,7 +69,7 @@ OPTIONS
   --version                Show version
 ```
 
-_See code: [src/commands/trigger/delete.ts](https://github.com/nimbella/nimbella-cli/blob/v1.10.2/src/commands/trigger/delete.ts)_
+_See code: [src/commands/trigger/delete.ts](https://github.com/nimbella/nimbella-cli/blob/v1.13.0/src/commands/trigger/delete.ts)_
 
 ## `nim trigger fire TRIGGERNAME`
 
@@ -99,7 +99,7 @@ OPTIONS
   --version                    Show version
 ```
 
-_See code: [src/commands/trigger/fire.ts](https://github.com/nimbella/nimbella-cli/blob/v1.10.2/src/commands/trigger/fire.ts)_
+_See code: [src/commands/trigger/fire.ts](https://github.com/nimbella/nimbella-cli/blob/v1.13.0/src/commands/trigger/fire.ts)_
 
 ## `nim trigger get TRIGGERPATH`
 
@@ -127,7 +127,7 @@ OPTIONS
   --version                Show version
 ```
 
-_See code: [src/commands/trigger/get.ts](https://github.com/nimbella/nimbella-cli/blob/v1.10.2/src/commands/trigger/get.ts)_
+_See code: [src/commands/trigger/get.ts](https://github.com/nimbella/nimbella-cli/blob/v1.13.0/src/commands/trigger/get.ts)_
 
 ## `nim trigger list`
 
@@ -158,7 +158,7 @@ OPTIONS
   --version                Show version
 ```
 
-_See code: [src/commands/trigger/list.ts](https://github.com/nimbella/nimbella-cli/blob/v1.10.2/src/commands/trigger/list.ts)_
+_See code: [src/commands/trigger/list.ts](https://github.com/nimbella/nimbella-cli/blob/v1.13.0/src/commands/trigger/list.ts)_
 
 ## `nim trigger update TRIGGERNAME`
 
@@ -190,4 +190,4 @@ OPTIONS
   --version                              Show version
 ```
 
-_See code: [src/commands/trigger/update.ts](https://github.com/nimbella/nimbella-cli/blob/v1.10.2/src/commands/trigger/update.ts)_
+_See code: [src/commands/trigger/update.ts](https://github.com/nimbella/nimbella-cli/blob/v1.13.0/src/commands/trigger/update.ts)_
