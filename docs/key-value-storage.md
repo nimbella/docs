@@ -33,7 +33,7 @@ A KV behaves like a database where you can create keys, apply values to those ke
 
 In this visual example, you can store user info, such as their City, State, and Country, and apply the correct values to them. This allows you to keep track of data and request the data when needed.
 
-<img alt="Docusaurus with Keytar" src={useBaseUrl('static/img/kv-storage-ex.png')} />
+<img alt="Nimbella Key-Value Storage Example" src={useBaseUrl('/img/kv-storage-ex.png')} />
 
 The Nimbella KV uses Redis as the underlying implantation. Redis is data structure store that is used as a database for your actions.
 
