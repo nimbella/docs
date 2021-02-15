@@ -13,12 +13,17 @@ With the Nimbella CLI, you can create a project template that you can use to ins
 To create a project template, run this command in your command prompt:
 
 ```shell
-nim project create folder_name
+nim project create <project-name>
 ```
 
-After running this command in your command prompt, you should see a message saying your project folder is available.
+After running this command in your command prompt, you will see a message stating your project is now available.
+The message is similar to the following text, with your chosen project name replacing the placeholder `<project-name>` shown below.
 
-<img alt="Nimbella Project Create Example" src={useBaseUrl('/img/nim-project-create-ex.png')} />
+```
+A sample project called '<project-name>' was created for you.
+You may deploy it by running the command shown on the next line:
+  nim project deploy <project-name>
+```
 
 ### Creating a YAML file for your project
 
