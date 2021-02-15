@@ -36,4 +36,4 @@ nim project deploy github:nimbella/demo-projects/visits
 
 After you run the command, copy and paste your DNS domain into your browser (`<namespace>-host.nimbella.io`).
 
-<img alt="Docusaurus with Keytar" src={useBaseUrl('/static/img/deploy-with-github-visits.gif')} />
+<img alt="Deploy From GitHub" src={useBaseUrl('/img/deploy-with-github-visits.gif')} />
