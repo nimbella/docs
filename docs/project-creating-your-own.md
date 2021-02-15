@@ -18,7 +18,7 @@ nim project create folder_name
 
 After running this command in your command prompt, you should see a message saying your project folder is available.
 
-<img alt="Docusaurus with Keytar" src={useBaseUrl('static/img/nim-project-create-ex.png')} />
+<img alt="Nimbella Project Create Example" src={useBaseUrl('/img/nim-project-create-ex.png')} />
 
 ### Creating a YAML file for your project
 
