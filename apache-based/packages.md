@@ -59,7 +59,7 @@ $ nim package get /my-namespace/demo
   "binding": {},
   "feeds": [],
   "name": "demo",
-  "namespace": "my-naespace",
+  "namespace": "my-namespace",
   "parameters": [],
   "publish": false,
   "updated": 1589136658325,

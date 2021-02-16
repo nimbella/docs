@@ -25,7 +25,7 @@ In the `nim` CLI, create the `demo` package:
 ```bash
 $ nim package create demo
 ```
-**Note:** Sucessful completion of any `create` command has no console ouput.
+**Note:** Successful completion of any `create` command has no console output.
 
 Then create a `hello` action in the `demo` package in your namespace. Use the `--web` flag with a value of `true` or `yes`. The following procedures returns a URL that makes the action accessible via the REST interface without the need for credentials.
 
@@ -182,7 +182,7 @@ All web actions, when invoked, receive one of the following additional HTTP requ
 | `__ow_method` | string | The HTTP method of the request. |
 | `__ow_headers` | map string to string | The request headers. |
 | `__ow_path` | string | The unmatched path of the request. (Matching stops after consuming the action extension.) |
-| `__ow_user` | string | The namespace identifying the Nimbella authenticated subject. <br/>The `__ow_user` property is only present when the web action is annotated to require authentication and allows a web action to implement its own authorization policy. See the [Apache OpenWnihsk document on annotations](https://github.com/apache/openwhisk/blob/master/docs/annotations.md/#annotations-specific-to-web-actions).|
+| `__ow_user` | string | The namespace identifying the Nimbella authenticated subject. <br/>The `__ow_user` property is only present when the web action is annotated to require authentication and allows a web action to implement its own authorization policy. See the [Apache OpenWhisk document on annotations](https://github.com/apache/openwhisk/blob/master/docs/annotations.md/#annotations-specific-to-web-actions).|
 | `__ow_body` | string | The request body entity: a base64-encoded string when content is binary or JSON object/array, otherwise a plain string. <br/>The `__ow_body` property is present either when handling "raw" HTTP requests, or when the HTTP request entity is not a JSON object or form data. |
 | `__ow_query` | string | The query parameters from the request as an unparsed string. <br/>The `__ow_query` property is available only when a web action elects to handle the ["raw" HTTP request](#raw-http-handling). It is a string containing the query parameters parsed from the URI (separated by `&`).|
 

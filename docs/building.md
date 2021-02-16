@@ -42,7 +42,7 @@ Project `qrcode` includes a Node.js function in a single source file. This funct
 
 ```shell
 > git clone
-> cd demo-projets
+> cd demo-projects
 ```
 
 Here is a part of the project layout:

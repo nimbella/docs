@@ -54,8 +54,8 @@ After you’ve created a namespace, you can view it and information about it in 
 
 ```shell
 > nim auth list
-  Namespace            Current Storage   Redis Production Project
-✓ <your namespace>       yes     yes      yes     no      <any>
+  Namespace            Current File-Store   Key-Val Production Project
+✓ <your namespace>       yes     yes          yes     no       <any>
 ```
 
 As a new user, your credential store has only one entry, but, if you or your team acquires more namespaces, there can be multiple entries.

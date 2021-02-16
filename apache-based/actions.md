@@ -406,7 +406,7 @@ Here's the meaning of each column in the list:
 | `Status` | The outcome of the invocation. For an explanation of the various statuses, see the description of the `statusCode` below. |
 | `Kind` | The runtime or action type |
 | `Version` | The version of the action. For information about versioning, see the [CLI Command Line guide](https://nimbella.io/downloads/nim/nim.html#recordkeeping-in-your-local-project).
-| `Activation ID` | An activation ID that can be used to retrive the result using the `nim activation get`, `nim activation result` and `nim activation logs` commands. |
+| `Activation ID` | An activation ID that can be used to retrieve the result using the `nim activation get`, `nim activation result` and `nim activation logs` commands. |
 | `Start` | An indication of the latency, i.e. if the runtime container was cold or warm started. |
 | `Duration` | Time taken to execute the invocation. |
 | `Entity` | The fully qualified name of entity that was invoked. |
@@ -515,7 +515,7 @@ Code associated with an existing action may be retrieved and saved locally. Savi
 
 ### List actions
 
-List all the actions that you have created with the following commnand:
+List all the actions that you have created with the following command:
 
 ```
 nim action list
