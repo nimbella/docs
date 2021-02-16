@@ -50,7 +50,7 @@ The file stores are also different in several ways.
 
 - Only the web store provides permanent public URLs to its files (as opposed to time-limited signed URLs).  It is intended to hold the front end of your application.
 - The web store is directly provisioned from a Nimbella project when you issue `nim project deploy`.  There is no direct provisioning of the data store from a project.
-- Files in the web store are connected to a CDN so that their delivery as web content can be done efficiently.  The cacheing policy is controlled at the time you deploy the content as described in [Nimbella deployer documentation](configuration.md#specifying-cache-behavior)
+- Files in the web store are connected to a CDN so that their delivery as web content can be done efficiently.  The caching policy is controlled at the time you deploy the content as described in [Nimbella deployer documentation](configuration.md#specifying-cache-behavior)
 
 ### Using a file store inside actions
 

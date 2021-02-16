@@ -23,7 +23,7 @@ The `activation list` command will list the recent activations that have occurre
 
 You can click on the individual IDs, which will automatically run `activation get` on them.
 
-<img alt="activationed list id clicked on" src={useBaseUrl('/static/img/activation-list-id-clicked.gif')} />
+<img alt="activation list id clicked on" src={useBaseUrl('/static/img/activation-list-id-clicked.gif')} />
 
 ```
 activation get [activation ID]

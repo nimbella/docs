@@ -8,7 +8,7 @@ sidebar_label: Tieing Namespaces to Projects
 
 There is no _required_ mapping between projects and namespaces.  However, you will want to decide on the mapping you want and how to enforce that mapping within a team.
 
-The Nimbella CLI provides some enforcement assistance for one commonly occuring use case, which is one in which
+The Nimbella CLI provides some enforcement assistance for one commonly occurring use case, which is one in which
 
 - each namespace belongs to a project
 - a project can deploy to one or two namespaces (one for testing and one for production).
@@ -29,9 +29,9 @@ Either `test` or `production` can be omitted.  When you deploy the project
 Once you have deployed the project to a namespace, it will record its ownership of the namespace in the credential store.  It also records the role of the namespace (test or production).  Once this happens, other projects will not be able to deploy to it.  You can observe the results in `nim auth list`.
 
 ```shell
-  Namespace            Current Storage   Redis Production Project
-  johndoeg-5skkrmhfzyo     no     yes     yes      no     mygithub/myrepo/myproject
-  johndoeg-grinjpsjnuh     no     yes     yes     yes     mygithub/myrepo/myproject
+  Namespace            Current File-Store   Key-Val Production Project
+  johndoeg-5skkrmhfzyo     no     yes         yes      no     mygithub/myrepo/myproject
+  johndoeg-grinjpsjnuh     no     yes         yes     yes     mygithub/myrepo/myproject
 ```
 
 Be aware that this enforcement is purely local.  In teams, consistent enforcement requires committing the project so that every team member uses the same `project.yml`.  The ownership must be re-established (by deploying the project) when switching machines or when a new team member first begins working in the project.
