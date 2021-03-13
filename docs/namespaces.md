@@ -41,8 +41,8 @@ This will connect the tool to your account (it may or may not ask for identifica
 
 A typical namespace is provisioned with the following:
 
-*   A web content area and an object storage area.  These are always provided as a pair and summarized as 'Storage' when presented in a list.
-*   A [Redis](https://redis.io) instance for storing key-value pairs
+*   A web content [file store](file-stores.md), and a second file store for data storage.  These are always provided as a pair and summarized as 'File-Store' when presented in a list.
+*   A [key-value store](key-value-storage.md) implemented using a [Redis](https://redis.io) instance.
 *   A DNS domain name for web content
 *   A set of OpenWhisk resources
 
@@ -64,8 +64,8 @@ Here’s more information about the table displayed in the response:
 *   The **Current** column displays `yes` for exactly one namespace.
     - The Nimbella deployer will deploy this namespace in the absence of other directives.
     - This entry is also marked by a check mark for added emphasis
-*   The **Storage** column indicates whether the namespace has provision for web content storage as discussed in [Adding static web content](web-content.md). There is also a second object storage bucket available for general use, not connected to the web.
-*   The **Redis** column indicates whether the namespace has a Redis key-value storage instance available for use by actions.
+*   The **File-Store** column indicates whether the namespace has provision for web content storage as discussed in [Adding static web content](web-content.md). There is also a second object storage bucket available for general use, not connected to the web.
+*   The **Key-Val** column indicates whether the namespace has a Redis key-value storage instance available for use by actions.
 *   The **Production** and **Project** columns become meaningful as you begin to define Nimbella [projects](projects.md) and wish to [tie namespaces to projects](tieing-namespaces-to-projects.md).
 
 ### Create and manage multiple namespaces
