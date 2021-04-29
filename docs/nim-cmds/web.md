@@ -28,7 +28,7 @@ OPTIONS
   --namespace=namespace  The namespace to clean (current namespace if omitted)
 ```
 
-_See code: [src/commands/web/clean.ts](https://github.com/nimbella/nimbella-cli/blob/v1.13.0/src/commands/web/clean.ts)_
+_See code: [src/commands/web/clean.ts](https://github.com/nimbella/nimbella-cli/blob/v1.14.0/src/commands/web/clean.ts)_
 
 ## `nim web create WEBCONTENTPATH`
 
@@ -55,7 +55,7 @@ ALIASES
   $ nim web add
 ```
 
-_See code: [src/commands/web/create.ts](https://github.com/nimbella/nimbella-cli/blob/v1.13.0/src/commands/web/create.ts)_
+_See code: [src/commands/web/create.ts](https://github.com/nimbella/nimbella-cli/blob/v1.14.0/src/commands/web/create.ts)_
 
 ## `nim web delete WEBCONTENTNAME`
 
@@ -77,7 +77,7 @@ OPTIONS
   --namespace=namespace  The namespace in which to delete content (current namespace if omitted)
 ```
 
-_See code: [src/commands/web/delete.ts](https://github.com/nimbella/nimbella-cli/blob/v1.13.0/src/commands/web/delete.ts)_
+_See code: [src/commands/web/delete.ts](https://github.com/nimbella/nimbella-cli/blob/v1.14.0/src/commands/web/delete.ts)_
 
 ## `nim web get WEBCONTENTNAME DESTINATION`
 
@@ -105,7 +105,7 @@ OPTIONS
   --saveAs=saveAs        Saves content on file system with the given name
 ```
 
-_See code: [src/commands/web/get.ts](https://github.com/nimbella/nimbella-cli/blob/v1.13.0/src/commands/web/get.ts)_
+_See code: [src/commands/web/get.ts](https://github.com/nimbella/nimbella-cli/blob/v1.14.0/src/commands/web/get.ts)_
 
 ## `nim web list [PREFIX]`
 
@@ -129,7 +129,7 @@ OPTIONS
   --namespace=namespace  The namespace to list web content from (current namespace if omitted)
 ```
 
-_See code: [src/commands/web/list.ts](https://github.com/nimbella/nimbella-cli/blob/v1.13.0/src/commands/web/list.ts)_
+_See code: [src/commands/web/list.ts](https://github.com/nimbella/nimbella-cli/blob/v1.14.0/src/commands/web/list.ts)_
 
 ## `nim web update WEBCONTENTPATH`
 
@@ -153,4 +153,4 @@ OPTIONS
   --namespace=namespace          The namespace in which to update content (current namespace if omitted)
 ```
 
-_See code: [src/commands/web/update.ts](https://github.com/nimbella/nimbella-cli/blob/v1.13.0/src/commands/web/update.ts)_
+_See code: [src/commands/web/update.ts](https://github.com/nimbella/nimbella-cli/blob/v1.14.0/src/commands/web/update.ts)_

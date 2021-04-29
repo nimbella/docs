@@ -24,4 +24,4 @@ OPTIONS
   --runtimes     List the supported runtimes
 ```
 
-_See code: [src/commands/info.ts](https://github.com/nimbella/nimbella-cli/blob/v1.13.0/src/commands/info.ts)_
+_See code: [src/commands/info.ts](https://github.com/nimbella/nimbella-cli/blob/v1.14.0/src/commands/info.ts)_

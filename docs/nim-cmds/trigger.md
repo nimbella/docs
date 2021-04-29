@@ -41,7 +41,7 @@ OPTIONS
   --version                              Show version
 ```
 
-_See code: [src/commands/trigger/create.ts](https://github.com/nimbella/nimbella-cli/blob/v1.13.0/src/commands/trigger/create.ts)_
+_See code: [src/commands/trigger/create.ts](https://github.com/nimbella/nimbella-cli/blob/v1.14.0/src/commands/trigger/create.ts)_
 
 ## `nim trigger delete TRIGGERPATH`
 
@@ -57,6 +57,7 @@ ARGUMENTS
   TRIGGERPATH  The name of the trigger, in the format /NAMESPACE/NAME
 
 OPTIONS
+  -f, --force              Just do it, omitting confirmatory prompt
   -i, --insecure           bypass certificate check
   -u, --auth=auth          whisk auth
   -v, --verbose            Verbose output
@@ -69,7 +70,7 @@ OPTIONS
   --version                Show version
 ```
 
-_See code: [src/commands/trigger/delete.ts](https://github.com/nimbella/nimbella-cli/blob/v1.13.0/src/commands/trigger/delete.ts)_
+_See code: [src/commands/trigger/delete.ts](https://github.com/nimbella/nimbella-cli/blob/v1.14.0/src/commands/trigger/delete.ts)_
 
 ## `nim trigger fire TRIGGERNAME`
 
@@ -99,7 +100,7 @@ OPTIONS
   --version                    Show version
 ```
 
-_See code: [src/commands/trigger/fire.ts](https://github.com/nimbella/nimbella-cli/blob/v1.13.0/src/commands/trigger/fire.ts)_
+_See code: [src/commands/trigger/fire.ts](https://github.com/nimbella/nimbella-cli/blob/v1.14.0/src/commands/trigger/fire.ts)_
 
 ## `nim trigger get TRIGGERPATH`
 
@@ -127,7 +128,7 @@ OPTIONS
   --version                Show version
 ```
 
-_See code: [src/commands/trigger/get.ts](https://github.com/nimbella/nimbella-cli/blob/v1.13.0/src/commands/trigger/get.ts)_
+_See code: [src/commands/trigger/get.ts](https://github.com/nimbella/nimbella-cli/blob/v1.14.0/src/commands/trigger/get.ts)_
 
 ## `nim trigger list`
 
@@ -158,7 +159,7 @@ OPTIONS
   --version                Show version
 ```
 
-_See code: [src/commands/trigger/list.ts](https://github.com/nimbella/nimbella-cli/blob/v1.13.0/src/commands/trigger/list.ts)_
+_See code: [src/commands/trigger/list.ts](https://github.com/nimbella/nimbella-cli/blob/v1.14.0/src/commands/trigger/list.ts)_
 
 ## `nim trigger update TRIGGERNAME`
 
@@ -190,4 +191,4 @@ OPTIONS
   --version                              Show version
 ```
 
-_See code: [src/commands/trigger/update.ts](https://github.com/nimbella/nimbella-cli/blob/v1.13.0/src/commands/trigger/update.ts)_
+_See code: [src/commands/trigger/update.ts](https://github.com/nimbella/nimbella-cli/blob/v1.14.0/src/commands/trigger/update.ts)_
