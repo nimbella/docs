@@ -51,7 +51,7 @@ OPTIONS
   --web-secure=web-secure                secure the web action (valid values are true, false, or any string)
 ```
 
-_See code: [src/commands/action/create.ts](https://github.com/nimbella/nimbella-cli/blob/v1.13.0/src/commands/action/create.ts)_
+_See code: [src/commands/action/create.ts](https://github.com/nimbella/nimbella-cli/blob/v1.14.0/src/commands/action/create.ts)_
 
 ## `nim action delete ACTIONNAME`
 
@@ -64,6 +64,7 @@ USAGE
   $ nim action delete ACTIONNAME
 
 OPTIONS
+  -f, --force              Just do it, omitting confirmatory prompt
   -i, --insecure           bypass certificate check
   -u, --auth=auth          whisk auth
   -v, --verbose            Verbose output
@@ -77,7 +78,7 @@ OPTIONS
   --version                Show version
 ```
 
-_See code: [src/commands/action/delete.ts](https://github.com/nimbella/nimbella-cli/blob/v1.13.0/src/commands/action/delete.ts)_
+_See code: [src/commands/action/delete.ts](https://github.com/nimbella/nimbella-cli/blob/v1.14.0/src/commands/action/delete.ts)_
 
 ## `nim action get ACTIONNAME`
 
@@ -108,7 +109,7 @@ OPTIONS
   --version                          Show version
 ```
 
-_See code: [src/commands/action/get.ts](https://github.com/nimbella/nimbella-cli/blob/v1.13.0/src/commands/action/get.ts)_
+_See code: [src/commands/action/get.ts](https://github.com/nimbella/nimbella-cli/blob/v1.14.0/src/commands/action/get.ts)_
 
 ## `nim action invoke ACTIONNAME`
 
@@ -138,7 +139,7 @@ OPTIONS
   --web                        Invoke as a web action, show result as web page
 ```
 
-_See code: [src/commands/action/invoke.ts](https://github.com/nimbella/nimbella-cli/blob/v1.13.0/src/commands/action/invoke.ts)_
+_See code: [src/commands/action/invoke.ts](https://github.com/nimbella/nimbella-cli/blob/v1.14.0/src/commands/action/invoke.ts)_
 
 ## `nim action list [PACKAGENAME]`
 
@@ -169,7 +170,7 @@ OPTIONS
   --version                Show version
 ```
 
-_See code: [src/commands/action/list.ts](https://github.com/nimbella/nimbella-cli/blob/v1.13.0/src/commands/action/list.ts)_
+_See code: [src/commands/action/list.ts](https://github.com/nimbella/nimbella-cli/blob/v1.14.0/src/commands/action/list.ts)_
 
 ## `nim action update ACTIONNAME [ACTIONPATH]`
 
@@ -212,4 +213,4 @@ OPTIONS
   --web-secure=web-secure                secure the web action (valid values are true, false, or any string)
 ```
 
-_See code: [src/commands/action/update.ts](https://github.com/nimbella/nimbella-cli/blob/v1.13.0/src/commands/action/update.ts)_
+_See code: [src/commands/action/update.ts](https://github.com/nimbella/nimbella-cli/blob/v1.14.0/src/commands/action/update.ts)_

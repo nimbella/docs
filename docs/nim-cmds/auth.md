@@ -36,7 +36,7 @@ OPTIONS
   --web          Show web domain (if available)
 ```
 
-_See code: [src/commands/auth/current.ts](https://github.com/nimbella/nimbella-cli/blob/v1.13.0/src/commands/auth/current.ts)_
+_See code: [src/commands/auth/current.ts](https://github.com/nimbella/nimbella-cli/blob/v1.14.0/src/commands/auth/current.ts)_
 
 ## `nim auth export [NAMESPACE]`
 
@@ -59,7 +59,7 @@ OPTIONS
   --non-expiring     Generate non-expiring token (for functional ids and integrations)
 ```
 
-_See code: [src/commands/auth/export.ts](https://github.com/nimbella/nimbella-cli/blob/v1.13.0/src/commands/auth/export.ts)_
+_See code: [src/commands/auth/export.ts](https://github.com/nimbella/nimbella-cli/blob/v1.14.0/src/commands/auth/export.ts)_
 
 ## `nim auth github`
 
@@ -84,7 +84,7 @@ OPTIONS
   --username=username  The GitHub username when adding an account manually
 ```
 
-_See code: [src/commands/auth/github.ts](https://github.com/nimbella/nimbella-cli/blob/v1.13.0/src/commands/auth/github.ts)_
+_See code: [src/commands/auth/github.ts](https://github.com/nimbella/nimbella-cli/blob/v1.14.0/src/commands/auth/github.ts)_
 
 ## `nim auth list`
 
@@ -97,11 +97,12 @@ USAGE
   $ nim auth list
 
 OPTIONS
-  -v, --verbose  Greater detail in error messages
-  --help         Show help
+  -v, --verbose      Greater detail in error messages
+  --apihost=apihost  Only list namespaces for the specified API host
+  --help             Show help
 ```
 
-_See code: [src/commands/auth/list.ts](https://github.com/nimbella/nimbella-cli/blob/v1.13.0/src/commands/auth/list.ts)_
+_See code: [src/commands/auth/list.ts](https://github.com/nimbella/nimbella-cli/blob/v1.14.0/src/commands/auth/list.ts)_
 
 ## `nim auth login [TOKEN]`
 
@@ -126,7 +127,7 @@ ALIASES
   $ nim login
 ```
 
-_See code: [src/commands/auth/login.ts](https://github.com/nimbella/nimbella-cli/blob/v1.13.0/src/commands/auth/login.ts)_
+_See code: [src/commands/auth/login.ts](https://github.com/nimbella/nimbella-cli/blob/v1.14.0/src/commands/auth/login.ts)_
 
 ## `nim auth logout [NAMESPACE]`
 
@@ -142,6 +143,7 @@ ARGUMENTS
   NAMESPACE  The namespace(s) you are dropping
 
 OPTIONS
+  -f, --force        Just do it, omitting confirmatory prompt
   -v, --verbose      Greater detail in error messages
   --all              log out of all namespaces (or, all on the given API host)
   --apihost=apihost  API host serving the namespace(s)
@@ -151,7 +153,7 @@ ALIASES
   $ nim logout
 ```
 
-_See code: [src/commands/auth/logout.ts](https://github.com/nimbella/nimbella-cli/blob/v1.13.0/src/commands/auth/logout.ts)_
+_See code: [src/commands/auth/logout.ts](https://github.com/nimbella/nimbella-cli/blob/v1.14.0/src/commands/auth/logout.ts)_
 
 ## `nim auth refresh [NAMESPACE]`
 
@@ -172,7 +174,7 @@ OPTIONS
   --help             Show help
 ```
 
-_See code: [src/commands/auth/refresh.ts](https://github.com/nimbella/nimbella-cli/blob/v1.13.0/src/commands/auth/refresh.ts)_
+_See code: [src/commands/auth/refresh.ts](https://github.com/nimbella/nimbella-cli/blob/v1.14.0/src/commands/auth/refresh.ts)_
 
 ## `nim auth switch NAMESPACE`
 
@@ -193,4 +195,4 @@ OPTIONS
   --help             Show help
 ```
 
-_See code: [src/commands/auth/switch.ts](https://github.com/nimbella/nimbella-cli/blob/v1.13.0/src/commands/auth/switch.ts)_
+_See code: [src/commands/auth/switch.ts](https://github.com/nimbella/nimbella-cli/blob/v1.14.0/src/commands/auth/switch.ts)_

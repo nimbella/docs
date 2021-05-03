@@ -29,7 +29,7 @@ OPTIONS
   --namespace=namespace  The namespace to clean (current namespace if omitted)
 ```
 
-_See code: [src/commands/object/clean.ts](https://github.com/nimbella/nimbella-cli/blob/v1.13.0/src/commands/object/clean.ts)_
+_See code: [src/commands/object/clean.ts](https://github.com/nimbella/nimbella-cli/blob/v1.14.0/src/commands/object/clean.ts)_
 
 ## `nim object create OBJECTPATH`
 
@@ -56,7 +56,7 @@ ALIASES
   $ nim object add
 ```
 
-_See code: [src/commands/object/create.ts](https://github.com/nimbella/nimbella-cli/blob/v1.13.0/src/commands/object/create.ts)_
+_See code: [src/commands/object/create.ts](https://github.com/nimbella/nimbella-cli/blob/v1.14.0/src/commands/object/create.ts)_
 
 ## `nim object delete OBJECTNAME`
 
@@ -78,7 +78,7 @@ OPTIONS
   --namespace=namespace  The namespace to delete the object from (current namespace if omitted)
 ```
 
-_See code: [src/commands/object/delete.ts](https://github.com/nimbella/nimbella-cli/blob/v1.13.0/src/commands/object/delete.ts)_
+_See code: [src/commands/object/delete.ts](https://github.com/nimbella/nimbella-cli/blob/v1.14.0/src/commands/object/delete.ts)_
 
 ## `nim object get OBJECTNAME DESTINATION`
 
@@ -105,7 +105,7 @@ OPTIONS
   --saveAs=saveAs        Saves object on file system with the given name
 ```
 
-_See code: [src/commands/object/get.ts](https://github.com/nimbella/nimbella-cli/blob/v1.13.0/src/commands/object/get.ts)_
+_See code: [src/commands/object/get.ts](https://github.com/nimbella/nimbella-cli/blob/v1.14.0/src/commands/object/get.ts)_
 
 ## `nim object list [PREFIX]`
 
@@ -129,7 +129,7 @@ OPTIONS
   --namespace=namespace  The namespace to list objects from (current namespace if omitted)
 ```
 
-_See code: [src/commands/object/list.ts](https://github.com/nimbella/nimbella-cli/blob/v1.13.0/src/commands/object/list.ts)_
+_See code: [src/commands/object/list.ts](https://github.com/nimbella/nimbella-cli/blob/v1.14.0/src/commands/object/list.ts)_
 
 ## `nim object update OBJECTPATH`
 
@@ -152,7 +152,7 @@ OPTIONS
   --namespace=namespace          The namespace in which to update the object (current namespace if omitted)
 ```
 
-_See code: [src/commands/object/update.ts](https://github.com/nimbella/nimbella-cli/blob/v1.13.0/src/commands/object/update.ts)_
+_See code: [src/commands/object/update.ts](https://github.com/nimbella/nimbella-cli/blob/v1.14.0/src/commands/object/update.ts)_
 
 ## `nim object url OBJECTNAME`
 
@@ -176,4 +176,4 @@ OPTIONS
   --namespace=namespace        The namespace to get the object URL from (current namespace if omitted)
 ```
 
-_See code: [src/commands/object/url.ts](https://github.com/nimbella/nimbella-cli/blob/v1.13.0/src/commands/object/url.ts)_
+_See code: [src/commands/object/url.ts](https://github.com/nimbella/nimbella-cli/blob/v1.14.0/src/commands/object/url.ts)_

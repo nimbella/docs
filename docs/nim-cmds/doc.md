@@ -23,4 +23,4 @@ ALIASES
   $ nim docs
 ```
 
-_See code: [src/commands/doc.ts](https://github.com/nimbella/nimbella-cli/blob/v1.13.0/src/commands/doc.ts)_
+_See code: [src/commands/doc.ts](https://github.com/nimbella/nimbella-cli/blob/v1.14.0/src/commands/doc.ts)_
