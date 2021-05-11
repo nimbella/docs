@@ -524,7 +524,39 @@ web: <true | false | raw >
 
 #### Granting shared access to a package
 
+Normally, in order to invoke the "non-web" (`web: false`) actions of the package, the authorization header for the request must specify the same value as was used to create the action (this will be the value returned by `nim auth current --auth`).  You can open the package to any Nimbella user (though not the public at large) by setting the package `shared` property.
+
+```
+packages:
+  - name: myPackage
+    shared: true
+    ...
+    actions:
+      ...
+```
+
+The default value of this property is `false`.  When it is set to true, then the actions of the package may be invoked using any authorization token granted by Nimbella to any user.  The action will run with the identity of that user, meaning it can only access what that user is authorized to access.
+
+This feature can be usefully combined with [Setting the web property for all actions of a package](#setting-the-web-property-for-all-actions-of-a-package) with the value `false` (making all the actions non-web actions and subject to the effect of the `shared` property).
+
+To secure individual web actions (`web:true` or `web: raw`) use the [webSecure property](#the-webSecure-property)
+
 #### Package annotations
+
+It is possible to place annotations on a package.  These are distinct from action annotations and can be used to convey any kind of metadata you require at the package level.
+
+```
+packages:
+  - name: myPackage
+    annotations:
+      <name1>: <value1>
+      <name2>: <value2>
+      ...
+    actions:
+      ...
+```
+
+The deployer will add [the `deployer` annotation](#the-deployer-annotation) to a package as well as to the individual actions of the package.  The information in the package-level `deployer` annotation reflects the last time the package metadata was updated and not necessarily updates to individual actions in the package.
 
 #### Parameters and Environment for a package
 
