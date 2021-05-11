@@ -35,6 +35,12 @@ This specification covers the behavior of the deployer with emphasis on complete
         - [Overwriting existing actions](#overwriting-existing-actions)
         - [Local versus remote building](#local-versus-remote-building-actions)
     - [Sequences](#sequences)
+    - [Package properties](#package-properties)
+        - [Granting shared access to a package](#granting-shared-access-to-a-package)
+        - [Package annotations](#package-annotations)
+        - [Parameters and Environment for a package](#parameters-and-environment-for-a-package)
+        - [Ensuring a clean start for a package](#ensuring-a-clean-start-for-a-package)
+        - [Setting the web property for all actions of a package](#setting-the-web-property-for-all-actions-of-a-package)
 - [Web content](#web-content)
     - [Web content in the project tree](#web-content-in-the-project-tree)
     - [Web content in the project configuration](#web-content-in-the-project-configuration)
@@ -44,6 +50,10 @@ This specification covers the behavior of the deployer with emphasis on complete
         - [Ensuring a clean start for web content](#ensuring-a-clean-start-for-web-content)
         - [Controlling CDN cacheing behavior](#controlling-cdn-cacheing-behavior)
         - [Local versus remote building](#local-versus-remote-building-web)
+- [Setting Global Properties](#setting-global-properties)
+    - [Setting the target namespace for a project](#setting-the-target-namespace-for-a-project)
+    - [Ensuring a clean start for a project](#ensuring-a-clean-start-for-a-project)
+    - [Parameters and Environment for all packages](#parameters-and-environment-for-all-packages)
 - [Information links](#information-links)
 
 ## Project location
@@ -115,11 +125,22 @@ A project may own a namespace, prohibiting other projects from deploying to it, 
 
 There are three basic ways to deploy a project to a namespace.
 
-1. With `nim project deploy` not specifying the `--incremental` flag.  This always deploys the entire project.
+1. With `nim project deploy` not specifying the `--incremental` flag.  This always deploys the entire project, except as modified by `--include` or `--exclude` as described below.
 2. With `nim project deploy --incremental`.  This deploys the parts of the project that appear to have changed.
 3. With `nim project watch`.  This watches the project in the filesystem and runs the equivalent of `nim project deploy --incremental` each time a change is noticed.
 
-TODO add discussion of `--include` and `--exclude`.
+The portion of a project that is actually deployed is affected by the command line flags `--include` and `--exclude`.  Both of these flags accept a comma-separated list of tokens (no whitespace).  The tokens may be
+
+- the special word `web` referring to the web content of the project
+- the name of a package
+  - if the package is called `web`, you should remove ambiguity by using a trailing slash as in `web/` (a trailing slash is accepted on any package)
+  - the package name `default` is used for the actions that are not members of any package
+- a qualified action name in the form `package-name/action-name`
+  -  e.g. `printer/notify` or `default/hello`
+  -  the `default/` prefix is required for actions not in any package; otherwise, the name will be taken to be a package name
+- wildcards are _not_ supported
+
+If you specify only `--include`, then only the listed project portions are deployed.  If you specify only `--exclude`, then _all but_ the listed project portions are deployed.  If you specify both flags, the deployer first includes only what is listed in `--include` and then excludes from that list.  This allows you to include a package while excluding one or more of its actions.
 
 ## Actions
 
@@ -429,6 +450,8 @@ packages:
         clean: true
 ```
 
+The `clean` property is ignored if the action is not being deployed (e.g. as the result of an `--include` or `--exclude` flag on the command line).
+
 #### Local versus remote building (actions)
 
 When an action has [build steps](building.md), the default behavior is to build in the local file system.  However, if the build is self-contained (does not depend on artifacts outside the action directory), it is possible to request that the build be done [remotely](building.md#remote-builds), in the runtime container in which the action will run.  The flag `--remote-build` is used to request this.  
@@ -485,6 +508,29 @@ In the example above, the sequence `mySequence` consists of two actions from the
 4. If a sequence incorporates actions that are not being deployed at the same time, it is up to you to ensure that they were _previously_ deployed.  Otherwise, deployment of the sequence will fail.
 5. If a sequence incorporates actions that are in the _same namespace_ as the sequence, but are not being deployed at the same time, you will get an initial warning, after which the previous note applies.
     - This case seems likely to represent an error, but you may have good reasons to deploy the namespace from multiple projects.
+
+### Package Properties
+
+Certain aspects of deployment may be controlled at the package level rather than on individual actions.
+
+```
+shared: <boolean>
+annotations: <object>
+parameters: <object>
+environment: <object>
+clean: <boolean>
+web: <true | false | raw > 
+```
+
+#### Granting shared access to a package
+
+#### Package annotations
+
+#### Parameters and Environment for a package
+
+#### Ensuring a clean start for a package
+
+#### Setting the web property for all actions of a package
 
 ## Web Content
 
@@ -597,6 +643,8 @@ bucket:
 
 The default value for this property is `false`.
 
+The `clean` property is ignored if web content is not being deployed (e.g. as the result of an `--include` or `--exclude` flag on the command line).
+
 #### Controlling CDN cacheing behavior
 
 The web content of a project is distributed by a CDN (the particular CDN may vary by cloud provider).  Normally, the `cache-control` header of the resources that make up the content are set to suppress cacheing so that you can see changes when deploying.   To turn on cacheing you use a specific directive.
@@ -632,6 +680,23 @@ bucket:
 ```
 
 For web content that can be built either locally or remotely, do not specify either property.   Let the command line option `--remote-build` govern where the build takes place (or, when deploying from the workbench, remote will be assumed).
+
+## Setting global properties
+
+Certain behaviors of the deployer are controlled by properties or objects specified at the top level of the project configuration.  These properties are
+
+```
+targetNamespace: <string or object>
+cleanNamespace: <boolean>
+parameters: <object>
+environment: <object>
+```
+
+#### Setting the target namespace for a project
+
+#### Ensuring a clean start for a project
+
+#### Parameters and Environment for all packages
 
 ## Information Links
 
