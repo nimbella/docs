@@ -445,7 +445,7 @@ packages:
         localBuild: true
 ```
 
-Note that local builds are impossible when deploying from the workbench (and `--remote-build` is true by default there), so an action with this flag will not deploy from the workbench.
+Note that local builds are impossible when deploying from the workbench (and `--remote-build` is true by default there), so an action with this property will not deploy from the workbench.
 
 THe following forces a remote build for a specific action even when `--remote-build` is not specified.  
 
@@ -459,7 +459,7 @@ packages:
 
 Note that remote builds require the target namespace to have object storage, because the remote build feature uses the object storage capabilities of the namespace to stage the inputs to the build.
 
-For actions that can be built either locally or remotely, do not specify either flag.   Let the command line option `--remote-build` govern where the build takes place (or, when deploying from the workbench, remote will be assumed).
+For actions that can be built either locally or remotely, do not specify either property.   Let the command line option `--remote-build` govern where the build takes place (or, when deploying from the workbench, remote will be assumed).
 
 ### Sequences
 
@@ -631,7 +631,7 @@ bucket:
   ...
 ```
 
-For web content that can be built either locally or remotely, do not specify either flag.   Let the command line option `--remote-build` govern where the build takes place (or, when deploying from the workbench, remote will be assumed).
+For web content that can be built either locally or remotely, do not specify either property.   Let the command line option `--remote-build` govern where the build takes place (or, when deploying from the workbench, remote will be assumed).
 
 ## Information Links
 
