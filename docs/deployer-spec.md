@@ -599,7 +599,39 @@ The default value for this property is `false`.
 
 #### Controlling CDN cacheing behavior
 
+The web content of a project is distributed by a CDN (the particular CDN may vary by cloud provider).  Normally, the `cache-control` header of the resources that make up the content are set to suppress cacheing so that you can see changes when deploying.   To turn on cacheing you use a specific directive.
+
+```
+bucket:
+  useCache: true
+  ...
+```
+
+The default value for this property is `false`.
+
 #### Local versus remote building (web)
+
+When your web content has [build steps](building.md), the default behavior is to build in the local file system.  However, if the build is self-contained (does not depend on artifacts outside the web directory), it is possible to request that the build be done [remotely](building.md#remote-builds).  For web content, remote builds are always done in the default `nodejs` runtime container, since most web build tools are in the `nodejs` ecosystem.
+
+Some web content may note work when the build is done remotely (due to dependence on artifacts that are not contained in the action directory).  The following forces a local build for web content (even when `--remote-build` is specified).
+
+```
+bucket:
+  localBuild: true
+  ...
+```
+
+Note that local builds are impossible when deploying from the workbench (and `--remote-build` is true by default there), so web content with this property will not deploy from the workbench.
+
+Similarly, you may with to force a remote build, although this only works when the default `nodejs` runtime container suffices to support the build and the build is self-contained.
+
+```
+bucket:
+  remoteBuild: true
+  ...
+```
+
+For web content that can be built either locally or remotely, do not specify either flag.   Let the command line option `--remote-build` govern where the build takes place (or, when deploying from the workbench, remote will be assumed).
 
 ## Information Links
 
