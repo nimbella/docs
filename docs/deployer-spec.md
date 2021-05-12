@@ -522,6 +522,8 @@ clean: <boolean>
 web: <true | false | raw > 
 ```
 
+These properties can only be specified on "real" packages (with a name other than `default`).   The "default" package does not exist as such.  It is just a convention for denoting actions that are not contained in any package.
+
 #### Granting shared access to a package
 
 Normally, in order to invoke the "non-web" (`web: false`) actions of the package, the authorization header for the request must specify the same value as was used to create the action (this will be the value returned by `nim auth current --auth`).  You can open the package to any Nimbella user (though not the public at large) by setting the package `shared` property.
@@ -560,9 +562,42 @@ The deployer will add [the `deployer` annotation](#the-deployer-annotation) to a
 
 #### Parameters and Environment for a package
 
+The specification of parameters for an individual action is discussed in [Parameters and Environment](#parameters-and-environment).  If you wish to pass the same parameters in the same fashion to all of the actions of a package, you can specify `parameters` or `environment` at the package level.
+
+```
+packages:
+  - name: myPackage
+    parameters:
+      <ordinary-parameter-name>: <value>
+      ...
+    environment:
+      <environment-parameter-name>: <value>
+      ...
+    actions:
+      - name: action1
+        ...
+      - name: action2
+        ...
+```
+
+In the example sketch shown above, both `myPackage/action1` and `myPackage/action2` will receive the parameters, either via the dictionary argument (`parameters`) or via the environment (`environment`).  If `parameters` and/or `environment` are specified both at package level and on an individual action, the values specified on the action will take precedence but otherwise both sources of information will be merged.
+
 #### Ensuring a clean start for a package
 
+The `clean` property (which can be specified on [individual actions](#overwriting-existing-actions)) can also be specified at the package level.
+
+```
+packages:
+  - name: myPackage
+    clean: true
+    ...
+```
+
+The effect is to remove the entire package and all of its actions from the namespace when anything is deployed to the package.
+
 #### Setting the web property for all actions of a package
+
+The `web` property (which can be specified on [individual actions](#the-web-property) can also be specified at package level.  The effect is to set the specified value for the `web` property on all of the actions of the package.  Note that the default value of `web` is `true`.  The most useful cases, then, are setting the value to `false` or `raw`.  If the `web` property is present both at package level and on an individual action, the value specified on the action takes precedence.
 
 ## Web Content
 
