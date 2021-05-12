@@ -761,6 +761,16 @@ environment: <object>
 
 #### Setting the target namespace for a project
 
+The `targetNamespace` property in the project configuration can be used with two slightly different meanings depending on syntax.
+
+###### `targetNamespace` as a simple string
+
+This form of the `targetNamespace` property records that the project should be deployed to a particular namespace unless that target is overridden on the command line.  It does not preclude other projects from deploying to the same namespace.
+
+###### `targetNamespace` as an object with `test` and/or `production` members
+
+This form of the `targetNamespace` property records one or two namespaces that the project should be deployed to (one for testing, and/or one for production).  In addition, this form establishes _ownership_ of the namespace by the project (other projects may not deploy to it).  Enforcement of ownership is not absolute and requires some cooperation within a team.   See [project ownership of namespaces](tieing-namespaces-to-projects.md).
+
 #### Ensuring a clean start for a project
 
 #### Parameters and Environment for all packages
