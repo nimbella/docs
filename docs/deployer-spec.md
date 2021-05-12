@@ -765,15 +765,44 @@ The `targetNamespace` property in the project configuration can be used with two
 
 ###### `targetNamespace` as a simple string
 
+```
+targetNamespace: myNamespace
+```
+
 This form of the `targetNamespace` property records that the project should be deployed to a particular namespace unless that target is overridden on the command line.  It does not preclude other projects from deploying to the same namespace.
 
 ###### `targetNamespace` as an object with `test` and/or `production` members
+
+```
+targetNamespace:
+  test: myTestNamespace
+  production: myNamespace
+```
 
 This form of the `targetNamespace` property records one or two namespaces that the project should be deployed to (one for testing, and/or one for production).  In addition, this form establishes _ownership_ of the namespace by the project (other projects may not deploy to it).  Enforcement of ownership is not absolute and requires some cooperation within a team.   See [project ownership of namespaces](tieing-namespaces-to-projects.md).
 
 #### Ensuring a clean start for a project
 
+```
+cleanNamespace: true
+```
+
+This property causes the target namespace to be cleared of all web content, packages, and actions before deploying the project.  It is equivalent to specifying the `clean` property under `bucket`, under every package in the project, and under those actions that are not in any package (`package: default`).
+
 #### Parameters and Environment for all packages
+
+The specification of parameters for all of the actions of a package is discussed in [Parameters and Environment for a package](#parameters-and-environment-for-a-package).  If you wish to pass the same parameters in the same fashion to all of the actions of _all_ of the packages, you can specify `parameters` or `environment` at top level.  Unfortunately, this behavior does not extend to actions that are not in any package (`package: default`).  These actions still need to have their parameters specified explicitly.
+
+```
+parameters:
+  <ordinary-parameter-name>: <value>
+  ...
+environment:
+  <environment-parameter-name>: <value>
+  ...
+packages:
+  ...
+```
 
 ## Information Links
 
