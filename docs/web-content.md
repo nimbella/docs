@@ -49,5 +49,5 @@ As the output shows, the contents of the web directory were deployed to the web,
 **Notes:**
 
 *   For a web deployment to work correctly, the namespace entry in the credential store must include storage. See [View the Credential Store](namespaces.md#view-the-credential-store) to generate the credential store, then check to make sure the `Storage` column of the response says `yes`. The first namespace created for each user includes storage, but it’s possible to create namespaces without it.
-*   You can add [project configuration to change how your static web content is deployed](configuration.md#project-configuration-for-web-content).
+*   You can add [project configuration to change how your static web content is deployed](deployer-spec.md#web-content).
 See [an example of how to configure a project when you generate web content with a tool such as React.](configuration.md#configuration-example-for-web-content-generated-by-a-tool)
