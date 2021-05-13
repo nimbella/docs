@@ -49,9 +49,11 @@ packages:
         limits: {}
 ```
 
-All of the properties in these examples will be explained below.  You can also hand-edit _project.yml_ from scratch but having an all-defaults template to start from can be helpful.
+You can also hand-edit _project.yml_ from scratch but having an all-defaults template to start from can be helpful.
 
 The project configuration is merged with what is inferred from file and directory names, so it’s only necessary to put information in the configuration that can’t be inferred from file or directory names or for which the defaults aren’t what you want.  If you generate your _project.yml_ using `nim project create`, you can remove entries that denote defaults without changing the subsequent behavior.
+
+All of the properties in these examples are explained in [the deployer specification](deployer-spec.md).  
 
 We’ll cover configuration for packages and actions first, then configuration for web content, including an example of generated content such as a React web app. Then we’ll cover symbolic variables and file substitution.
 
@@ -68,7 +70,7 @@ packages:
         main: myMain
 ```
 
-The following sections contain a list of configuration members for [actions](#action-modifiers-allowed-in-project-yml), [packages](#package-modifiers-allowed-in-project-yml), and [global](#global-modifiers-allowed-in-project-yml). An additional configuration member is `bucket` which is documented in [Adding static web content](web-content.md).
+The details concerning how actions and packages are controlled from the configuration can be found in [the deployer specification](deployer-spec.md#actions).
 
 #### Action modifiers allowed in project.yml
 
