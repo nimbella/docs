@@ -445,7 +445,7 @@ You need not specify all limits if you only wish to specify one or two.  All thr
 
 #### Overwriting existing actions
 
-When the deployer uploads an action, but that action already exists in your namespace, the new information is merged with the old.  You will notice, in this case, that the `version` property of the action will be incremented from its previous value.  The `clean` property causes the old action to be deleted first, enabling a "clean start".
+When the deployer uploads an action, but that action already exists in your namespace, the new information is merged with the old (the same semantics as `nim action update`, rather than `nim action create`).  You will notice, in this case, that the `version` property of the action will be incremented from its previous value.  In addition, parameters and annotations from a previous incarnation are retained unless changed. The `clean` property causes the old action to be deleted first, enabling a "clean start".
 
 ```
 packages:
@@ -599,6 +599,12 @@ packages:
 ```
 
 The effect is to remove the entire package and all of its actions from the namespace when anything is deployed to the package.
+
+**Notes:**
+
+*   `clean` at the package level is not the same as specifying clean on each action of the package. At package level, the `clean` flag removes all actions from the package before deploying, even ones that are not being deployed by the present project. It also removes package parameters and annotations. The `clean` flag at the package level is only appropriate when you want the project to “own” a particular package outright.
+*   The `clean` flag on packages is ignored when the `--incremental` flag is specified.
+*   The `clean` flag on packages is also ignored when deployment of those packages is suppressed through the use of `--include` or `--exclude` flags on the command line.
 
 #### Setting the web property for all actions of a package
 
