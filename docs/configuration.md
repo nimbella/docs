@@ -53,13 +53,7 @@ You can also hand-edit _project.yml_ from scratch but having an all-defaults tem
 
 The project configuration is merged with what is inferred from file and directory names, so it’s only necessary to put information in the configuration that can’t be inferred from file or directory names or for which the defaults aren’t what you want.  If you generate your _project.yml_ using `nim project create`, you can remove entries that denote defaults without changing the subsequent behavior.
 
-All of the properties in these examples are explained in [the deployer specification](deployer-spec.md).  
-
-We’ll cover configuration for packages and actions first, then configuration for web content, including an example of generated content such as a React web app. Then we’ll cover symbolic variables and file substitution.
-
-### Project configuration for packages and actions
-
-Let’s suppose that in [the example1 project](single-action-example.md), you don’t want `hello` to be a web action and the deployer cannot determine its main entry point directly from the code. Add a _project.yml_ file such as the following:
+For example, let’s suppose that in [the example1 project](single-action-example.md), you don’t want `hello` to be a web action and the deployer cannot determine its main entry point directly from the code. Add a _project.yml_ file such as the following:
 
 ```yaml
 packages:
@@ -70,7 +64,7 @@ packages:
         main: myMain
 ```
 
-The details concerning how actions and packages are controlled from the configuration can be found in [the deployer specification](deployer-spec.md#actions).
+All properties that can be specified in `project.yml` are explained in [the deployer specification](deployer-spec.md).  
 
 ### Symbolic variables
 
