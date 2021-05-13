@@ -337,6 +337,11 @@ The `web` property translates to settings of three distinct annotations (you sho
     - `final: true`
     - `raw-http: true`
 
+The `web` modifier has the same semantics as it does in `nim action create`, except for the default. 
+
+**Note:** See also [Setting the web property for all actions of a package](#setting-the-web-property-for-all-actions-of-a-package).
+
+
 ##### The `webSecure` property
 
 The `webSecure` property of an action adds security to a web action.  For some background see [Information Links(#information-links).
