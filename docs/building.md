@@ -137,7 +137,7 @@ Possible reasons why you may want to do this are
 - you are initiating the build from the workbench where local storage is not available to run the build
     - in fact, in the workbench, `--remote-build` is on by default
 
-The question of whether a build is local or remote is also affected by flags that can be added to the project configuration.  See [localBuild](configuration.md#localbuild), [remoteBuild](configuration.md#remotebuild), [Forcing local build behavior](configuration.md#forcing-local-build-behavior) and [Forcing remote build behavior](configuration.md#forcing-remote-build-behavior).
+The question of whether a build is local or remote is also affected by properties that can be added to the project configuration.  See [the deployer specification](deployer-spec.md#local-versus-remote-building-actions), [and also this section](deployer-spec.md#local-versus-remote-building-web).
 
 #### Current Restrictions
 

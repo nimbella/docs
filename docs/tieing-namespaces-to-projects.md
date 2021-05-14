@@ -13,7 +13,7 @@ The Nimbella CLI provides some enforcement assistance for one commonly occurring
 - each namespace belongs to a project
 - a project can deploy to one or two namespaces (one for testing and one for production).
 
-You impose this rule by creating a `project.yml` file in the root of an "owning" project.  This file can contain quite a bit of information, as outlined in [Adding project configuration](configuration.md).  For present purposes it needs to contain at least
+You impose this rule by creating a `project.yml` file in the root of an "owning" project.  This file can contain quite a bit of information, as outlined in [the deployer specification](deployer-spec.md).  For present purposes it needs to contain at least
 
 ```yaml
 targetNamespace:
