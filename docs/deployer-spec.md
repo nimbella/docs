@@ -249,6 +249,21 @@ If the runtime is not specified in project configuration, then the following app
 
 There is no final default runtime.  The runtime must be determined either from the project configuration or from the project tree by using file extensions.
 
+##### Docker Image Runtimes
+
+Custom docker images can be used as the action runtime - rather than a built-in platform runtime. This is useful for customising the runtime environment (adding extra packages) or supporting new programming languages. Use the `docker` parameter under the `actions` configuration section to identify the Docker image tag to use. Docker images used for runtimes must be available in a public Docker registry. 
+
+```
+packages:
+  - name: default
+    actions:
+      - name: hello
+        main: 'main'
+        docker: 'myregistry/actionloop-python-v3.7ai'
+```
+
+Docker images referenced must implement the API interface used by the Nimbella platform. See more details [here](https://github.com/apache/openwhisk/blob/master/docs/actions-docker.md) on the requirements for these images and how to create your own.
+
 #### Main entry point
 
 The main entry point to use may be specified in project configuration using the following template.
