@@ -19,3 +19,7 @@ Nimbella supports the following languages and runtimes for creating serverless A
 - TypeScript 3.7
 
 ## Installed packages in the runtime
+
+- [Node.js 14](https://nimbella-apigcp.nimbella.io/canirequire)
+- [Python 3.7](https://github.com/nimbella-corp/openwhisk-runtime-python/blob/dev/core/python3ActionLoop/requirements.txt)
+
