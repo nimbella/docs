@@ -11,7 +11,7 @@ Nimbella supports the following languages and runtimes for creating serverless A
 - Deno 1.3
 - Go 1.5
 - Java 8
-- JavaScript and Node.js 14
+- Node.js 14
 - PHP 8.0
 - Python 3.7
 - Swift 4.2
