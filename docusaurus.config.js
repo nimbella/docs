@@ -62,6 +62,12 @@ module.exports = {
       ],
       copyright: `Copyright © Nimbella, Inc ${new Date().getFullYear()}. All rights reserved. <a href="https://nimbella.com/terms" target="_blank" rel="noreferrer noopener nofollow">Terms</a> | <a href="https://nimbella.com/privacy" target="_blank" rel="noreferrer noopener nofollow">Privacy</a>`,
     },
+    metadatas: [
+      {
+        name: 'robots',
+        content: 'noindex, nofollow'
+      }
+    ]
   },
   presets: [
     [
