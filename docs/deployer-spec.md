@@ -79,7 +79,7 @@ There are actually three kinds of location.
  
 A project also has an _identity_, used in many messages and in enforcing [project ownership of namespaces](tieing-namespaces-to-projects.md).  
 
-- For both GitHub locations and git-controlled locations, the identity of the project is given by a GithHub repository and a path within that repository (for a git-controlled location the repository is the origin remote).
+- For both GitHub locations and git-controlled locations, the identity of the project is given by a GitHub repository and a path within that repository (for a git-controlled location the repository is the origin remote).
 - For uncontrolled locations, the identity is the file system path
 
 Note that when the identity of a project is the same but the location differs, the contents of the project may differ, because different developers may have different local modifications to the project contents.
@@ -251,7 +251,7 @@ There is no final default runtime.  The runtime must be determined either from t
 
 ##### Docker Image Runtimes
 
-Custom docker images can be used as the action runtime - rather than a built-in platform runtime. This is useful for customising the runtime environment (adding extra packages) or supporting new programming languages. Use the `docker` parameter under the `actions` configuration section to identify the Docker image tag to use. Docker images used for runtimes must be available in a public Docker registry. 
+Custom docker images can be used as the action runtime - rather than a built-in platform runtime. This is useful for customizing the runtime environment (adding extra packages) or supporting new programming languages. Use the `docker` parameter under the `actions` configuration section to identify the Docker image tag to use. Docker images used for runtimes must be available in a public Docker registry. 
 
 ```
 packages:
@@ -382,7 +382,7 @@ The deployer itself generates an annotation and adds it to every action (and pac
 
 ```
 repository: <GitHub path>
-commit:     <8-digit-hasn>
+commit:     <8-digit-hash>
 digest:     <8-digit-hash>
 projectPath: <relative-path>
 user:       <user-name>
@@ -754,7 +754,7 @@ The default value for this property is `false`.
 
 When your web content has [build steps](building.md), the default behavior is to build in the local file system.  However, if the build is self-contained (does not depend on artifacts outside the web directory), it is possible to request that the build be done [remotely](building.md#remote-builds).  For web content, remote builds are always done in the default `nodejs` runtime container, since most web build tools are in the `nodejs` ecosystem.
 
-Some web content may note work when the build is done remotely (due to dependence on artifacts that are not contained in the action directory).  The following forces a local build for web content (even when `--remote-build` is specified).
+Some web content may not work when the build is done remotely (due to dependence on artifacts that are not contained in the action directory).  The following forces a local build for web content (even when `--remote-build` is specified).
 
 ```
 bucket:
