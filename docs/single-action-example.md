@@ -96,7 +96,7 @@ Deployed actions:
 
 Here’s a diagram of the project structure that was created in this procedure.
 
-<center id="fig2"><img src="img/fig2-nim-example1-project-directory-structure.svg" height="300"/></center>
+<center id="fig2"><img src="/img/fig2-nim-example1-project-directory-structure.svg" height="300"/></center>
 <center><strong>Figure 1: Directory structure of the example1 project</strong></center>
 
 **Notes:**
