@@ -27,7 +27,7 @@ example3/web/favicon.ico
 
 Here’s a diagram of the `example3` project structure.
 
-<center><img src="img/fig6-nim-example3-project-directory-structure.svg" height="450"/></center>
+<center><img src="/img/fig6-nim-example3-project-directory-structure.svg" height="450"/></center>
 <center><strong>Figure 5: A project with static web content</strong></center>
 
 Here’s the output when the project is deployed.

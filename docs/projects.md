@@ -13,7 +13,7 @@ A project represents a logical unit of functionality whose boundaries are up to 
 
 A project has a fixed directory structure, which determines how projects are deployed. Here’s a diagram that summarizes the directory structure of an individual project with no project configuration, with explanation below.
 
-<center><img src="img/fig3-nim-project-directory-structure.svg" height="300"/></center>
+<center><img src="/img/fig3-nim-project-directory-structure.svg" height="300"/></center>
 <center><strong>Figure 2: Basic directory structure of a project</strong></center>
 
 The project has a root directory, within which a certain small number of directory names are significant to the deployer, specifically:
