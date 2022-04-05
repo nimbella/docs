@@ -22,20 +22,6 @@ The `nim` CLI operations to create, invoke, and manage actions are the same rega
 
 Here are languages and runtimes supported in the Nimbella Cloud, with links to more complete OpenWhisk tutorials for each language. We recommend reading the basics in this document first, which are language agnostic, before getting deeper into a language-specific tutorial. If your preferred language isn't supported directly, the Docker action or native binary paths may be more suitable.
 
-**Supported languages**
-
-* [Ballerina](actions-ballerina.md)
-* [Go](actions-go.md)
-* [Java](actions-java.md)
-* [JavaScript](actions-nodejs.md)
-* [PHP](actions-php.md)
-* [Python](actions-python.md)
-* [Ruby](actions-ruby.md)
-* [Rust](actions-rust.md)
-* [Swift](actions-swift.md)
-* [.NET Core](actions-dotnet.md)
-* [Docker and native binaries](actions-docker.md)
-
 **Supported runtimes**
 
 The Nimbella deployer determines the kind of runtime required for the action from the file suffix. The following runtimes are supported:
